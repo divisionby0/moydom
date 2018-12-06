@@ -1,0 +1,2 @@
+2018-12-02T07:49:02+00:00 CRITICAL require_once(): Failed opening required 'custom/functions.php' (include_path='.;C:\php\pear') в E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\theme-customisations.php на строке 34
+
