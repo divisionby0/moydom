@@ -10,6 +10,6 @@ class CostMetabox
 
     private function show($cost){
         echo "<h2>Цена</h2>";
-        echo "<input type='text' name='costEditor' id='costEditor' value='".$cost."' style='display:block;'>";
+        echo "<input type='number' name='costEditor' id='costEditor' value='".$cost."' style='display:block;'>";
     }
 }

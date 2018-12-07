@@ -46,11 +46,31 @@ class DialTypeMetabox{
     private parseData():void{
         var data:string = this.$j("#dialTypeEditor").val();
 
+        console.log("sale:",this.$j("#saleTypeEditor").val());
+
+        this.types[0] = parseInt(this.$j("#saleTypeEditor").val());
+        this.types[1] = parseInt(this.$j("#rentTypeEditor").val());
+
+        if(isNaN(this.types[0])){
+            this.types[0] = 0;
+        }
+        if(isNaN(this.types[1])){
+            this.types[1] = 0;
+        }
+
+        this.saleIsEnabled = this.types[0];
+        this.rentIsEnabled = this.types[1];
+
+
+        /*
         if(data!=""){
-            this.types = JSON.parse(data);
+            var rawData:string[] = data.split("");
+            this.types[0] = parseInt(rawData[0]);
+            this.types[1] = parseInt(rawData[1]);
             this.saleIsEnabled = this.types[0];
             this.rentIsEnabled = this.types[1];
         }
+        */
     }
 
     private updateTypes():void{
@@ -59,7 +79,14 @@ class DialTypeMetabox{
     }
 
     private updateEditor():void{
-        this.$j("#dialTypeEditor").val(JSON.stringify(this.types));
+        /*
+        var dataString:string = "";
+        for(var i:number = 0; i<this.types.length; i++){
+            dataString+=this.types[i];
+        }
+        */
+        this.$j("#saleTypeEditor").val(this.types[0]);
+        this.$j("#rentTypeEditor").val(this.types[1]);
     }
 
     private updateControls():void {

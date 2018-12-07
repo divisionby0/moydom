@@ -25,8 +25,18 @@ class Autoload
         include_once('metabox/cost/php/CostMetabox.php');
         include_once('metabox/cost/php/SaveCost.php');
 
+        include_once('metabox/floorNumber/php/FloorNumberMetabox.php');
+        include_once('metabox/floorNumber/php/SaveFloorNumber.php');
+
+        include_once('metabox/totalFloors/php/TotalFloorsMetabox.php');
+        include_once('metabox/totalFloors/php/SaveTotalFloors.php');
+        
+        include_once('metabox/roomQuantity/php/RoomQuantityMetabox.php');
+        include_once('metabox/roomQuantity/php/SaveRoomQuantity.php');
+
         include_once('php/InitEstateAdmin.php');
         include_once('php/house/HousePostType.php');
+        include_once('php/flat/FlatPostType.php');
         include_once ("IncludeJS.php");
     }
 }

@@ -3,10 +3,14 @@
 class SaveDialType extends SaveMetadata
 {
     protected function save(){
-        $dialTypes = $_POST["dialTypeEditor"];
-        
-        if ( isset( $dialTypes )) {
-            update_post_meta( $this->estateId, 'dialTypes', $dialTypes );
+        $saleDialType = $_POST["saleTypeEditor"];
+        $rentDialType = $_POST["rentTypeEditor"];
+
+        if ( isset( $saleDialType )) {
+            update_post_meta( $this->estateId, 'saleDialType', $saleDialType );
+        }
+        if ( isset( $rentDialType )) {
+            update_post_meta( $this->estateId, 'rentDialType', $rentDialType );
         }
     }
 }

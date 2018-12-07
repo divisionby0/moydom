@@ -1,0 +1,733 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: biznesspack\n"
+"POT-Creation-Date: 2018-04-20 11:02+0530\n"
+"PO-Revision-Date: 2018-04-20 11:02+0530\n"
+"Last-Translator: \n"
+"Language-Team: pioneerthemes\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:18
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: comments.php:32
+#, php-format
+msgctxt "comments title"
+msgid "One Reply to &ldquo;%s&rdquo;"
+msgstr ""
+
+#: comments.php:37
+#, php-format
+msgctxt "comments title"
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:56
+msgid "Reply"
+msgstr ""
+
+#: comments.php:62 single.php:23
+msgid "Previous"
+msgstr ""
+
+#: comments.php:63 single.php:26
+msgid "Next"
+msgstr ""
+
+#: comments.php:71
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:29
+msgid "Footer Social Links Menu"
+msgstr ""
+
+#: functions.php:47
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:48
+msgid "Social Links Menu"
+msgstr ""
+
+#: functions.php:108
+msgid "Default Header Image"
+msgstr ""
+
+#: functions.php:172 sidebar.php:13
+msgid "Blog Sidebar"
+msgstr ""
+
+#: functions.php:174
+msgid ""
+"Add widgets here to appear in your sidebar on blog posts and archive pages."
+msgstr ""
+
+#: functions.php:182
+msgid "Footer 1"
+msgstr ""
+
+#: functions.php:184 functions.php:194 functions.php:203 functions.php:212
+msgid "Add widgets here to appear in your footer."
+msgstr ""
+
+#: functions.php:192
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:201
+msgid "Footer 3"
+msgstr ""
+
+#: functions.php:210
+msgid "Footer 4"
+msgstr ""
+
+#: functions.php:234 template-parts/page/slider.php:59
+#: template-parts/page/slider.php:104 template-parts/page/slider.php:149
+#: template-parts/post/slider.php:85
+msgid "Read More"
+msgstr ""
+
+#: functions.php:308
+msgid "Expand child menu"
+msgstr ""
+
+#: functions.php:309
+msgid "Collapse child menu"
+msgstr ""
+
+#: header.php:75
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: include/back-compat.php:33 include/back-compat.php:42
+#: include/back-compat.php:54
+#, php-format
+msgid ""
+"Biznesspack requires at least WordPress version 4.7. You are running version "
+"%s. Please upgrade and try again."
+msgstr ""
+
+#: include/customizer.php:41
+msgid "Theme Options"
+msgstr ""
+
+#: include/customizer.php:50
+msgid "Header Options"
+msgstr ""
+
+#: include/customizer.php:67
+msgid "Show Header - Top"
+msgstr ""
+
+#: include/customizer.php:84
+msgid "Top Header Left Section"
+msgstr ""
+
+#: include/customizer.php:89 include/customizer.php:111
+msgid "Contact Details"
+msgstr ""
+
+#: include/customizer.php:90 include/customizer.php:112
+msgid "Social Links"
+msgstr ""
+
+#: include/customizer.php:106
+msgid "Top Header Right Section"
+msgstr ""
+
+#: include/customizer.php:128
+msgid "facebook"
+msgstr ""
+
+#: include/customizer.php:129 include/customizer.php:148
+#: include/customizer.php:167 include/customizer.php:186
+#: include/customizer.php:1000 include/customizer.php:1816
+msgid "e.g: http://example.com"
+msgstr ""
+
+#: include/customizer.php:147
+msgid "Twitter"
+msgstr ""
+
+#: include/customizer.php:166
+msgid "Instagram"
+msgstr ""
+
+#: include/customizer.php:185
+msgid "Google Plus"
+msgstr ""
+
+#: include/customizer.php:203
+msgid "Address/Location"
+msgstr ""
+
+#: include/customizer.php:220
+msgid "Phone Number"
+msgstr ""
+
+#: include/customizer.php:237
+msgid "Email"
+msgstr ""
+
+#: include/customizer.php:249
+msgid "Breadcrumb Options"
+msgstr ""
+
+#: include/customizer.php:267
+msgid "Breadcrumb Type"
+msgstr ""
+
+#: include/customizer.php:272 include/customizer.php:333
+msgid "Disable"
+msgstr ""
+
+#: include/customizer.php:273
+msgid "Normal"
+msgstr ""
+
+#: include/customizer.php:282
+msgid "Footer Options"
+msgstr ""
+
+#: include/customizer.php:300
+msgid "Copyright Text"
+msgstr ""
+
+#: include/customizer.php:310
+msgid "Back To Top Options"
+msgstr ""
+
+#: include/customizer.php:328
+msgid "Active?"
+msgstr ""
+
+#: include/customizer.php:334
+msgid "Enable"
+msgstr ""
+
+#: include/customizer.php:342 include/customizer.php:360
+msgid "Post Slider"
+msgstr ""
+
+#: include/customizer.php:361
+msgid "Note: Hide Header Image If you Want Post Slider."
+msgstr ""
+
+#: include/customizer.php:380
+msgid "Number Of Slider"
+msgstr ""
+
+#: include/customizer.php:385 include/customizer.php:1738
+msgid "2"
+msgstr ""
+
+#: include/customizer.php:386 include/customizer.php:1739
+msgid "3"
+msgstr ""
+
+#: include/customizer.php:387 include/customizer.php:1740
+msgid "4"
+msgstr ""
+
+#: include/customizer.php:388
+msgid "5"
+msgstr ""
+
+#: include/customizer.php:405
+msgid "Post Navigation"
+msgstr ""
+
+#: include/customizer.php:423
+msgid "Post Pagination"
+msgstr ""
+
+#: include/customizer.php:441
+msgid "Post Content"
+msgstr ""
+
+#: include/customizer.php:459
+msgid "Post Time"
+msgstr ""
+
+#: include/customizer.php:477
+msgid "Post Excerpt"
+msgstr ""
+
+#: include/customizer.php:503
+msgid "Choose Page"
+msgstr ""
+
+#: include/customizer.php:510
+msgid "Page Slider"
+msgstr ""
+
+#: include/customizer.php:528
+msgid "Enable Slider"
+msgstr ""
+
+#: include/customizer.php:529
+msgid ""
+"Note: Hide Header Image If you Want Page Slider. How to create a slider :- "
+"First, when you create a page, Enter the page title, page descritpion or "
+"upload image to the page,if you have created a slider page, get it selected "
+"here. You can slide on only Frontpage"
+msgstr ""
+
+#: include/customizer.php:546
+msgid "Select Page One"
+msgstr ""
+
+#: include/customizer.php:564
+msgid "Select Page Two"
+msgstr ""
+
+#: include/customizer.php:582
+msgid "Select Page Three"
+msgstr ""
+
+#: include/customizer.php:601
+msgid "Slider Navigation"
+msgstr ""
+
+#: include/customizer.php:619
+msgid "Slider Pagination"
+msgstr ""
+
+#: include/customizer.php:637
+msgid "Page Content"
+msgstr ""
+
+#: include/customizer.php:655
+msgid "Slider Excerpt"
+msgstr ""
+
+#: include/customizer.php:665
+msgid "Frontpage Section"
+msgstr ""
+
+#: include/customizer.php:674 include/customizer.php:707
+#: include/customizer.php:1044 include/customizer.php:1346
+msgid "Feature Box 1"
+msgstr ""
+
+#: include/customizer.php:690 include/customizer.php:1027
+#: include/customizer.php:1313
+msgid "Active"
+msgstr ""
+
+#: include/customizer.php:723 include/customizer.php:772
+#: include/customizer.php:821 include/customizer.php:870
+#: include/customizer.php:1060 include/customizer.php:1125
+#: include/customizer.php:1190 include/customizer.php:1255
+msgid "Icon"
+msgstr ""
+
+#: include/customizer.php:739 include/customizer.php:788
+#: include/customizer.php:837 include/customizer.php:886
+#: include/customizer.php:930 include/customizer.php:1076
+#: include/customizer.php:1141 include/customizer.php:1206
+#: include/customizer.php:1271 include/customizer.php:1362
+#: include/customizer.php:1411 include/customizer.php:1460
+#: include/customizer.php:1509 include/customizer.php:1558
+#: include/customizer.php:1607
+msgid "Title"
+msgstr ""
+
+#: include/customizer.php:756 include/customizer.php:1011
+#: include/customizer.php:1109 include/customizer.php:1395
+msgid "Feature Box 2"
+msgstr ""
+
+#: include/customizer.php:805 include/customizer.php:1174
+#: include/customizer.php:1297 include/customizer.php:1444
+msgid "Feature Box 3"
+msgstr ""
+
+#: include/customizer.php:854 include/customizer.php:1239
+#: include/customizer.php:1493
+msgid "Feature Box 4"
+msgstr ""
+
+#: include/customizer.php:896 include/customizer.php:912
+msgid "About Page"
+msgstr ""
+
+#: include/customizer.php:948 include/customizer.php:1092
+#: include/customizer.php:1157 include/customizer.php:1222
+#: include/customizer.php:1287 include/customizer.php:1378
+#: include/customizer.php:1427 include/customizer.php:1476
+#: include/customizer.php:1525 include/customizer.php:1574
+#: include/customizer.php:1623 include/customizer.php:1781
+msgid "Content"
+msgstr ""
+
+#: include/customizer.php:965
+msgid "Page Image"
+msgstr ""
+
+#: include/customizer.php:982
+msgid "Button"
+msgstr ""
+
+#: include/customizer.php:999
+msgid "Link"
+msgstr ""
+
+#: include/customizer.php:1329 include/customizer.php:1666
+msgid "Section Title"
+msgstr ""
+
+#: include/customizer.php:1542
+msgid "Feature Box 5"
+msgstr ""
+
+#: include/customizer.php:1591
+msgid "Feature Box 6"
+msgstr ""
+
+#: include/customizer.php:1633 include/customizer.php:1649
+msgid "Latest Post"
+msgstr ""
+
+#: include/customizer.php:1683
+msgid "Section Sub Title"
+msgstr ""
+
+#: include/customizer.php:1699
+msgid "Show Title"
+msgstr ""
+
+#: include/customizer.php:1715
+msgid "Show Time"
+msgstr ""
+
+#: include/customizer.php:1733
+msgid "Item to Show"
+msgstr ""
+
+#: include/customizer.php:1748 include/customizer.php:1764
+msgid "Call To Action"
+msgstr ""
+
+#: include/customizer.php:1798
+msgid "Button Title"
+msgstr ""
+
+#: include/customizer.php:1815
+msgid "Button Link"
+msgstr ""
+
+#: include/customizer.php:1948
+msgid "Copyright &copy; All rights reserved."
+msgstr ""
+
+#: include/customizer.php:1993
+msgid ""
+"We ensure quality & support. People love us & we love them. We provide "
+"services more than 100000 Customers worldwide. Customer satisfaction is our "
+"first goal."
+msgstr ""
+
+#: include/customizer.php:1996
+msgid "Contact Now"
+msgstr ""
+
+#: include/customizer.php:2005
+msgid "Latest News"
+msgstr ""
+
+#: include/customizer.php:2008
+msgid ""
+"Build Awesome and Beautiful Premium HTML, WordPress, Magento, Joomla, E-"
+"commerce Themes and Email Templates.Lorem ipsum dolor sit amet, consectetur "
+"adipisicing elit."
+msgstr ""
+
+#: include/customizer.php:2038
+msgid "Creative Design"
+msgstr ""
+
+#: include/customizer.php:2044
+msgid "Easy To Customize"
+msgstr ""
+
+#: include/customizer.php:2050
+msgid "100% Responsive"
+msgstr ""
+
+#: include/customizer.php:2056 include/customizer.php:2104
+msgid "Full Support"
+msgstr ""
+
+#: include/customizer.php:2077
+msgid "Customer First"
+msgstr ""
+
+#: include/customizer.php:2080 include/customizer.php:2089
+#: include/customizer.php:2098 include/customizer.php:2107
+msgid ""
+"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo "
+"ligula eget dolor. Aenean massa."
+msgstr ""
+
+#: include/customizer.php:2086
+msgid "10+ Year Experience"
+msgstr ""
+
+#: include/customizer.php:2095
+msgid "Professional Team"
+msgstr ""
+
+#: include/customizer.php:2116
+msgid "About Company"
+msgstr ""
+
+#: include/customizer.php:2125
+msgid "Learn More"
+msgstr ""
+
+#: include/customizer.php:2134
+msgid "Why Choose Biznesspack?"
+msgstr ""
+
+#: include/customizer.php:2140
+msgid "Ultra Responsive Design"
+msgstr ""
+
+#: include/customizer.php:2143 include/customizer.php:2152
+#: include/customizer.php:2161 include/customizer.php:2170
+#: include/customizer.php:2179 include/customizer.php:2188
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et culpa dolore "
+"odio voluptate suscipit corporis sed ad sunt autem! Lorem ipsum dolor sit "
+"amet, Lorem ipsum dolor consectetur adipisicing elit."
+msgstr ""
+
+#: include/customizer.php:2149
+msgid "Modern and clean Design"
+msgstr ""
+
+#: include/customizer.php:2158
+msgid "Well Documentation Included"
+msgstr ""
+
+#: include/customizer.php:2167
+msgid "Unlimited Features Avail"
+msgstr ""
+
+#: include/customizer.php:2176
+msgid "Life Time Free Updates"
+msgstr ""
+
+#: include/customizer.php:2185
+msgid "Friendly Customer Support"
+msgstr ""
+
+#: include/icon-functions.php:37
+msgid "Please define default parameters in the form of an array."
+msgstr ""
+
+#: include/icon-functions.php:42
+msgid "Please define an SVG icon filename."
+msgstr ""
+
+#: include/template-tags.php:52
+#, php-format
+msgid "<span class=\"screen-reader-text\">Posted on</span> %s"
+msgstr ""
+
+#: include/template-tags.php:66
+msgid ", "
+msgstr ""
+
+#: include/template-tags.php:85
+msgid "Categories"
+msgstr ""
+
+#: include/template-tags.php:89
+msgid "Tags"
+msgstr ""
+
+#: include/template-tags.php:117
+#, php-format
+msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: include/template-tags.php:151
+#, php-format
+msgid "Front Page Section %1$s Placeholder"
+msgstr ""
+
+#: search.php:30
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: searchform.php:15
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:16
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:20
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: template-parts/footer/site-info.php:19
+msgid "http://www.pioneerthemes.com/"
+msgstr ""
+
+#: template-parts/footer/site-info.php:19
+#, php-format
+msgid "Designed by %s"
+msgstr ""
+
+#: template-parts/footer/widgets.php:41
+msgid "Footer"
+msgstr ""
+
+#: template-parts/header/breadcrumb.php:245
+msgid "Browse:"
+msgstr ""
+
+#: template-parts/header/breadcrumb.php:246
+msgctxt "breadcrumbs aria label"
+msgid "Breadcrumbs"
+msgstr ""
+
+#: template-parts/header/breadcrumb.php:247
+msgid "Home"
+msgstr ""
+
+#: template-parts/header/breadcrumb.php:248
+msgid "404 Not Found"
+msgstr ""
+
+#: template-parts/header/breadcrumb.php:249
+msgid "Archives"
+msgstr ""
+
+#: template-parts/header/breadcrumb.php:251
+#, php-format
+msgid "Search results for: %s"
+msgstr ""
+
+#: template-parts/header/breadcrumb.php:253
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: template-parts/header/breadcrumb.php:255
+#, php-format
+msgid "Comment Page %s"
+msgstr ""
+
+#: template-parts/header/breadcrumb.php:257
+#, php-format
+msgid "Minute %s"
+msgstr ""
+
+#: template-parts/header/breadcrumb.php:259
+#, php-format
+msgid "Week %s"
+msgstr ""
+
+#: template-parts/header/breadcrumb.php:719
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr ""
+
+#: template-parts/header/breadcrumb.php:736
+msgctxt "minute archives time format"
+msgid "i"
+msgstr ""
+
+#: template-parts/header/breadcrumb.php:753
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr ""
+
+#: template-parts/header/breadcrumb.php:769
+#: template-parts/header/breadcrumb.php:798
+#: template-parts/header/breadcrumb.php:825
+#: template-parts/header/breadcrumb.php:852
+#: template-parts/header/breadcrumb.php:1192
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: template-parts/header/breadcrumb.php:770
+#: template-parts/header/breadcrumb.php:826
+#: template-parts/header/breadcrumb.php:1196
+msgctxt "monthly archives date format"
+msgid "F"
+msgstr ""
+
+#: template-parts/header/breadcrumb.php:771
+#: template-parts/header/breadcrumb.php:1200
+msgctxt "daily archives date format"
+msgid "j"
+msgstr ""
+
+#: template-parts/header/breadcrumb.php:799
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr ""
+
+#: template-parts/page/content-page.php:22
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/post/archive-content.php:24
+#: template-parts/post/content.php:23 template-parts/post/single.php:26
+msgid "No Comments"
+msgstr ""
+
+#: template-parts/post/archive-content.php:26
+#: template-parts/post/content.php:25 template-parts/post/single.php:28
+msgid " Comments"
+msgstr ""
+
+#: template-parts/post/archive-content.php:28
+#: template-parts/post/content.php:27 template-parts/post/single.php:30
+msgid "1 Comment"
+msgstr ""
+
+#: template-parts/post/content-none.php:12
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/post/content-none.php:18
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/post/content-none.php:22
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""

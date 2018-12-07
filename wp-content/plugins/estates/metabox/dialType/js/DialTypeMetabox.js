@@ -39,18 +39,40 @@ var DialTypeMetabox = (function () {
     };
     DialTypeMetabox.prototype.parseData = function () {
         var data = this.$j("#dialTypeEditor").val();
-        if (data != "") {
-            this.types = JSON.parse(data);
+        console.log("sale:", this.$j("#saleTypeEditor").val());
+        this.types[0] = parseInt(this.$j("#saleTypeEditor").val());
+        this.types[1] = parseInt(this.$j("#rentTypeEditor").val());
+        if (isNaN(this.types[0])) {
+            this.types[0] = 0;
+        }
+        if (isNaN(this.types[1])) {
+            this.types[1] = 0;
+        }
+        this.saleIsEnabled = this.types[0];
+        this.rentIsEnabled = this.types[1];
+        /*
+        if(data!=""){
+            var rawData:string[] = data.split("");
+            this.types[0] = parseInt(rawData[0]);
+            this.types[1] = parseInt(rawData[1]);
             this.saleIsEnabled = this.types[0];
             this.rentIsEnabled = this.types[1];
         }
+        */
     };
     DialTypeMetabox.prototype.updateTypes = function () {
         this.types[0] = this.saleIsEnabled;
         this.types[1] = this.rentIsEnabled;
     };
     DialTypeMetabox.prototype.updateEditor = function () {
-        this.$j("#dialTypeEditor").val(JSON.stringify(this.types));
+        /*
+        var dataString:string = "";
+        for(var i:number = 0; i<this.types.length; i++){
+            dataString+=this.types[i];
+        }
+        */
+        this.$j("#saleTypeEditor").val(this.types[0]);
+        this.$j("#rentTypeEditor").val(this.types[1]);
     };
     DialTypeMetabox.prototype.updateControls = function () {
         if (this.types[0] == 1) {
