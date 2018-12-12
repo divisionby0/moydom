@@ -9,17 +9,19 @@ class Ajax{
         this.j = jQuery.noConflict();
     }
     
-    public getEstates(estateType:string, dialTypeCollection:string[], city:string):void{
+    public getEstates(estateType:string, saleDialType:number, rentDialType:number, city:string, costMin:number, costMax:number):void{
         var data:any = {'action':'getEstates',
             'estateType':estateType,
-            'dialTypeCollection':dialTypeCollection,
+            'saleDialType':saleDialType,
+            'rentDialType':rentDialType,
+            'costMin':costMin,
+            'costMax':costMax,
             'city':city
         };
         this.j.post(ajaxurl, data, (response) => this.onFilteredEstatesResponse(response));
     }
     
     private onFilteredEstatesResponse(response:any):void{
-        console.log("onFilteredEstatesResponse: ",response);
         EventBus.dispatchEvent(AjaxServiceEvent.ON_ESTATES_LOAD_COMPLETE, response);
     }
 }

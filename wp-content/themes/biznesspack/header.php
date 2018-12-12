@@ -11,6 +11,11 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Агентство недвижимости 'Мой дом' в Феодосии. Недвижимость по всему Крыму. ">
+    <meta property="og:site_name" content="Продажа, аренда, консультации">
+    <meta property="og:url" content="http://mdfeo.ru">
+    <meta property="og:description" content="Продажа, аренда, консультации">
+    <meta property="og:image" content="http://mdfeo.ru/wp-content/uploads/2018/12/logo2.png">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <?php wp_head(); ?>
 </head>

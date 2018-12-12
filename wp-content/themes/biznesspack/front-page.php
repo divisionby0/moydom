@@ -39,22 +39,6 @@ $biznesspack_featurebox_type3_section = biznesspack_get_option( 'biznesspack_fea
 
 echo "<div class='container'><div class='row'><h2>Каталог</h2></div></div>";
 new CatalogController();
-
-echo "<h2>Testing selection...</h2>";
-$estateType = Constant::$houses;
-$saleDialType = "1";
-$rentDialType = "1";
-$city = "Судак";
-
-$estatesData = DataBase::getEstate($estateType, $saleDialType, $rentDialType, $city);
-
-$estates = json_decode($estatesData);
-
-//echo "<p>city=".$city."  estateType:".$estateType."</p>";
-for($i=0; $i<sizeof($estates); $i++){
-	$estate = $estates[$i];
-	echo "<p>Estate:".$estates[$i]->id." ".$estates[$i]->name." sale:".$estates[$i]->saleDialType." rent:".$estates[$i]->rentDialType."</p>";
-}
-
+echo "<div class='container' style='padding-top: 20px;' id='estatesListContainer'></div>";
 
 get_footer(); ?>

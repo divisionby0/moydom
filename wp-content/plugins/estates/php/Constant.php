@@ -7,4 +7,5 @@ class Constant
     public static $city = 'city';
     public static $houses = 'houses';
     public static $flats = 'flats';
+    public static $commercialEstates = 'commercialEstates';
 }

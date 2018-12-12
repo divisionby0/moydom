@@ -37,6 +37,8 @@ class Autoload
         include_once('php/InitEstateAdmin.php');
         include_once('php/house/HousePostType.php');
         include_once('php/flat/FlatPostType.php');
+        include_once('php/commerce/CommerceEstatePostType.php');
+
         include_once ("IncludeJS.php");
     }
 }

@@ -22,6 +22,7 @@ function initPlugin(){
 function create_content_types(){
     new HousePostType();
     new FlatPostType();
+    new CommerceEstatePostType();
 }
 
 // show estate
@@ -63,7 +64,6 @@ function display_estate_meta_box( $estate ) {
         $roomsQuantity = get_post_meta($id , 'rooms', true );
         new RoomQuantityMetabox($roomsQuantity);
     }
-
 }
 
 function estate_admin(){

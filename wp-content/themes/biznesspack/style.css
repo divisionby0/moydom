@@ -51,7 +51,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 --------------------------------------------------------------*/
 
 html {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Arial', sans-serif;
 	line-height: 1.15;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -59,7 +59,7 @@ html {
 
 body.colors-light {
 	margin: 0;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Arial', sans-serif;
 	font-size: 14px;
     font-weight: 400;
 	background-color: #fff;
@@ -72,11 +72,11 @@ h3,
 h4, 
 h5, 
 h6{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Arial', sans-serif;
 	font-weight: 500;
 }
 body p {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.8;
@@ -437,7 +437,7 @@ input,
 select,
 textarea {
 	color: #333;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Arial', sans-serif;
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 1.66;
@@ -537,7 +537,7 @@ address {
 
 pre {
 	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-family: "Arial", Courier, monospace;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	line-height: 1.6;
@@ -626,7 +626,7 @@ html[lang="ur"] button,
 html[lang="ur"] input,
 html[lang="ur"] select,
 html[lang="ur"] textarea {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Arial', sans-serif;
 }
 
 html[lang="ar"] h1,
@@ -983,7 +983,7 @@ input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
 	color: #333;
-	border-color: #f0634c;
+	border-color: #315a86;
 }
 
 select {
@@ -1007,7 +1007,7 @@ input[type="checkbox"] + label {
 button,
 input[type="button"],
 input[type="submit"] {
-	background-color: #f0634c;
+	background-color: #315a86;
 	border: 0;
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
@@ -1036,7 +1036,7 @@ input[type="reset"],
 input[type="button"].secondary,
 input[type="reset"].secondary,
 input[type="submit"].secondary {
-	background-color: #f0634c;
+	background-color: #315a86;
 	color: #333;
 }
 
@@ -1181,7 +1181,7 @@ a:focus {
 
 body a:hover,
 body a:active {
-	color: #f0634c;
+	color: #315a86;
 	outline: unset;
 	text-decoration: none;
 }
@@ -1297,7 +1297,7 @@ body a:active {
 }
 
 .main-navigation a:hover {
-	color: #f0634c;
+	color: #315a86;
 }
 
 /* Menu toggle */
@@ -1478,7 +1478,7 @@ html {
 
 .site-title,
 .site-title a {
-	color: #f0634c;
+	color: #315a86;
 	opacity: 1; /* Prevent opacity from changing during selective refreshes in the customize preview */
 }
 
@@ -1983,7 +1983,7 @@ body:not(.biznesspack-front-page) #comments {
 }
 
 .entry-footer .edit-link a.post-edit-link {
-	background-color: #f0634c;
+	background-color: #315a86;
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
 	color: #fff;
@@ -2102,6 +2102,9 @@ body:not(.biznesspack-front-page) #comments {
 /*--------------------------------------------------------------
 13.6 Footer
 --------------------------------------------------------------*/
+.footer-bottom{
+	background-color: #7eb22e!important;
+}
 .site-footer .footer-top {
     border-top: 1px solid #f2f2f2;
 }
@@ -2165,7 +2168,7 @@ body:not(.biznesspack-front-page) #comments {
 	margin-left: 5px;
 }
 .site-footer .site-info a:hover {
-    color: #f0634c;
+    color: #315a86;
 }
 
 .site-info .sep {
@@ -2257,7 +2260,7 @@ body:not(.biznesspack-front-page) #comments {
 }
 
 .comment-reply-link {
-	background: #f0634c;
+	background: #315a86;
     color: #fff;
     display: inline-block;
     float: none;
@@ -2569,7 +2572,7 @@ h2.widget-title {
 }
 .colors-light .widget .tag-cloud-link {
     border: none;
-    background: #f0634c;
+    background: #315a86;
     color: #fff;
 }
 .widget .tagcloud a:hover {
@@ -3363,7 +3366,7 @@ p > object:only-child {
 
 	.main-navigation li li:hover,
 	.main-navigation li li.focus {
-		background: #f0634c;
+		background: #315a86;
 	}
 
 	.main-navigation li li a {
@@ -4040,7 +4043,7 @@ p > object:only-child {
 	margin-bottom: 0;
 }
 .page-header.jumbotron {
-    background: #f0634c;
+    background: #315a86;
 }
 .header-breadcrumb a {
     color: #333;
@@ -4062,6 +4065,9 @@ p > object:only-child {
 		display: none;
 }
 /* header top*/
+.header-wrapper{
+	background-color: #7eb22e;
+}
 .header-wrapper .header-top ul {
     margin-bottom: 0;
 }
@@ -4076,10 +4082,12 @@ p > object:only-child {
     float: left;
 	padding: 0;
 	margin: 9px 0px;
+	background-color: #7eb22e;
 }
 .header-wrapper .header-menu .navigation-section {
     float: right;
 	margin: 6px 0;
+	background-color: #7eb22e;
 }
 #secondary.widget-area .widget {
 	padding: 25px 25px;
@@ -4129,7 +4137,7 @@ article.post header.entry-header {
 	padding-bottom: 20px;
 }
 .post-navigation .nav-previous a {
-    background: #f0634c;
+    background: #315a86;
     display: inline-block;
     color: #fff;
     float: left;
@@ -4138,7 +4146,7 @@ article.post header.entry-header {
     padding: 10px 10px;
 }
 .post-navigation .nav-next a{
-	background: #f0634c;
+	background: #315a86;
     display: inline-block;
     color: #fff;
     float: right;
@@ -4187,7 +4195,7 @@ article.post header.entry-header {
 }
 .colors-light .pagination .nav-links a {
     color: #fff;
-    background: #f0634c;
+    background: #315a86;
     clear: both;
 	font-size: 15px;
     font-weight: 400;
@@ -4203,12 +4211,12 @@ article.post header.entry-header {
     font-weight: 400;
 }
 .colors-light .pagination .nav-links .page-numbers.current:hover {
-    background: #f0634c;
+    background: #315a86;
     color: #fff;
 }
 .colors-light .pagination .nav-links .page-numbers.dots {
     color: #fff;
-    background: #f0634c;
+    background: #315a86;
 }
 .site-content .pagination {
     display: block;
@@ -4228,7 +4236,7 @@ article.post header.entry-header {
 .post .entry-title a:focus,
 .post .entry-title a:active
  {
-    color: #f0634c;
+    color: #315a86;
 }
 .post .entry-meta li {
     letter-spacing: 2px;
@@ -4248,7 +4256,7 @@ article.post header.entry-header {
 }
 .post .entry-meta i,
 .post .meta-categories i {
-    color: #f0634c;
+    color: #315a86;
 }
 .single-post .post-inner-wrapper .post-thumbnail {
 	margin-bottom: 25px;
@@ -4264,7 +4272,7 @@ article.post header.entry-header {
 }
 .read-more .btn.read-more-link {
     color: #fff;
-    background: #f0634c;
+    background: #315a86;
     font-size: 14px;
     font-weight: 300;
 	border-radius: 0;
@@ -4283,7 +4291,7 @@ article.post header.entry-header {
 	margin-bottom: 0;
 }
 .post .entry-content .more-link {
-    color: #f0634c;
+    color: #315a86;
     text-transform: uppercase;
     font-size: 13px;
     letter-spacing: 1px;
@@ -4354,7 +4362,7 @@ body .not-found .search-form label,
 }
 .type-attachment .entry-meta i {
     font-size: 12px;
-	color: #f0634c;
+	color: #315a86;
     margin-right: 3px;
 }
 .comment-respond {
@@ -4386,6 +4394,7 @@ body .container {
 }
 .site-content {
 		padding: 100px 0;
+	background-color: white!important;
 }
 .back-to-top {
     display: none;
@@ -4397,7 +4406,7 @@ body .container {
     z-index: 99999;
 }
 .back-to-top > i {
-    background-color: #f0634c;
+    background-color: #315a86;
     color: #ffffff;
     height: 40px;
     line-height: 40px;
@@ -4504,7 +4513,7 @@ a.back-to-top .fa:hover {
     margin-bottom: 0;
 }
 .recent-post-slider .read-more .btn {
-    background: #f0634c;
+    background: #315a86;
     color: #fff;
 	font-size: 14px;
 	border-radius: 25px;
@@ -4520,7 +4529,7 @@ a.back-to-top .fa:hover {
     padding: 15px 0;
 }
 .recent-post-slider .post-meta .slider-post-categories a {
-    background: #f0634c;
+    background: #315a86;
     padding: 3px;
     font-size: 12px;
     color: #fff;
@@ -4550,7 +4559,7 @@ a.back-to-top .fa:hover {
     font-size: 16px;
 }
 .recent-post-slider .owl-dot.active {
-    background: #f0634c;
+    background: #315a86;
 }
 .recent-post-slider .active .animation.animated-item-1 {
     -webkit-animation: fadeInUp 300ms linear 300ms both;
@@ -4613,7 +4622,7 @@ a.back-to-top .fa:hover {
     margin-bottom: 0;
 }
 .biznesspack-featured-slider-wrapper .post-wrapper .read-more .btn {
-    background: #f0634c;
+    background: #315a86;
     color: #fff;
     font-size: 14px;
 }
@@ -4644,7 +4653,7 @@ a.back-to-top .fa:hover {
     animation: fadeInUp 300ms linear 900ms both;	
 }
 .theme-color{
-	color: #f0634c;
+	color: #315a86;
 }
 .theme-color-bg{
 	background-color: #f0634c;
@@ -4675,7 +4684,7 @@ a.back-to-top .fa:hover {
     height: 60px;
     width: 60px;
     line-height: 60px;
-	background: #f0634c;
+	background: #315a86;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -4696,8 +4705,8 @@ a.back-to-top .fa:hover {
     right: 0;
     position: absolute;
     width: 40px;
-	color: #f0634c;
-	border-color: #f0634c;
+	color: #315a86;
+	border-color: #315a86;
 }
 .feature-bottom-line {
     line-height: 1.5;
@@ -4780,7 +4789,7 @@ a.back-to-top .fa:hover {
     padding-bottom: 15px;
 }
 .biznesspack-about-page .read-more .btn {
-    background: #f0634c;
+    background: #315a86;
     color: #fff;
     font-size: 14px;
 }
@@ -4791,7 +4800,7 @@ a.back-to-top .fa:hover {
     padding: 0 5px 0px 5px;
 }
 .biznesspack-slider-wrapper .post-inner-wrapper .post-time i {
-    color: #f0634c;
+    color: #315a86;
 	padding-right: 5px;
 }
 .bg-grey{
@@ -5031,7 +5040,7 @@ a.back-to-top .fa:hover {
 	.recent-post-slider .owl-nav i {
 		font-size: 22px;
 		color: #fff;
-		background: #f0634c;
+		background: #315a86;
 		padding: 7px 12px;
 		margin: 0;
 	}
@@ -5080,7 +5089,7 @@ a.back-to-top .fa:hover {
 		border-radius: 50%;
 	}
 	.biznesspack-featured-slider-wrapper .owl-dot.active {
-		background: #f0634c;
+		background: #315a86;
 	}
 	.biznesspack-featured-slider-wrapper .owl-dots {
 		margin: 0 auto;
@@ -5114,7 +5123,7 @@ a.back-to-top .fa:hover {
 	.biznesspack-featured-slider-wrapper .owl-nav i {
 		font-size: 22px;
 		color: #fff;
-		background: #f0634c;
+		background: #315a86;
 		padding: 7px 12px;
 		margin: 0;
 	}
@@ -5145,4 +5154,9 @@ a.back-to-top .fa:hover {
 }
 .biznesspack-featured-slider-wrapper .type-page .entry-content p{
 	text-indent: unset;
+}
+.site-description a{
+	color: #315a86!important;
+}.site-description a:hover{
+	color: #315a86!important;
 }

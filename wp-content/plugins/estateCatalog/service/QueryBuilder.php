@@ -2,10 +2,9 @@
 
 class QueryBuilder
 {
-    public static function createQuery($estateType, $saleDialType, $rentDialType, $city){
+    public static function createQuery($estateType, $saleDialType, $rentDialType, $city, $costMin, $costMax, $postsPerPage = "-1"){
 
         $saleQuery = null;
-        $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
         $metaQuery = array(array(
             'key'     => 'selectedCity',
@@ -47,10 +46,23 @@ class QueryBuilder
             ));
         }
 
+        if($costMin && $costMax){
+            $costs = array();
+            $costs[0] = $costMin;
+            $costs[1] = $costMax;
+
+            array_push($metaQuery, array(
+                'key'     => 'cost',
+                'value'   => array($costMin, $costMax),
+                'compare' => "BETWEEN",
+                'type' => 'NUMERIC'
+            ));
+        }
 
         $args = array(
             'post_type'      => $estateType,
             'post_status'    => 'publish',
+            'posts_per_page'  =>$postsPerPage,
             'meta_query'     => $metaQuery
         );
         return $args;

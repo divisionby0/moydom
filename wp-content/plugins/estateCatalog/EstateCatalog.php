@@ -22,22 +22,26 @@ function createJSConstants() {
 
 function getEstates(){
     $estateType = $_POST['estateType'];
-    $dialTypeCollection = $_POST['dialTypeCollection'];
+    $saleDialType = $_POST['saleDialType'];
+    $rentDialType = $_POST['rentDialType'];
+    $costMin = $_POST['costMin'];
+    $costMax = $_POST['costMax'];
     $city = $_POST['city'];
+    
+    $estatesData = DataBase::getEstate($estateType, $saleDialType, $rentDialType, $city, $costMin, $costMax);
 
-    $estates = DataBase::getEstate($estateType, $dialTypeCollection, $city);
-
-    echo "city=".$city."  estateType:".$estateType."  estates:".$estates;
+    echo $estatesData;
     die();
 }
 
 function loadJs(){
-    wp_enqueue_script( 'collections', plugin_dir_url( __FILE__ ) . '/js/lib/collections/collections.min.js');
-    wp_enqueue_script( 'eventBus', plugin_dir_url( __FILE__ )  . '/js/lib/events/EventBus.js');
-    wp_enqueue_script( 'ajaxService', plugin_dir_url( __FILE__ )  . '/js/service/Ajax.js');
-    wp_enqueue_script( 'ajaxServiceEvent', plugin_dir_url( __FILE__ )  . '/js/service/AjaxServiceEvent.js');
-    wp_enqueue_script( 'constants', plugin_dir_url( __FILE__ )  . '/js/Constants.js');
-    wp_enqueue_script( 'catalog', plugin_dir_url( __FILE__ )  . '/js/Catalog.js');
+    wp_enqueue_script( 'collections', plugin_dir_url( __FILE__ ) . '/js/lib/collections/collections.min.js', null, null, true);
+    wp_enqueue_script( 'eventBus', plugin_dir_url( __FILE__ )  . '/js/lib/events/EventBus.js', null, null, true);
+    wp_enqueue_script( 'ajaxService', plugin_dir_url( __FILE__ )  . '/js/service/Ajax.js', null, null, true);
+    wp_enqueue_script( 'ajaxServiceEvent', plugin_dir_url( __FILE__ )  . '/js/service/AjaxServiceEvent.js', null, null, true);
+    wp_enqueue_script( 'constants', plugin_dir_url( __FILE__ )  . '/js/Constants.js', null, null, true);
+    wp_enqueue_script( 'catalog', plugin_dir_url( __FILE__ )  . '/js/Catalog.js', null, null, true);
+    wp_enqueue_script( 'estateListRenderer', plugin_dir_url( __FILE__ )  . '/js/EstateListRenderer.js', null, null, true);
     wp_enqueue_script( 'plugin', plugin_dir_url( __FILE__ )  . '/js/EstateCatalogPlugin.js', array('jquery'), null, true);
 }
 

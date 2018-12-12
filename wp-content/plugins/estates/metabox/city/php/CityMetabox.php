@@ -2,7 +2,7 @@
 
 class CityMetabox
 {
-    private $cities = array();
+    private $cities = array("Не выбран");
     private $selectedCity = null;
 
     public function __construct($selectedCity)
