@@ -4,17 +4,9 @@
 class ResentProductsController
 {
     private $model;
-    //private $view;
-    public function __construct()
+    public function __construct($model,$estateType, $saleDialType, $rentDialType, $city, $minCost, $maxCost)
     {
-        $view = new ResentProductListView();
-        $this->model = new ResentProductsModel($view);
-    }
-    
-    public function loadProducts($estateType, $saleDialType, $rentDialType, $city){
-        $estatesData = DataBase::getEstate($estateType, $saleDialType, $rentDialType, $city, null, null, 3);
-        $estates = json_decode($estatesData);
-        
-        $this->model->setData($estates);
+        $this->model = $model;
+        $this->model->load($estateType, $saleDialType, $rentDialType, $city, $minCost, $maxCost);
     }
 }

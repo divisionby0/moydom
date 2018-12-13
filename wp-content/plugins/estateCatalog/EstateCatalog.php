@@ -13,6 +13,13 @@ include_once ("model/CatalogModel.php");
 include_once ("model/Estate.php");
 include_once ("view/FiltersView.php");
 
+// resent
+include_once ("resentProducts/ResentProductsView.php");
+include_once ("resentProducts/ResentProductListRenderer.php");
+include_once ("resentProducts/ResentProductsModel.php");
+include_once ("resentProducts/ResentProductsController.php");
+include_once ("resentProducts/ResentProducts.php");
+
 function createJSConstants() {
     echo '<script type="text/javascript">
            var ajaxurl = "' . admin_url('admin-ajax.php') . '";

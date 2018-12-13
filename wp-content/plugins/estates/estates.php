@@ -23,11 +23,15 @@ function create_content_types(){
     new HousePostType();
     new FlatPostType();
     new CommerceEstatePostType();
+    new SectorPostType();
 }
 
 // show estate
 function display_estate_meta_box( $estate ) {
-    $isFlat = getCurrentPostType()===Constant::$flats;
+    $postType = getCurrentPostType();
+    $isFlat = $postType ===Constant::$flats;
+    $isCommercialEstate = $postType===Constant::$commercialEstates;
+    $isSector = $postType===Constant::$sectors;
 
     $id = $estate->ID;
     new IdMetabox($id);
@@ -64,6 +68,11 @@ function display_estate_meta_box( $estate ) {
         $roomsQuantity = get_post_meta($id , 'rooms', true );
         new RoomQuantityMetabox($roomsQuantity);
     }
+
+    if($isCommercialEstate || $isSector){
+        $area = get_post_meta($id , 'area', true );
+        new AreaMetabox($area);
+    }
 }
 
 function estate_admin(){
@@ -77,7 +86,10 @@ function getCurrentPostType(){
 
 function admin_save_post( $estate_id, $estate ) {
 
-    $isFlat = getCurrentPostType()===Constant::$flats;
+    $postType = getCurrentPostType();
+    $isFlat = $postType ===Constant::$flats;
+    $isCommercialEstate = $postType===Constant::$commercialEstates;
+    $isSector = $postType===Constant::$sectors;
 
     new SaveCity($estate_id, $estate);
     new SaveDialType($estate_id, $estate);
@@ -93,6 +105,9 @@ function admin_save_post( $estate_id, $estate ) {
         new SaveFloorNumber($estate_id, $estate);
         new SaveTotalFloors($estate_id, $estate);
         new SaveRoomQuantity($estate_id, $estate);
+    }
+    if($isCommercialEstate || $isSector){
+        new SaveArea($estate_id, $estate);
     }
 }
 

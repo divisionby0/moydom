@@ -4,13 +4,17 @@
 class ResentProductsModel
 {
     private $view;
-    
-    public function __construct($view)
+    private $currentId;
+    public function __construct($currentId, $view)
     {
         $this->view = $view;
+        $this->currentId = $currentId;
     }
     
-    public function setData($data){
-        $this->view->setData($data);
+    public function load($estateType, $saleDialType, $rentDialType, $city, $minCost, $maxCost){
+        $estatesData = DataBase::getEstate($estateType, $saleDialType, $rentDialType, $city, $minCost, $maxCost);
+        $estates = json_decode($estatesData);
+
+        $this->view->setData($estates, $this->currentId);
     }
 }

@@ -26,8 +26,6 @@ class FiltersView
         $this->createDialType();
         $this->createEstateType();
         $this->createCities();
-        $this->createFloorNumber();
-        $this->createRoomsQuantity();
         $this->createCost();
         echo "</div></div>";
     }
@@ -47,13 +45,12 @@ class FiltersView
         echo "<div class='row'><select id='estateType'>";
         echo "<option data-type='".Constant::$houses."'>Дом</option>";
         echo "<option data-type='".Constant::$flats."'>Квартира</option>";
-        echo "<option>Участок</option>";
+        echo "<option data-type='".Constant::$sectors."'>Участок</option>";
         echo "<option data-type='".Constant::$commercialEstates."'>Коммерческая недвижимость</option>";
         echo "</select></div></div>";
     }
 
     private function createCities(){
-
         echo "<div class='col-md-3'>";
         echo "<div class='row'><b>Населенный пункт:</b></div>";
         echo "<div class='row'>";

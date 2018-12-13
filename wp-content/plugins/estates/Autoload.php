@@ -34,10 +34,14 @@ class Autoload
         include_once('metabox/roomQuantity/php/RoomQuantityMetabox.php');
         include_once('metabox/roomQuantity/php/SaveRoomQuantity.php');
 
+        include_once('metabox/area/php/AreaMetabox.php');
+        include_once('metabox/area/php/SaveArea.php');
+
         include_once('php/InitEstateAdmin.php');
         include_once('php/house/HousePostType.php');
         include_once('php/flat/FlatPostType.php');
         include_once('php/commerce/CommerceEstatePostType.php');
+        include_once('php/sector/SectorPostType.php');
 
         include_once ("IncludeJS.php");
     }

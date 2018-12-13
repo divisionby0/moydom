@@ -27,9 +27,15 @@ get_header(); ?>
                                 $city = get_post_meta($id, "selectedCity", true);
                                 $estateType = get_post_type($id);
 
+                                //echo "<p>estate type:".$estateType."</p>";
+                                echo "<section class='page-header jumbotron'><div class='container'><div class='row'><div class='col-md-12'><h2 style='color:white;'>Похожее</h2></div></div></div></section>";
+                            new ResentProducts($id, $estateType, $saleDialType, $rentDialType, $city, null, null);
+                                /*
                                 echo "<section class='page-header jumbotron'><div class='container'><div class='row'><div class='col-md-12'><h2 style='color:white;'>Похожее</h2></div></div></div></section>";
 
-                                $estatesData = DataBase::getEstate($estateType, $saleDialType, $rentDialType, $city, null, null, 3);
+                                $estatesData = DataBase::getEstate($estateType, $saleDialType, $rentDialType, $city, null, null);
+                                echo "<p>estates data:</p>";
+                                var_dump($estatesData);
                                 $estates = json_decode($estatesData);
 
 
@@ -39,16 +45,8 @@ get_header(); ?>
                                     echo "<p>resent: ".$estates[$i]->name."  cost: ".$estates[$i]->cost."</p>";
                                 }
                             }
-                                /*
-                                the_post_navigation( array(
-                                    'prev_text' => '<span class="previous-label">' . __( 'Previous', 'biznesspack' ) . '</span>
-                                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                                        <span class="nav-title">%title</span>',
-                                    'next_text' => '<span class="next-label">' . __( 'Next', 'biznesspack' ) . '</span>
-                                        <span class="nav-title">%title</span>
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>',
-                                ) );
                                 */
+
                             endwhile; // End of the loop.
                             ?>
                 
