@@ -34,6 +34,9 @@ class Autoload
         include_once('metabox/roomQuantity/php/RoomQuantityMetabox.php');
         include_once('metabox/roomQuantity/php/SaveRoomQuantity.php');
 
+        include_once('metabox/hotSaleOption/php/HotSaleOptionMetabox.php');
+        include_once('metabox/hotSaleOption/php/SaveHotSaleOption.php');
+        
         include_once('metabox/area/php/AreaMetabox.php');
         include_once('metabox/area/php/OutsideAreaMetabox.php');
         include_once('metabox/area/php/SaveArea.php');

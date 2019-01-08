@@ -51,6 +51,9 @@ function display_estate_meta_box( $estate ) {
     $cost = get_post_meta($id , 'cost', true );
     new CostMetabox($cost);
 
+    $isHotSale = get_post_meta($id , 'hotSale', true );
+    new HotSaleOptionMetabox($isHotSale);
+
     if(Utils::isAdministratorRole()){
         $hiddenData1 = get_post_meta($id , 'hiddenData1', true );
         $hiddenData2 = get_post_meta($id , 'hiddenData2', true );
@@ -107,6 +110,7 @@ function admin_save_post( $estate_id, $estate ) {
     new SaveCost($estate_id, $estate);
     new SaveArea($estate_id, $estate);
     new SaveHiddenDataOne($estate_id, $estate);
+    new SaveHotSaleOption($estate_id, $estate);
 
     if(Utils::isAdministratorRole()){
         new SaveHiddenDataOne($estate_id, $estate);
