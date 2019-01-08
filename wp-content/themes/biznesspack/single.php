@@ -30,23 +30,6 @@ get_header(); ?>
                                 //echo "<p>estate type:".$estateType."</p>";
                                 echo "<section class='page-header jumbotron'><div class='container'><div class='row'><div class='col-md-12'><h2 style='color:white;'>Похожее</h2></div></div></div></section>";
                             new ResentProducts($id, $estateType, $saleDialType, $rentDialType, $city, null, null);
-                                /*
-                                echo "<section class='page-header jumbotron'><div class='container'><div class='row'><div class='col-md-12'><h2 style='color:white;'>Похожее</h2></div></div></div></section>";
-
-                                $estatesData = DataBase::getEstate($estateType, $saleDialType, $rentDialType, $city, null, null);
-                                echo "<p>estates data:</p>";
-                                var_dump($estatesData);
-                                $estates = json_decode($estatesData);
-
-
-                            for($i=0; $i<sizeof($estates);$i++){
-                                $resentPostId = $estates[$i]->id;
-                                if(intval($resentPostId) != intval($id)){
-                                    echo "<p>resent: ".$estates[$i]->name."  cost: ".$estates[$i]->cost."</p>";
-                                }
-                            }
-                                */
-
                             endwhile; // End of the loop.
                             ?>
                 

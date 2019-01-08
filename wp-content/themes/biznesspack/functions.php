@@ -450,3 +450,35 @@ function biznesspack_custom_excerpt_length( $length ) {
 }
 
 add_filter( 'excerpt_length', 'biznesspack_custom_excerpt_length');
+
+function clearPostContent($content){
+	$newContent = preg_replace('(\[(?:\[??[^\[]*?\]))', '', $content);
+	$newContent = mb_substr($newContent, 0, 90, "utf-8");
+
+	if(strlen($content) > strlen($newContent)){
+		$newContent.="...";
+	}
+
+	return $newContent;
+}
+
+function register_general_phone_1_admin_text(){
+	register_setting('general', 'admin_phone_1_text', 'esc_attr');
+	add_settings_field('admin_phone_1_text', '<label for="admin_phone_1_text">'.__('Телефон 1' , 'admin_phone_1_text' ).'</label>' , 'print_admin_phone_1_text', 'general');
+}
+function register_general_phone_2_admin_text(){
+	register_setting('general', 'admin_phone_2_text', 'esc_attr');
+	add_settings_field('admin_phone_2_text', '<label for="admin_phone_2_text">'.__('Телефон 2' , 'admin_phone_2_text' ).'</label>' , 'print_admin_phone_2_text', 'general');
+}
+
+function print_admin_phone_1_text(){
+	$value = get_option( 'admin_phone_1_text', '' );
+	echo '<input style="width:100%;" type="text" id="admin_phone_1_text" name="admin_phone_1_text" value="' . $value . '" />';
+}
+function print_admin_phone_2_text(){
+	$value = get_option( 'admin_phone_2_text', '' );
+	echo '<input style="width:100%;" type="text" id="admin_phone_2_text" name="admin_phone_2_text" value="' . $value . '" />';
+}
+
+add_filter('admin_init', 'register_general_phone_1_admin_text');
+add_filter('admin_init', 'register_general_phone_2_admin_text');

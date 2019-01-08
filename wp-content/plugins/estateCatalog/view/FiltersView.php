@@ -22,7 +22,7 @@ class FiltersView
         
     }
     public function createChildren(){
-        echo "<div class='container''><div class='row'>";
+        echo "<div class='container'><div class='row'>";
         $this->createDialType();
         $this->createEstateType();
         $this->createCities();
@@ -93,9 +93,10 @@ class FiltersView
     private function createCost()
     {
         echo "<div class='col-md-3'>";
-        echo "<div class='row'><b>Цена:</b></div><div class='row'>";
+        echo "<div class='row'><div class='col-md-6'><b>Цена от </b></div><div class='col-md-6'><b>Цена до </b></div></div><div class='row'>";
 
         echo "<div class='col-md-6'>";
+
         echo "<div class='row'>";
         echo "<select id='costMin'>";
         echo "<option>5 000</option>";
@@ -125,7 +126,7 @@ class FiltersView
         echo "<option>2 000 000</option>";
         echo "<option>3 000 000</option>";
         echo "<option>5 000 000</option>";
-        echo "<option>Более 5 000 000</option>";
+        echo "<option selected>Более 5 000 000</option>";
         echo "</select></div></div>";
 
         echo "</div></div>";

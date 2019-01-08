@@ -1,0 +1,240 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: YaMaps for Wordpress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-10 08:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: yamap.php:186
+msgid "YaMaps plugin for Wordpress"
+msgstr ""
+
+#: yamap.php:226 yamap.php:231
+msgid "Map"
+msgstr ""
+
+#: yamap.php:227
+msgid "Add map"
+msgstr ""
+
+#: yamap.php:228
+msgid "Edit map"
+msgstr ""
+
+#: yamap.php:229
+msgid "YaMaps plugin: Yandex.Map"
+msgstr ""
+
+#: yamap.php:230
+msgid "Placemark"
+msgstr ""
+
+#: yamap.php:232 options.php:197
+msgid "Icon"
+msgstr ""
+
+#: yamap.php:233
+msgid "Blue only"
+msgstr ""
+
+#: yamap.php:234
+msgid "Link"
+msgstr ""
+
+#: yamap.php:235
+msgid "Placemark hyperlink url or post ID"
+msgstr ""
+
+#: yamap.php:236 options.php:160
+msgid "Map height"
+msgstr ""
+
+#: yamap.php:237
+msgid "Placemark name"
+msgstr ""
+
+#: yamap.php:238
+msgid "Text for hint or icon content"
+msgstr ""
+
+#: yamap.php:239
+msgid "Use the links below"
+msgstr ""
+
+#: yamap.php:240
+msgid "Сoordinates"
+msgstr ""
+
+#: yamap.php:241
+msgid "Click on the map to choose or create the mark"
+msgstr ""
+
+#: yamap.php:242 options.php:169
+msgid "Map controls"
+msgstr ""
+
+#: yamap.php:243
+msgid "Delete"
+msgstr ""
+
+#: yamap.php:244 options.php:151 options.php:167
+msgid "Map type"
+msgstr ""
+
+#: yamap.php:245 options.php:167
+msgid "Zoom"
+msgstr ""
+
+#: yamap.php:246 options.php:177
+msgid "Wheel zoom"
+msgstr ""
+
+#: yamap.php:247 options.php:167
+msgid "Search"
+msgstr ""
+
+#: yamap.php:248 options.php:167
+msgid "Route"
+msgstr ""
+
+#: yamap.php:249 options.php:167
+msgid "Ruler"
+msgstr ""
+
+#: yamap.php:250 options.php:167
+msgid "Traffic"
+msgstr ""
+
+#: yamap.php:251 options.php:167
+msgid "Full screen"
+msgstr ""
+
+#: yamap.php:252 options.php:167
+msgid "Geolocation"
+msgstr ""
+
+#: yamap.php:253 options.php:205
+msgid "Marker color"
+msgstr ""
+
+#: yamap.php:254
+msgid "Put in ID"
+msgstr ""
+
+#: yamap.php:255
+msgid ""
+"Do not create a block in the content. Use the existing block of the WP theme "
+"with the specified ID"
+msgstr ""
+
+#: yamap.php:256
+msgid "Extra"
+msgstr ""
+
+#: yamap.php:257
+msgid ""
+"<div style=\"position: relative; display: block; width: 100%; white-space: "
+"normal !important;\"><h2 style=\"color: #444;font-size: 18px;font-weight: "
+"600;line-height: 36px;\">Want other icon types?</h2>Additional types of "
+"icons can be found by the link in the <a href=\"https://tech.yandex."
+"com/maps/doc/jsapi/2.1/ref/reference/option.presetStorage-docpage/ \" "
+"style=\"white-space: normal\">Yandex.Map documentation</a>.</div><div "
+"style=\"position: relative; display: block; width: 100%; white-space: normal "
+"!important;\"><h2 style=\"color: #444;font-size: 18px;font-weight: 600;line-"
+"height: 36px;\">Do you like YaMaps plugin?</h2>You can support its "
+"development by donate (<a href=\"https://money.yandex.ru/to/41001278340150\" "
+"style=\"white-space: normal\">Yandex</a>, <a href=\"https://www.paypal."
+"me/yhunter\" style=\"white-space: normal\">PayPal</a>) or just leave a "
+"positive feedback in the <a href=\"https://wordpress."
+"org/support/plugin/yamaps/reviews/\" style=\"white-space: normal\">plugin "
+"repository</a>. It's very motivating!</div><div style=\"position: relative; "
+"display: block; width: 100%; white-space: normal !important;\"><h2 "
+"style=\"color: #444;font-size: 18px;font-weight: 600;line-height: 36px;\">"
+"Any questions?</h2>Ask in the comments <a href=\"https://www.yhunter."
+"ru/portfolio/dev/yamaps/\" style=\"white-space: normal\">on the plug-in's "
+"page</a>, <a href=\"https://wordpress.org/support/plugin/yamaps\" "
+"style=\"white-space: normal\">WP support forum</a> or <a href=\"https:"
+"//github.com/yhunter-ru/yamaps/issues\" style=\"white-space: normal\">on "
+"GitHub</a>.</div>"
+msgstr ""
+
+#: options.php:24
+msgid "YaMaps default options"
+msgstr ""
+
+#: options.php:124
+msgid "Map options"
+msgstr ""
+
+#: options.php:130
+msgid "Drag the map to set its default coordinates"
+msgstr ""
+
+#: options.php:133
+msgid "Map center"
+msgstr ""
+
+#: options.php:139
+msgid "Zoom the map to set its default scale"
+msgstr ""
+
+#: options.php:142
+msgid "Map zoom"
+msgstr ""
+
+#: options.php:148
+msgid "Choose default map type: yandex#map, yandex#satellite, yandex#hybrid"
+msgstr ""
+
+#: options.php:175
+msgid "The map can be scaled with mouse scroll"
+msgstr ""
+
+#: options.php:183
+msgid "Disable link to plugin page"
+msgstr ""
+
+#: options.php:185
+msgid "Author link"
+msgstr ""
+
+#: options.php:189
+msgid "Marker options"
+msgstr ""
+
+#: options.php:195
+msgid "Other icon types"
+msgstr ""
+
+#: options.php:203
+msgid "For example:"
+msgstr ""
+
+#. Name of the plugin
+msgid "YaMaps for Wordpress"
+msgstr ""
+
+#. Description of the plugin
+msgid "Yandex Map integration"
+msgstr ""
+
+#. URI of the plugin
+msgid "www.yhunter.ru/portfolio/dev/yamaps/"
+msgstr ""
+
+#. Author of the plugin
+msgid "Yuri Baranov"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "www.yhunter.ru"
+msgstr ""

@@ -242,11 +242,11 @@ class Biznesspack_Breadcrumb_Trail {
 	protected function set_labels() {
 
 		$defaults = array(
-			'browse'              => esc_html__( 'Browse:',                               'biznesspack' ),
+			'browse'              => esc_html__( 'Поиск:',                               'biznesspack' ),
 			'aria_label'          => esc_attr_x( 'Breadcrumbs', 'breadcrumbs aria label', 'biznesspack' ),
-			'home'                => esc_html__( 'Home',                                  'biznesspack' ),
-			'error_404'           => esc_html__( '404 Not Found',                         'biznesspack' ),
-			'archives'            => esc_html__( 'Archives',                              'biznesspack' ),
+			'home'                => esc_html__( 'Главная',                                  'biznesspack' ),
+			'error_404'           => esc_html__( '404 Не найдено',                         'biznesspack' ),
+			'archives'            => esc_html__( 'Архивы',                              'biznesspack' ),
 			// Translators: %s is the search query.
 			'search'              => esc_html__( 'Search results for: %s',                'biznesspack' ),
 			// Translators: %s is the page number.

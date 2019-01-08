@@ -13,6 +13,7 @@ $biznesspack_featurebox_type3_section = biznesspack_get_option( 'biznesspack_fea
             <div class="header-image">
                 <img src="<?php esc_url( header_image() ); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
             </div>
+
 		<?php } 
 		elseif( $biznesspack_featured_status == 1 ){
 			get_template_part( 'template-parts/page/slider' ); 

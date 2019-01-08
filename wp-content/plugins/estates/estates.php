@@ -30,6 +30,7 @@ function create_content_types(){
 function display_estate_meta_box( $estate ) {
     $postType = getCurrentPostType();
     $isFlat = $postType ===Constant::$flats;
+    $isHouse = $postType ===Constant::$houses;
     $isCommercialEstate = $postType===Constant::$commercialEstates;
     $isSector = $postType===Constant::$sectors;
 
@@ -69,9 +70,18 @@ function display_estate_meta_box( $estate ) {
         new RoomQuantityMetabox($roomsQuantity);
     }
 
+    /*
     if($isCommercialEstate || $isSector){
         $area = get_post_meta($id , 'area', true );
         new AreaMetabox($area);
+    }
+    */
+    $area = get_post_meta($id , 'area', true );
+    new AreaMetabox($area);
+    
+    if($isHouse){
+        $outsideArea = get_post_meta($id , 'outsideArea', true );
+        new OutsideAreaMetabox($outsideArea);
     }
 }
 
@@ -88,13 +98,14 @@ function admin_save_post( $estate_id, $estate ) {
 
     $postType = getCurrentPostType();
     $isFlat = $postType ===Constant::$flats;
+    $isHouse = $postType ===Constant::$houses;
     $isCommercialEstate = $postType===Constant::$commercialEstates;
     $isSector = $postType===Constant::$sectors;
 
     new SaveCity($estate_id, $estate);
     new SaveDialType($estate_id, $estate);
     new SaveCost($estate_id, $estate);
-
+    new SaveArea($estate_id, $estate);
     new SaveHiddenDataOne($estate_id, $estate);
 
     if(Utils::isAdministratorRole()){
@@ -105,9 +116,10 @@ function admin_save_post( $estate_id, $estate ) {
         new SaveFloorNumber($estate_id, $estate);
         new SaveTotalFloors($estate_id, $estate);
         new SaveRoomQuantity($estate_id, $estate);
+
     }
-    if($isCommercialEstate || $isSector){
-        new SaveArea($estate_id, $estate);
+    if($isHouse){
+        new SaveOutsideArea($estate_id, $estate);
     }
 }
 
