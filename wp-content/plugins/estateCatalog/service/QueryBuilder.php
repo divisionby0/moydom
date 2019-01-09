@@ -67,4 +67,16 @@ class QueryBuilder
         );
         return $args;
     }
+    public static function createGetHotSaleQuery($estateType){
+        $metaQuery = array(array(
+            'key'     => 'hotSale',
+            'value'   => 1
+        ));
+        $args = array(
+            'post_type'      => $estateType,
+            'post_status'    => 'publish',
+            'meta_query'     => $metaQuery
+        );
+        return $args;
+    }
 }

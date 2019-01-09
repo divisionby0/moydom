@@ -21,6 +21,6 @@ class HotSaleOptionMetabox
         else{
             echo "<input type='checkbox' name='hotSaleOption' id='hotSaleOption' style='display:block;'>";
         }
-        echo "<input type='text' id='hotSaleOptionEditor' name='hotSaleOptionEditor' value='".$value."'>";
+        echo "<input type='text' id='hotSaleOptionEditor' name='hotSaleOptionEditor' value='".$value."' style='display:none;'>";
     }
 }

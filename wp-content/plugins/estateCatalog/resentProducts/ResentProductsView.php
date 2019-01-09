@@ -16,8 +16,7 @@ class ResentProductsView
                 $resentPostId = $data[$i]->id;
                 if(intval($resentPostId) != intval($currentId)){
                     $estateData = $data[$i];
-                    new ResentProductListRenderer($estateData);
-                    //echo "<p>resent: ".$data[$i]->name."  cost: ".$data[$i]->cost."</p>";
+                    new BaseItemRenderer($estateData);
                 }
             }
             echo "</div></div>";

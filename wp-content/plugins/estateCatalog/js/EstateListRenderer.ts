@@ -1,4 +1,5 @@
 ///<reference path="../../estates/lib/jqueryTS/jquery.d.ts"/>
+declare var pluginsUrl;
 class EstateListRenderer{
     private $j;
     private parent:any;
@@ -19,25 +20,22 @@ class EstateListRenderer{
         this.container.appendTo(container);
 
         container.appendTo(this.parent);
-
-        var dialTypeString:string = "";
-        if(this.data.saleDialType == 1){
-            dialTypeString+="Продажа ";
+        
+        var rendererIcon:string = pluginsUrl+"/estateCatalog/assets/";
+        if(this.data.saleDialType == 1 && this.data.rentDialType == 1){
+            rendererIcon+="renderer_rent_sale.png";
         }
-        if(this.data.rentDialType == 1){
-            if(dialTypeString!=""){
-                dialTypeString+="/ Аренда";
-            }
-            else{
-                dialTypeString+="/ Аренда";
-            }
+        else if(this.data.saleDialType == 1){
+            rendererIcon+="renderer_sale.png";
+        }
+        else{
+            rendererIcon+="renderer_rent.png";
         }
 
-        var image:any = this.$j("<div class='col-md-2'><img src='"+this.data.image+"' style='position: relative;' class='img-thumbnail'/></div>");
+        var image:any = this.$j("<div class='col-md-2'><img src='"+this.data.image+"' style='position: relative; z-index: 1;' class='img-thumbnail'/></div>");
         image.appendTo(this.container);
 
-        var dialType:any = this.$j("<div  style='position:absolute; width:100%; text-align:center; color: #7eb22e; bottom:0; left:0; background-color:rgba(255, 255, 255, 0.5);'><b>"+dialTypeString+"</b></div>");
-        //dialType.appendTo(this.container);
+        var dialType:any = this.$j("<img src='"+rendererIcon+"' style='position:absolute; z-index: 1000; top:0;'/>");
         dialType.appendTo(image);
 
         var name:any = this.$j("<div class='col-md-6'><b>"+this.data.name+"</b></div>");
