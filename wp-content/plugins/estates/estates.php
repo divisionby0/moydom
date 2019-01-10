@@ -51,8 +51,26 @@ function display_estate_meta_box( $estate ) {
     $cost = get_post_meta($id , 'cost', true );
     new CostMetabox($cost);
 
-    $isHotSale = get_post_meta($id , 'hotSale', true );
+    $isHotSale = get_post_meta($id , Options::$HOT_SALE_OPTION, true );
     new HotSaleOptionMetabox($isHotSale);
+
+    $hasWater = get_post_meta($id , Options::$WATER_OPTION, true );
+    new WaterOptionMetabox($hasWater);
+    
+    $hasElectricity = get_post_meta($id , Options::$ELECTRICITY_OPTION, true );
+    new ElectricityOptionMetabox($hasElectricity);
+    
+    $hasSewage = get_post_meta($id , Options::$SEWAGE_OPTION, true );
+    new SewageOptionMetabox($hasSewage);
+
+    $hasGas = get_post_meta($id , Options::$GAS_OPTION, true );
+    new GasOptionMetabox($hasGas);
+    
+    $hasInternet = get_post_meta($id , Options::$INTERNET_OPTION, true );
+    new InternetOptionMetabox($hasInternet);
+
+    $hasFreeParking = get_post_meta($id , Options::$FREE_PARKING_OPTION, true );
+    new FreeParkingOptionMetabox($hasFreeParking);
 
     if(Utils::isAdministratorRole()){
         $hiddenData1 = get_post_meta($id , 'hiddenData1', true );
@@ -73,12 +91,6 @@ function display_estate_meta_box( $estate ) {
         new RoomQuantityMetabox($roomsQuantity);
     }
 
-    /*
-    if($isCommercialEstate || $isSector){
-        $area = get_post_meta($id , 'area', true );
-        new AreaMetabox($area);
-    }
-    */
     $area = get_post_meta($id , 'area', true );
     new AreaMetabox($area);
     
@@ -111,6 +123,12 @@ function admin_save_post( $estate_id, $estate ) {
     new SaveArea($estate_id, $estate);
     new SaveHiddenDataOne($estate_id, $estate);
     new SaveHotSaleOption($estate_id, $estate);
+    new SaveWaterOption($estate_id, $estate);
+    new SaveElectricityOption($estate_id, $estate);
+    new SaveSewage($estate_id, $estate);
+    new SaveGas($estate_id, $estate);
+    new SaveInternet($estate_id, $estate);
+    new SaveFreeParking($estate_id, $estate);
 
     if(Utils::isAdministratorRole()){
         new SaveHiddenDataOne($estate_id, $estate);

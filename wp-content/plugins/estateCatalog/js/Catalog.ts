@@ -33,6 +33,8 @@ class Catalog{
         this.$j("#city").change(()=>this.onCityChanged());
         this.$j("#sailType").change(()=>this.onSaleDialTypeChanged());
         this.$j("#rentType").change(()=>this.onRentDialTypeChanged());
+        this.$j("#costMin").change(()=>this.onCostMinChanged());
+        this.$j("#costMax").change(()=>this.onCostMaxChanged());
     }
 
     private onCityChanged():void{
@@ -42,6 +44,14 @@ class Catalog{
 
     private onEstateTypeChanged():void{
         this.selectedEstateType = this.$j("#estateType").find(":selected").data("type");
+        this.createRequest();
+    }
+    private onCostMinChanged():void{
+        this.costMin = this.$j("#costMin").find(":selected").data("value");
+        this.createRequest();
+    }
+    private onCostMaxChanged():void{
+        this.costMax = this.$j("#costMax").find(":selected").data("value");
         this.createRequest();
     }
 

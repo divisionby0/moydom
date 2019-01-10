@@ -46,7 +46,7 @@ class QueryBuilder
             ));
         }
 
-        if($costMin && $costMax){
+        if(isset($costMin) && isset($costMax)){
             $costs = array();
             $costs[0] = $costMin;
             $costs[1] = $costMax;

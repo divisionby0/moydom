@@ -26,6 +26,8 @@ var Catalog = (function () {
         this.$j("#city").change(function () { return _this.onCityChanged(); });
         this.$j("#sailType").change(function () { return _this.onSaleDialTypeChanged(); });
         this.$j("#rentType").change(function () { return _this.onRentDialTypeChanged(); });
+        this.$j("#costMin").change(function () { return _this.onCostMinChanged(); });
+        this.$j("#costMax").change(function () { return _this.onCostMaxChanged(); });
     };
     Catalog.prototype.onCityChanged = function () {
         this.selectedCity = this.$j("#city").find(":selected").text();
@@ -33,6 +35,14 @@ var Catalog = (function () {
     };
     Catalog.prototype.onEstateTypeChanged = function () {
         this.selectedEstateType = this.$j("#estateType").find(":selected").data("type");
+        this.createRequest();
+    };
+    Catalog.prototype.onCostMinChanged = function () {
+        this.costMin = this.$j("#costMin").find(":selected").data("value");
+        this.createRequest();
+    };
+    Catalog.prototype.onCostMaxChanged = function () {
+        this.costMax = this.$j("#costMax").find(":selected").data("value");
         this.createRequest();
     };
     Catalog.prototype.createRequest = function () {

@@ -34,9 +34,30 @@ class Autoload
         include_once('metabox/roomQuantity/php/RoomQuantityMetabox.php');
         include_once('metabox/roomQuantity/php/SaveRoomQuantity.php');
 
-        include_once('metabox/hotSaleOption/php/HotSaleOptionMetabox.php');
-        include_once('metabox/hotSaleOption/php/SaveHotSaleOption.php');
+        include_once('metabox/options/Options.php');
+        include_once('metabox/options/base/php/BaseOptionMetabox.php');
+
+        include_once('metabox/options/hotSaleOption/php/HotSaleOptionMetabox.php');
+        include_once('metabox/options/hotSaleOption/php/SaveHotSaleOption.php');
+
+        include_once('metabox/options/waterOption/php/WaterOptionMetabox.php');
+        include_once('metabox/options/waterOption/php/SaveWaterOption.php');
+
+        include_once('metabox/options/electricity/php/ElectricityOptionMetabox.php');
+        include_once('metabox/options/electricity/php/SaveElectricityOption.php');
         
+        include_once('metabox/options/sewage/php/SewageOptionMetabox.php');
+        include_once('metabox/options/sewage/php/SaveSewage.php');
+
+        include_once('metabox/options/gasOption/php/GasOptionMetabox.php');
+        include_once('metabox/options/gasOption/php/SaveGas.php');
+        
+        include_once('metabox/options/internet/php/InternetOptionMetabox.php');
+        include_once('metabox/options/internet/php/SaveInternet.php');
+        
+        include_once('metabox/options/freeParking/php/FreeParkingOptionMetabox.php');
+        include_once('metabox/options/freeParking/php/SaveFreeParking.php');
+
         include_once('metabox/area/php/AreaMetabox.php');
         include_once('metabox/area/php/OutsideAreaMetabox.php');
         include_once('metabox/area/php/SaveArea.php');
