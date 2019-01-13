@@ -1,7 +1,7 @@
 <?php
 
 
-class Options
+class MetaboxConstants
 {
     public static $HOT_SALE_OPTION = "hotSale";
     public static $WATER_OPTION = "hasWater";
@@ -10,4 +10,5 @@ class Options
     public static $GAS_OPTION = "hasGas";
     public static $INTERNET_OPTION = "hasInternet";
     public static $FREE_PARKING_OPTION = "hasFreeParking";
+    public static $ADDRESS = "address";
 }

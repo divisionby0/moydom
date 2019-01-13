@@ -7,6 +7,6 @@ class SaveHotSaleOption extends SaveMetadata
         return "hotSaleOptionEditor";
     }
     protected function getCurrentOption(){
-        return Options::$HOT_SALE_OPTION;
+        return MetaboxConstants::$HOT_SALE_OPTION;
     }
 }

@@ -6,6 +6,6 @@ class SaveInternet extends SaveMetadata
         return "internetOptionEditor";
     }
     protected function getCurrentOption(){
-        return Options::$INTERNET_OPTION;
+        return MetaboxConstants::$INTERNET_OPTION;
     }
 }

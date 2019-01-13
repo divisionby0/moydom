@@ -3,6 +3,7 @@
 ///<reference path="lib/events/EventBus.ts"/>
 ///<reference path="service/AjaxServiceEvent.ts"/>
 ///<reference path="EstateListRenderer.ts"/>
+///<reference path="utils/DateUtils.ts"/>
 var Catalog = (function () {
     function Catalog(ajax) {
         this.saleDialType = 1;
@@ -28,6 +29,22 @@ var Catalog = (function () {
         this.$j("#rentType").change(function () { return _this.onRentDialTypeChanged(); });
         this.$j("#costMin").change(function () { return _this.onCostMinChanged(); });
         this.$j("#costMax").change(function () { return _this.onCostMaxChanged(); });
+        this.$j("#dateSort").click(function (event) { return _this.onDateSortClicked(event); });
+        this.$j("#costSort").click(function (event) { return _this.onCostSortClicked(event); });
+    };
+    Catalog.prototype.onDateSortClicked = function (event) {
+        event.preventDefault();
+        this.$j("#estatesListContainer").empty();
+        this.estates.sort(this.sortByDate);
+        this.renderCollection();
+        return false;
+    };
+    Catalog.prototype.onCostSortClicked = function (event) {
+        event.preventDefault();
+        this.$j("#estatesListContainer").empty();
+        this.estates.sort(this.sortByCost);
+        this.renderCollection();
+        return false;
     };
     Catalog.prototype.onCityChanged = function () {
         this.selectedCity = this.$j("#city").find(":selected").text();
@@ -68,20 +85,34 @@ var Catalog = (function () {
     };
     Catalog.prototype.onResponse = function (data) {
         try {
-            var estates = JSON.parse(data);
-            console.log("response: ", estates);
-            this.renderCollection(estates);
+            this.estates = JSON.parse(data);
+            console.log("response: ", this.estates);
+            this.renderCollection();
         }
         catch (error) {
             console.log("error parsing data ", data);
         }
     };
-    Catalog.prototype.renderCollection = function (collection) {
+    Catalog.prototype.renderCollection = function () {
         this.$j("#estatesListContainer").empty();
-        for (var i = 0; i < collection.length; i++) {
-            var estate = collection[i];
+        for (var i = 0; i < this.estates.length; i++) {
+            var estate = this.estates[i];
             new EstateListRenderer(this.$j("#estatesListContainer"), estate);
         }
+    };
+    Catalog.prototype.sortByCost = function (a, b) {
+        if (a.cost < b.cost)
+            return -1;
+        if (a.cost > b.cost)
+            return 1;
+        return 0;
+    };
+    Catalog.prototype.sortByDate = function (a, b) {
+        if (DateUtils.toTimestamp(a.date) < DateUtils.toTimestamp(b.date))
+            return -1;
+        if (DateUtils.toTimestamp(a.date) > DateUtils.toTimestamp(b.date))
+            return 1;
+        return 0;
     };
     Catalog.prototype.createResponseListeners = function () {
         var _this = this;

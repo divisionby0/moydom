@@ -2530,8 +2530,8 @@ h2.widget-title {
 
 .search-form {
 	position: relative;
+	margin-bottom: 25px;
 }
-
 
 .search-form .search-submit .icon {
 	height: 24px;

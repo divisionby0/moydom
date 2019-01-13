@@ -7,6 +7,6 @@ class SaveElectricityOption extends SaveMetadata
         return "electricityOptionEditor";
     }
     protected function getCurrentOption(){
-        return Options::$ELECTRICITY_OPTION;
+        return MetaboxConstants::$ELECTRICITY_OPTION;
     }
 }

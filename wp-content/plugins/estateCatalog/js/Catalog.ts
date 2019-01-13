@@ -3,6 +3,7 @@
 ///<reference path="lib/events/EventBus.ts"/>
 ///<reference path="service/AjaxServiceEvent.ts"/>
 ///<reference path="EstateListRenderer.ts"/>
+///<reference path="utils/DateUtils.ts"/>
 class Catalog{
     private ajax:Ajax;
     private $j;
@@ -13,6 +14,7 @@ class Catalog{
     private rentDialType:number = 0;
     private costMin:number = 0;
     private costMax:number = 9000000;
+    private estates:any[];
 
     constructor(ajax:Ajax){
         this.$j = jQuery.noConflict();
@@ -35,6 +37,23 @@ class Catalog{
         this.$j("#rentType").change(()=>this.onRentDialTypeChanged());
         this.$j("#costMin").change(()=>this.onCostMinChanged());
         this.$j("#costMax").change(()=>this.onCostMaxChanged());
+        this.$j("#dateSort").click((event)=>this.onDateSortClicked(event));
+        this.$j("#costSort").click((event)=>this.onCostSortClicked(event));
+    }
+
+    private onDateSortClicked(event:any):boolean{
+        event.preventDefault();
+        this.$j("#estatesListContainer").empty();
+        this.estates.sort(this.sortByDate);
+        this.renderCollection();
+        return false;
+    }
+    private onCostSortClicked(event:any):boolean{
+        event.preventDefault();
+        this.$j("#estatesListContainer").empty();
+        this.estates.sort(this.sortByCost);
+        this.renderCollection();
+        return false;
     }
 
     private onCityChanged():void{
@@ -81,23 +100,39 @@ class Catalog{
 
     private onResponse(data:string):void{
         try{
-            var estates:any[] = JSON.parse(data);
-            console.log("response: ",estates);
-            this.renderCollection(estates);
+            this.estates = JSON.parse(data);
+            console.log("response: ",this.estates);
+            this.renderCollection();
         }
         catch(error){
             console.log("error parsing data ",data);
         }
     }
     
-    private renderCollection(collection:any[]):void{
+    private renderCollection():void{
         this.$j("#estatesListContainer").empty();
         
-        for(var i:number = 0; i<collection.length; i++){
-            var estate:any = collection[i];
+        for(var i:number = 0; i<this.estates.length; i++){
+            var estate:any = this.estates[i];
             new EstateListRenderer(this.$j("#estatesListContainer"), estate);
         }
     }
+
+    private sortByCost(a:any, b:any):number{
+        if (a.cost < b.cost)
+            return -1;
+        if (a.cost > b.cost)
+            return 1;
+        return 0;
+    }
+    private sortByDate(a:any, b:any):number{
+        if (DateUtils.toTimestamp(a.date) < DateUtils.toTimestamp(b.date))
+            return -1;
+        if (DateUtils.toTimestamp(a.date) > DateUtils.toTimestamp(b.date))
+            return 1;
+        return 0;
+    }
+    
 
     private createResponseListeners():void {
         EventBus.addEventListener(AjaxServiceEvent.ON_ESTATES_LOAD_COMPLETE,(data)=>this.onResponse(data));

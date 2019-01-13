@@ -1,11 +1,11 @@
 <?php
 
-class HotSaleOptionMetabox extends BaseOptionMetabox
+class HotSaleMetabox extends BaseMetabox
 {
     protected function getHeaderText(){
         return "<font color='#ff0000'>Горячая продажа</font>";
     }
-    protected function getCheckboxId(){
+    protected function getControlId(){
         return "hotSaleOption";
     }
     protected function getEditorId(){

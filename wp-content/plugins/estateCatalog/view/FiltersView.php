@@ -27,6 +27,7 @@ class FiltersView
         $this->createEstateType();
         $this->createCities();
         $this->createCost();
+        $this->createSort();
         echo "</div></div>";
     }
     
@@ -130,5 +131,10 @@ class FiltersView
         echo "</select></div></div>";
 
         echo "</div></div>";
+    }
+
+    private function createSort()
+    {
+        echo "<div class='col-md-12' style='text-align: center; margin-top: 20px;'>Сортировать <a href='#' id='dateSort'><b>по дате добавления</b></a> / <a href='#' id='costSort'><b>по цене</b></a></div>";
     }
 }

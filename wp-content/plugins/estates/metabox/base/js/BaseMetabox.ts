@@ -1,4 +1,4 @@
-class BaseOptionMetabox{
+class BaseMetabox{
     protected $j:any;
     protected hasValue:number = 0;
 

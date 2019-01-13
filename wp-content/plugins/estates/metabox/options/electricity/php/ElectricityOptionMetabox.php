@@ -1,11 +1,11 @@
 <?php
 
-class ElectricityOptionMetabox extends BaseOptionMetabox
+class ElectricityMetabox extends BaseMetabox
 {
     protected function getHeaderText(){
         return "Наличие электричества";
     }
-    protected function getCheckboxId(){
+    protected function getControlId(){
         return "electricityOption";
     }
     protected function getEditorId(){

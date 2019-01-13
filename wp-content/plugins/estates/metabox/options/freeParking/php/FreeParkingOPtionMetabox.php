@@ -1,12 +1,12 @@
 <?php
 
 
-class FreeParkingOptionMetabox extends BaseOptionMetabox
+class FreeParkingMetabox extends BaseMetabox
 {
     protected function getHeaderText(){
         return "Наличие бесплатной парковки";
     }
-    protected function getCheckboxId(){
+    protected function getControlId(){
         return "freeParkingOption";
     }
     protected function getEditorId(){

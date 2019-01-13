@@ -1,12 +1,12 @@
 <?php
 
 
-class GasOptionMetabox extends BaseOptionMetabox
+class GasMetabox extends BaseMetabox
 {
     protected function getHeaderText(){
         return "Наличие газа";
     }
-    protected function getCheckboxId(){
+    protected function getControlId(){
         return "gasOption";
     }
     protected function getEditorId(){

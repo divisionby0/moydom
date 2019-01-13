@@ -67,6 +67,31 @@ class QueryBuilder
         );
         return $args;
     }
+
+    public static function createSearchQueryByAddress($value){
+        $metaQuery = array(array(
+            'key'     => MetaboxConstants::$ADDRESS,
+            'value'   => $value,
+            'compare' => 'LIKE'
+        ));
+
+        $args = array(
+            'post_type'      => array(Constant::$commercialEstates, Constant::$flats, Constant::$houses, Constant::$sectors),
+            'post_status'    => 'publish',
+            'posts_per_page'  => 1000000,
+            'meta_query'     => $metaQuery
+        );
+        return $args;
+    }
+
+    public static function createSearchQueryById($value){
+        $args = array(
+            'p'         => $value, // ID of a page, post, or custom type
+            'post_type' => array(Constant::$commercialEstates, Constant::$flats, Constant::$houses, Constant::$sectors)
+        );
+        return $args;
+    }
+
     public static function createGetHotSaleQuery($estateType){
         $metaQuery = array(array(
             'key'     => 'hotSale',

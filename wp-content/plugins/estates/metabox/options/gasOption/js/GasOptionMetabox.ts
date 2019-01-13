@@ -1,5 +1,5 @@
-///<reference path="../../base/js/BaseOptionMetabox.ts"/>
-class GasOptionMetabox extends BaseOptionMetabox{
+///<reference path="../../../base/js/BaseMetabox.ts"/>
+class GasOptionMetabox extends BaseMetabox{
     protected getCheckboxId():string{
         return "gasOption";
     }

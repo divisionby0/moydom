@@ -6,6 +6,6 @@ class SaveFreeParking extends SaveMetadata
         return "freeParkingOptionEditor";
     }
     protected function getCurrentOption(){
-        return Options::$FREE_PARKING_OPTION;
+        return MetaboxConstants::$FREE_PARKING_OPTION;
     }
 }

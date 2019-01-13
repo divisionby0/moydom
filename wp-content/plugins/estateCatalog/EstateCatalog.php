@@ -56,6 +56,7 @@ function loadJs(){
     wp_enqueue_script( 'constants', plugin_dir_url( __FILE__ )  . '/js/Constants.js', null, null, true);
     wp_enqueue_script( 'catalog', plugin_dir_url( __FILE__ )  . '/js/Catalog.js', null, null, true);
     wp_enqueue_script( 'estateListRenderer', plugin_dir_url( __FILE__ )  . '/js/EstateListRenderer.js', null, null, true);
+    wp_enqueue_script( 'dateUtils', plugin_dir_url( __FILE__ )  . '/js/utils/DateUtils.js', null, null, true);
     wp_enqueue_script( 'plugin', plugin_dir_url( __FILE__ )  . '/js/EstateCatalogPlugin.js', array('jquery'), null, true);
 }
 

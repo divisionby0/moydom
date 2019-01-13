@@ -6,6 +6,6 @@ class SaveGas extends SaveMetadata
         return "gasOptionEditor";
     }
     protected function getCurrentOption(){
-        return Options::$GAS_OPTION;
+        return MetaboxConstants::$GAS_OPTION;
     }
 }

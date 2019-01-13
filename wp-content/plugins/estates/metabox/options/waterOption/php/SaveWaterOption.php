@@ -7,6 +7,6 @@ class SaveWaterOption extends SaveMetadata
         return "waterOptionEditor";
     }
     protected function getCurrentOption(){
-        return Options::$WATER_OPTION;
+        return MetaboxConstants::$WATER_OPTION;
     }
 }

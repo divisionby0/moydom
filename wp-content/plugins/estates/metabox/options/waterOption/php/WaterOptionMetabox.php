@@ -1,11 +1,11 @@
 <?php
 
-class WaterOptionMetabox extends BaseOptionMetabox
+class WaterMetabox extends BaseMetabox
 {
     protected function getHeaderText(){
         return "Наличие водопровода";
     }
-    protected function getCheckboxId(){
+    protected function getControlId(){
         return "waterOption";
     }
     protected function getEditorId(){

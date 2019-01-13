@@ -1,11 +1,11 @@
 <?php
 
-class SewageOptionMetabox extends BaseOptionMetabox
+class SewageMetabox extends BaseMetabox
 {
     protected function getHeaderText(){
         return "Наличие канализации";
     }
-    protected function getCheckboxId(){
+    protected function getControlId(){
         return "sewageOption";
     }
     protected function getEditorId(){

@@ -51,26 +51,29 @@ function display_estate_meta_box( $estate ) {
     $cost = get_post_meta($id , 'cost', true );
     new CostMetabox($cost);
 
-    $isHotSale = get_post_meta($id , Options::$HOT_SALE_OPTION, true );
-    new HotSaleOptionMetabox($isHotSale);
+    $isHotSale = get_post_meta($id , MetaboxConstants::$HOT_SALE_OPTION, true );
+    new HotSaleMetabox($isHotSale);
 
-    $hasWater = get_post_meta($id , Options::$WATER_OPTION, true );
-    new WaterOptionMetabox($hasWater);
+    $hasWater = get_post_meta($id , MetaboxConstants::$WATER_OPTION, true );
+    new WaterMetabox($hasWater);
     
-    $hasElectricity = get_post_meta($id , Options::$ELECTRICITY_OPTION, true );
-    new ElectricityOptionMetabox($hasElectricity);
+    $hasElectricity = get_post_meta($id , MetaboxConstants::$ELECTRICITY_OPTION, true );
+    new ElectricityMetabox($hasElectricity);
     
-    $hasSewage = get_post_meta($id , Options::$SEWAGE_OPTION, true );
-    new SewageOptionMetabox($hasSewage);
+    $hasSewage = get_post_meta($id , MetaboxConstants::$SEWAGE_OPTION, true );
+    new SewageMetabox($hasSewage);
 
-    $hasGas = get_post_meta($id , Options::$GAS_OPTION, true );
-    new GasOptionMetabox($hasGas);
+    $hasGas = get_post_meta($id , MetaboxConstants::$GAS_OPTION, true );
+    new GasMetabox($hasGas);
     
-    $hasInternet = get_post_meta($id , Options::$INTERNET_OPTION, true );
-    new InternetOptionMetabox($hasInternet);
+    $hasInternet = get_post_meta($id , MetaboxConstants::$INTERNET_OPTION, true );
+    new InternetMetabox($hasInternet);
 
-    $hasFreeParking = get_post_meta($id , Options::$FREE_PARKING_OPTION, true );
-    new FreeParkingOptionMetabox($hasFreeParking);
+    $hasFreeParking = get_post_meta($id , MetaboxConstants::$FREE_PARKING_OPTION, true );
+    new FreeParkingMetabox($hasFreeParking);
+
+    $address = get_post_meta($id , MetaboxConstants::$ADDRESS, true );
+    new AddressMetabox($address);
 
     if(Utils::isAdministratorRole()){
         $hiddenData1 = get_post_meta($id , 'hiddenData1', true );
@@ -129,6 +132,7 @@ function admin_save_post( $estate_id, $estate ) {
     new SaveGas($estate_id, $estate);
     new SaveInternet($estate_id, $estate);
     new SaveFreeParking($estate_id, $estate);
+    new SaveAddress($estate_id, $estate);
 
     if(Utils::isAdministratorRole()){
         new SaveHiddenDataOne($estate_id, $estate);
@@ -138,7 +142,6 @@ function admin_save_post( $estate_id, $estate ) {
         new SaveFloorNumber($estate_id, $estate);
         new SaveTotalFloors($estate_id, $estate);
         new SaveRoomQuantity($estate_id, $estate);
-
     }
     if($isHouse){
         new SaveOutsideArea($estate_id, $estate);

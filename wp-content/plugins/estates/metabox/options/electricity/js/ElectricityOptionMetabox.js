@@ -3,7 +3,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-///<reference path="../../base/js/BaseOptionMetabox.ts"/>
+///<reference path="../../../base/js/BaseMetabox.ts"/>
 var ElectricityOptionMetabox = (function (_super) {
     __extends(ElectricityOptionMetabox, _super);
     function ElectricityOptionMetabox() {
@@ -16,5 +16,5 @@ var ElectricityOptionMetabox = (function (_super) {
         return "electricityOptionEditor";
     };
     return ElectricityOptionMetabox;
-}(BaseOptionMetabox));
+}(BaseMetabox));
 //# sourceMappingURL=ElectricityOptionMetabox.js.map

@@ -30,6 +30,8 @@ get_header(); ?>
                                 //echo "<p>estate type:".$estateType."</p>";
                                 echo "<section class='page-header jumbotron'><div class='container'><div class='row'><div class='col-md-12'><h2 style='color:white;'>Похожее</h2></div></div></div></section>";
                             new ResentProducts($id, $estateType, $saleDialType, $rentDialType, $city, null, null);
+                                echo "<section class='page-header jumbotron'><div class='container'><div class='row'><div class='col-md-12'><h2 style='color:white;'>Горячая продажа</h2></div></div></div></section>";
+                                new HotSaleController();
                             endwhile; // End of the loop.
                             ?>
                 

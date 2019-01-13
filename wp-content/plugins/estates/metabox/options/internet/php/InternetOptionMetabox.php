@@ -1,11 +1,11 @@
 <?php
 
-class InternetOptionMetabox extends BaseOptionMetabox
+class InternetMetabox extends BaseMetabox
 {
     protected function getHeaderText(){
         return "Наличие Интернета";
     }
-    protected function getCheckboxId(){
+    protected function getControlId(){
         return "internetOption";
     }
     protected function getEditorId(){
