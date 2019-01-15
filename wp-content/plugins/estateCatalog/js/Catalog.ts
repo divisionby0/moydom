@@ -31,6 +31,7 @@ class Catalog{
     }
 
     private createUIListeners():void{
+        console.log("createUIListeners estateType=",this.$j("#estateType"));
         this.$j("#estateType").change(()=>this.onEstateTypeChanged());
         this.$j("#city").change(()=>this.onCityChanged());
         this.$j("#sailType").change(()=>this.onSaleDialTypeChanged());
@@ -62,6 +63,7 @@ class Catalog{
     }
 
     private onEstateTypeChanged():void{
+        console.log("onEstateTypeChanged");
         this.selectedEstateType = this.$j("#estateType").find(":selected").data("type");
         this.createRequest();
     }

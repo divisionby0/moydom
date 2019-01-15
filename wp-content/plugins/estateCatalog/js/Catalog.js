@@ -23,6 +23,7 @@ var Catalog = (function () {
     };
     Catalog.prototype.createUIListeners = function () {
         var _this = this;
+        console.log("createUIListeners estateType=", this.$j("#estateType"));
         this.$j("#estateType").change(function () { return _this.onEstateTypeChanged(); });
         this.$j("#city").change(function () { return _this.onCityChanged(); });
         this.$j("#sailType").change(function () { return _this.onSaleDialTypeChanged(); });
@@ -51,6 +52,7 @@ var Catalog = (function () {
         this.createRequest();
     };
     Catalog.prototype.onEstateTypeChanged = function () {
+        console.log("onEstateTypeChanged");
         this.selectedEstateType = this.$j("#estateType").find(":selected").data("type");
         this.createRequest();
     };

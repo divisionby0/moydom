@@ -1,0 +1,119 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2019-01-12 19:12-0600\n"
+"PO-Revision-Date: 2019-01-12 19:20-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_html;esc_html__;esc_att;esc_attr__;"
+"esc_attr_e;esc_html_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: recaptcha-v2.php:71
+msgid "Please verify that you are not a robot."
+msgstr ""
+
+#: recaptcha-v2.php:338 recaptcha-v2.php:369 recaptcha-v2.php:378
+msgid "reCAPTCHA"
+msgstr ""
+
+#: recaptcha-v2.php:369
+#, php-format
+msgid ""
+"To use reCAPTCHA, first you need to install an API key pair. For more "
+"details, see %s."
+msgstr ""
+
+#: recaptcha-v2.php:369 recaptcha-v2.php:378
+msgid "https://contactform7.com/recaptcha/"
+msgstr ""
+
+#: recaptcha-v2.php:377
+#, php-format
+msgid "Generate a form-tag for a reCAPTCHA widget. For more details, see %s."
+msgstr ""
+
+#: recaptcha-v2.php:388 recaptcha-v2.php:391
+msgid "Size"
+msgstr ""
+
+#: recaptcha-v2.php:392
+msgid "Normal"
+msgstr ""
+
+#: recaptcha-v2.php:394
+msgid "Compact"
+msgstr ""
+
+#: recaptcha-v2.php:400 recaptcha-v2.php:403
+msgid "Theme"
+msgstr ""
+
+#: recaptcha-v2.php:404
+msgid "Light"
+msgstr ""
+
+#: recaptcha-v2.php:406
+msgid "Dark"
+msgstr ""
+
+#: recaptcha-v2.php:412
+msgid "Id attribute"
+msgstr ""
+
+#: recaptcha-v2.php:417
+msgid "Class attribute"
+msgstr ""
+
+#: recaptcha-v2.php:430
+msgid "Insert Tag"
+msgstr ""
+
+#: wpcf7-recaptcha.php:88 wpcf7-recaptcha.php:89
+msgid "reCaptcha Version"
+msgstr ""
+
+#: wpcf7-recaptcha.php:123 wpcf7-recaptcha.php:135
+msgid "Contact Form 7 - reCaptcha v2"
+msgstr ""
+
+#: wpcf7-recaptcha.php:124
+msgid ""
+"This version of Contact Form 7 already uses reCaptcha version 2, you do not "
+"need 'Contact Form 7 - reCaptcha v2' installed at this time."
+msgstr ""
+
+#: wpcf7-recaptcha.php:140
+msgid "Your reCaptcha settings have been updated."
+msgstr ""
+
+#: wpcf7-recaptcha.php:145
+msgid "Select the version of reCaptcha you would like to use."
+msgstr ""
+
+#: wpcf7-recaptcha.php:146
+msgid "You will still need to use the"
+msgstr ""
+
+#: wpcf7-recaptcha.php:147
+msgid "shortcode tag in your Contact Form 7 forms."
+msgstr ""
+
+#: wpcf7-recaptcha.php:154
+msgid "Default Usage"
+msgstr ""
+
+#: wpcf7-recaptcha.php:155
+msgid "reCaptcha Version 2"
+msgstr ""
+
+#: wpcf7-recaptcha.php:158
+msgid "Submit"
+msgstr ""

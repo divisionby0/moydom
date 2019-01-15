@@ -45,6 +45,17 @@
                     <div class="row">
                         <div class="col-md-12">
                             <?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
+                            <?php
+                                $address = get_option( 'address_text', '' );
+                                $url = site_url()."/контакты/";
+                                $phone1 = get_option( 'admin_phone_1_text', '' );
+                                $phone2 = get_option( 'admin_phone_2_text', '' );
+                                echo "<div class='addressAndPhones'>";
+                                echo "<a href='".$url."'>".$address."</a>";
+                                echo "<p><a href='tel:$phone1'>$phone1</a></p><p><a href='tel:$phone2'>$phone2</a></p>";
+                                echo "</div>";
+                            ?>
+
                             <?php if ( has_nav_menu( 'primary' ) ) : ?>
                                 <div class="navigation-section">
                                 	<div class="mobile-menu-wrapper">

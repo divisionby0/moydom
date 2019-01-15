@@ -106,5 +106,22 @@ jQuery(function($) {
 			}
 		});
 	}
+
+	function getProductId(){
+		return $("#productId").text();
+
+	}
+
+	function updateCardPage(){
+		var productId = getProductId();
+		console.log("product id: " + productId);
+		if(productId!=undefined){
+			var objectUrl = $("#objectUrl").text();
+			var messageText = "Здравствуйте. Меня заинтересовало объявление "+productId+". Свяжитесь со мной.";
+			$("input[name='requestData']").val(messageText);
+		}
+	}
+
+	updateCardPage();
 });
 

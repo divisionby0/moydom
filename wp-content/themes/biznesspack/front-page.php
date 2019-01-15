@@ -10,8 +10,13 @@ $biznesspack_featurebox_type3_section = biznesspack_get_option( 'biznesspack_fea
 
 	if( is_front_page() ):  
 		if ( has_header_image() ) { ?>
-            <div class="header-image">
+            <div class="header-image" style="position: relative!important;">
                 <img src="<?php esc_url( header_image() ); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+				<?php
+				//echo "<div class='container' id='catalogFiltersDesktop' style='position: absolute!important; top: 0;'><div class='row'><h2 style='width: 100%; text-align: center;'>Каталог</h2></div>";
+				//new CatalogController();
+				//echo "</div>";
+				?>
             </div>
 
 		<?php } 
@@ -38,15 +43,16 @@ $biznesspack_featurebox_type3_section = biznesspack_get_option( 'biznesspack_fea
 		get_template_part( 'section/calltoaction' );
 	endif;
 
-echo "<div class='container'><div class='row'><h2 style='width: 100%; text-align: center;'>Поиск</h2></div></div>";
+echo "<div class='container'><div class='row'></div></div>";
 get_search_form();
 
 echo "<div class='container'><div class='row'><h2 style='width: 100%; text-align: center;'>Горячая продажа</h2></div></div>";
 new HotSaleController();
 echo "<div class='container' style='padding-top: 20px;' id='hotSaleListContainer'></div>";
 
-echo "<div class='container'><div class='row'><h2 style='width: 100%; text-align: center;'>Каталог</h2></div></div>";
+echo "<div class='container' id='catalogFiltersMobile'><div class='row'><h2 style='width: 100%; text-align: center;'>Каталог</h2></div>";
 new CatalogController();
+echo "</div>";
 echo "<div class='container' style='padding-top: 20px;' id='estatesListContainer'></div>";
 
 get_footer(); ?>

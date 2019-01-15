@@ -3130,6 +3130,9 @@ p > object:only-child {
 	}
 }
 
+
+
+
 @media screen and (min-width: 48em) {
 
 	/* Typography */
@@ -4860,6 +4863,17 @@ a.back-to-top .fa:hover {
     background-color: rgba(255,255,255,0.7);
     margin-bottom: 30px;
 }
+
+
+.addressAndPhones{
+	width: 40%;
+	float: left;
+	font-size: 1em;
+}
+
+/*
+Queries
+*/
 @media screen and ( max-width: 767px ) {
 	#secondary.widget-area {
     	margin-top: 50px;
@@ -4936,7 +4950,9 @@ a.back-to-top .fa:hover {
 		text-align: left;
     	margin-top: 10px;
 	}
-	
+	.addressAndPhones{
+		font-size: 0.77em;
+	}
 }
 @media screen and ( max-width: 1024px ) {
 	.mobile-menu {
@@ -4954,7 +4970,7 @@ a.back-to-top .fa:hover {
 		display: none;
 	}
 	.site-branding {
-		width: 80%;
+		width: 40%;
 		float: left;
 	}
 	.navigation-section {
@@ -5163,3 +5179,17 @@ a.back-to-top .fa:hover {
 .logoPhone{
 	padding-right: 2px;
 }
+/*
+#catalogFiltersMobile{
+	display: none;
+}
+
+@media screen and (max-width: 992px) {
+	.header-image{
+		display: none;
+	}
+	#catalogFiltersMobile{
+		display: block;
+	}
+}
+*/

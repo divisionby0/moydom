@@ -2462,3 +2462,260 @@
 [13-Jan-2019 13:21:44 UTC] PHP Notice:  Undefined offset: 0 in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estateCatalog\service\DataBase.php on line 83
 [13-Jan-2019 13:21:44 UTC] PHP Notice:  Undefined offset: 0 in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estateCatalog\service\DataBase.php on line 83
 [13-Jan-2019 13:21:51 UTC] PHP Notice:  Undefined offset: 0 in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estateCatalog\service\DataBase.php on line 83
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Trying to get property of non-object in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 112
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index:  in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index:  in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index:  in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index:  in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index:  in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index: hotSaleOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index: waterOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index: electricityOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index: sewageOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index: gasOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index: internetOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index: freeParkingOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index: addressEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index:  in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index:  in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Trying to get property of non-object in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 112
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index:  in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index:  in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index:  in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index:  in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index:  in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index: hotSaleOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index: waterOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index: electricityOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index: sewageOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index: gasOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index: internetOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index: freeParkingOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index: addressEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index:  in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[14-Jan-2019 07:13:10 UTC] PHP Notice:  Undefined index:  in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 09:16:15 UTC] PHP Notice:  Undefined index: a:1:{s:3:"ssl";b:1;} in E:\workspaces\DenverServers\home\moydom\www\wp-includes\class-requests.php on line 213
+[15-Jan-2019 09:16:15 UTC] PHP Notice:  Undefined index: a:1:{s:3:"ssl";b:1;} in E:\workspaces\DenverServers\home\moydom\www\wp-includes\class-requests.php on line 213
+[15-Jan-2019 21:16:06 UTC] PHP Notice:  Undefined index: a:1:{s:3:"ssl";b:1;} in E:\workspaces\DenverServers\home\moydom\www\wp-includes\class-requests.php on line 213
+[15-Jan-2019 21:17:49 UTC] PHP Notice:  Undefined index: a:1:{s:3:"ssl";b:1;} in E:\workspaces\DenverServers\home\moydom\www\wp-includes\class-requests.php on line 213
+[15-Jan-2019 21:18:05 UTC] PHP Notice:  Undefined index: a:1:{s:3:"ssl";b:1;} in E:\workspaces\DenverServers\home\moydom\www\wp-includes\class-requests.php on line 213
+[15-Jan-2019 21:20:19 UTC] PHP Notice:  Trying to get property of non-object in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 113
+[15-Jan-2019 21:20:19 UTC] PHP Notice:  Undefined index: selectedCityEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:20:19 UTC] PHP Notice:  Undefined index: saleTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 6
+[15-Jan-2019 21:20:19 UTC] PHP Notice:  Undefined index: rentTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 7
+[15-Jan-2019 21:20:19 UTC] PHP Notice:  Undefined index: costEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\cost\php\SaveCost.php on line 7
+[15-Jan-2019 21:20:19 UTC] PHP Notice:  Undefined index: areaEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\area\php\SaveArea.php on line 7
+[15-Jan-2019 21:20:19 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:20:19 UTC] PHP Notice:  Undefined index: hotSaleOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:20:19 UTC] PHP Notice:  Undefined index: waterOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:20:19 UTC] PHP Notice:  Undefined index: electricityOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:20:19 UTC] PHP Notice:  Undefined index: sewageOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:20:19 UTC] PHP Notice:  Undefined index: gasOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:20:19 UTC] PHP Notice:  Undefined index: internetOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:20:19 UTC] PHP Notice:  Undefined index: freeParkingOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:20:19 UTC] PHP Notice:  Undefined index: addressEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:20:19 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:20:19 UTC] PHP Notice:  Undefined index: hidden2_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataTwo.php on line 7
+[15-Jan-2019 21:23:12 UTC] PHP Notice:  Trying to get property of non-object in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 113
+[15-Jan-2019 21:23:12 UTC] PHP Notice:  Undefined index: selectedCityEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:23:12 UTC] PHP Notice:  Undefined index: saleTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 6
+[15-Jan-2019 21:23:12 UTC] PHP Notice:  Undefined index: rentTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 7
+[15-Jan-2019 21:23:12 UTC] PHP Notice:  Undefined index: costEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\cost\php\SaveCost.php on line 7
+[15-Jan-2019 21:23:12 UTC] PHP Notice:  Undefined index: areaEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\area\php\SaveArea.php on line 7
+[15-Jan-2019 21:23:12 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:23:12 UTC] PHP Notice:  Undefined index: hotSaleOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:23:12 UTC] PHP Notice:  Undefined index: waterOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:23:12 UTC] PHP Notice:  Undefined index: electricityOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:23:12 UTC] PHP Notice:  Undefined index: sewageOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:23:12 UTC] PHP Notice:  Undefined index: gasOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:23:12 UTC] PHP Notice:  Undefined index: internetOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:23:12 UTC] PHP Notice:  Undefined index: freeParkingOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:23:12 UTC] PHP Notice:  Undefined index: addressEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:23:12 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:23:12 UTC] PHP Notice:  Undefined index: hidden2_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataTwo.php on line 7
+[15-Jan-2019 21:24:16 UTC] PHP Notice:  Trying to get property of non-object in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 113
+[15-Jan-2019 21:24:16 UTC] PHP Notice:  Undefined index: selectedCityEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:24:16 UTC] PHP Notice:  Undefined index: saleTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 6
+[15-Jan-2019 21:24:16 UTC] PHP Notice:  Undefined index: rentTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 7
+[15-Jan-2019 21:24:16 UTC] PHP Notice:  Undefined index: costEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\cost\php\SaveCost.php on line 7
+[15-Jan-2019 21:24:16 UTC] PHP Notice:  Undefined index: areaEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\area\php\SaveArea.php on line 7
+[15-Jan-2019 21:24:16 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:24:16 UTC] PHP Notice:  Undefined index: hotSaleOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:24:16 UTC] PHP Notice:  Undefined index: waterOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:24:16 UTC] PHP Notice:  Undefined index: electricityOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:24:16 UTC] PHP Notice:  Undefined index: sewageOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:24:16 UTC] PHP Notice:  Undefined index: gasOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:24:16 UTC] PHP Notice:  Undefined index: internetOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:24:16 UTC] PHP Notice:  Undefined index: freeParkingOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:24:16 UTC] PHP Notice:  Undefined index: addressEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:24:16 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:24:16 UTC] PHP Notice:  Undefined index: hidden2_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataTwo.php on line 7
+[15-Jan-2019 21:27:35 UTC] PHP Notice:  Trying to get property of non-object in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 113
+[15-Jan-2019 21:27:35 UTC] PHP Notice:  Undefined index: selectedCityEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:27:35 UTC] PHP Notice:  Undefined index: saleTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 6
+[15-Jan-2019 21:27:35 UTC] PHP Notice:  Undefined index: rentTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 7
+[15-Jan-2019 21:27:35 UTC] PHP Notice:  Undefined index: costEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\cost\php\SaveCost.php on line 7
+[15-Jan-2019 21:27:35 UTC] PHP Notice:  Undefined index: areaEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\area\php\SaveArea.php on line 7
+[15-Jan-2019 21:27:35 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:27:35 UTC] PHP Notice:  Undefined index: hotSaleOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:27:35 UTC] PHP Notice:  Undefined index: waterOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:27:35 UTC] PHP Notice:  Undefined index: electricityOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:27:35 UTC] PHP Notice:  Undefined index: sewageOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:27:35 UTC] PHP Notice:  Undefined index: gasOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:27:35 UTC] PHP Notice:  Undefined index: internetOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:27:35 UTC] PHP Notice:  Undefined index: freeParkingOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:27:35 UTC] PHP Notice:  Undefined index: addressEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:27:35 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:27:35 UTC] PHP Notice:  Undefined index: hidden2_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataTwo.php on line 7
+[15-Jan-2019 21:28:00 UTC] PHP Notice:  Trying to get property of non-object in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 113
+[15-Jan-2019 21:28:00 UTC] PHP Notice:  Undefined index: selectedCityEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:00 UTC] PHP Notice:  Undefined index: saleTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 6
+[15-Jan-2019 21:28:00 UTC] PHP Notice:  Undefined index: rentTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 7
+[15-Jan-2019 21:28:00 UTC] PHP Notice:  Undefined index: costEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\cost\php\SaveCost.php on line 7
+[15-Jan-2019 21:28:00 UTC] PHP Notice:  Undefined index: areaEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\area\php\SaveArea.php on line 7
+[15-Jan-2019 21:28:00 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:28:00 UTC] PHP Notice:  Undefined index: hotSaleOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:00 UTC] PHP Notice:  Undefined index: waterOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:00 UTC] PHP Notice:  Undefined index: electricityOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:00 UTC] PHP Notice:  Undefined index: sewageOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:00 UTC] PHP Notice:  Undefined index: gasOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:00 UTC] PHP Notice:  Undefined index: internetOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:00 UTC] PHP Notice:  Undefined index: freeParkingOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:00 UTC] PHP Notice:  Undefined index: addressEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:00 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:28:00 UTC] PHP Notice:  Undefined index: hidden2_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataTwo.php on line 7
+[15-Jan-2019 21:28:12 UTC] PHP Notice:  Trying to get property of non-object in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 113
+[15-Jan-2019 21:28:12 UTC] PHP Notice:  Undefined index: selectedCityEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:12 UTC] PHP Notice:  Undefined index: saleTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 6
+[15-Jan-2019 21:28:12 UTC] PHP Notice:  Undefined index: rentTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 7
+[15-Jan-2019 21:28:12 UTC] PHP Notice:  Undefined index: costEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\cost\php\SaveCost.php on line 7
+[15-Jan-2019 21:28:12 UTC] PHP Notice:  Undefined index: areaEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\area\php\SaveArea.php on line 7
+[15-Jan-2019 21:28:12 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:28:12 UTC] PHP Notice:  Undefined index: hotSaleOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:12 UTC] PHP Notice:  Undefined index: waterOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:12 UTC] PHP Notice:  Undefined index: electricityOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:12 UTC] PHP Notice:  Undefined index: sewageOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:12 UTC] PHP Notice:  Undefined index: gasOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:12 UTC] PHP Notice:  Undefined index: internetOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:12 UTC] PHP Notice:  Undefined index: freeParkingOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:12 UTC] PHP Notice:  Undefined index: addressEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:12 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:28:12 UTC] PHP Notice:  Undefined index: hidden2_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataTwo.php on line 7
+[15-Jan-2019 21:28:23 UTC] PHP Notice:  Trying to get property of non-object in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 113
+[15-Jan-2019 21:28:23 UTC] PHP Notice:  Undefined index: selectedCityEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:23 UTC] PHP Notice:  Undefined index: saleTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 6
+[15-Jan-2019 21:28:23 UTC] PHP Notice:  Undefined index: rentTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 7
+[15-Jan-2019 21:28:23 UTC] PHP Notice:  Undefined index: costEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\cost\php\SaveCost.php on line 7
+[15-Jan-2019 21:28:23 UTC] PHP Notice:  Undefined index: areaEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\area\php\SaveArea.php on line 7
+[15-Jan-2019 21:28:23 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:28:23 UTC] PHP Notice:  Undefined index: hotSaleOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:23 UTC] PHP Notice:  Undefined index: waterOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:23 UTC] PHP Notice:  Undefined index: electricityOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:23 UTC] PHP Notice:  Undefined index: sewageOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:23 UTC] PHP Notice:  Undefined index: gasOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:23 UTC] PHP Notice:  Undefined index: internetOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:23 UTC] PHP Notice:  Undefined index: freeParkingOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:23 UTC] PHP Notice:  Undefined index: addressEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:28:23 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:28:23 UTC] PHP Notice:  Undefined index: hidden2_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataTwo.php on line 7
+[15-Jan-2019 21:29:42 UTC] PHP Notice:  Trying to get property of non-object in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 113
+[15-Jan-2019 21:29:42 UTC] PHP Notice:  Undefined index: selectedCityEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:29:42 UTC] PHP Notice:  Undefined index: saleTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 6
+[15-Jan-2019 21:29:42 UTC] PHP Notice:  Undefined index: rentTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 7
+[15-Jan-2019 21:29:42 UTC] PHP Notice:  Undefined index: costEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\cost\php\SaveCost.php on line 7
+[15-Jan-2019 21:29:42 UTC] PHP Notice:  Undefined index: areaEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\area\php\SaveArea.php on line 7
+[15-Jan-2019 21:29:42 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:29:42 UTC] PHP Notice:  Undefined index: hotSaleOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:29:42 UTC] PHP Notice:  Undefined index: waterOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:29:42 UTC] PHP Notice:  Undefined index: electricityOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:29:42 UTC] PHP Notice:  Undefined index: sewageOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:29:42 UTC] PHP Notice:  Undefined index: gasOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:29:42 UTC] PHP Notice:  Undefined index: internetOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:29:42 UTC] PHP Notice:  Undefined index: freeParkingOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:29:42 UTC] PHP Notice:  Undefined index: addressEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:29:42 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:29:42 UTC] PHP Notice:  Undefined index: hidden2_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataTwo.php on line 7
+[15-Jan-2019 21:30:13 UTC] PHP Notice:  Undefined index: selectedCityEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:13 UTC] PHP Notice:  Undefined index: saleTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 6
+[15-Jan-2019 21:30:13 UTC] PHP Notice:  Undefined index: rentTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 7
+[15-Jan-2019 21:30:13 UTC] PHP Notice:  Undefined index: costEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\cost\php\SaveCost.php on line 7
+[15-Jan-2019 21:30:13 UTC] PHP Notice:  Undefined index: areaEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\area\php\SaveArea.php on line 7
+[15-Jan-2019 21:30:13 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:30:13 UTC] PHP Notice:  Undefined index: hotSaleOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:13 UTC] PHP Notice:  Undefined index: waterOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:13 UTC] PHP Notice:  Undefined index: electricityOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:13 UTC] PHP Notice:  Undefined index: sewageOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:13 UTC] PHP Notice:  Undefined index: gasOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:13 UTC] PHP Notice:  Undefined index: internetOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:14 UTC] PHP Notice:  Undefined index: freeParkingOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:14 UTC] PHP Notice:  Undefined index: addressEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:14 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:30:14 UTC] PHP Notice:  Undefined index: hidden2_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataTwo.php on line 7
+[15-Jan-2019 21:30:14 UTC] PHP Notice:  Undefined index: selectedCityEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:14 UTC] PHP Notice:  Undefined index: saleTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 6
+[15-Jan-2019 21:30:14 UTC] PHP Notice:  Undefined index: rentTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 7
+[15-Jan-2019 21:30:14 UTC] PHP Notice:  Undefined index: costEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\cost\php\SaveCost.php on line 7
+[15-Jan-2019 21:30:14 UTC] PHP Notice:  Undefined index: areaEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\area\php\SaveArea.php on line 7
+[15-Jan-2019 21:30:14 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:30:14 UTC] PHP Notice:  Undefined index: hotSaleOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:14 UTC] PHP Notice:  Undefined index: waterOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:14 UTC] PHP Notice:  Undefined index: electricityOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:14 UTC] PHP Notice:  Undefined index: sewageOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:14 UTC] PHP Notice:  Undefined index: gasOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:14 UTC] PHP Notice:  Undefined index: internetOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:14 UTC] PHP Notice:  Undefined index: freeParkingOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:14 UTC] PHP Notice:  Undefined index: addressEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:14 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:30:14 UTC] PHP Notice:  Undefined index: hidden2_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataTwo.php on line 7
+[15-Jan-2019 21:30:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\area\php\SaveArea.php:7) in E:\workspaces\DenverServers\home\moydom\www\wp-admin\post.php on line 198
+[15-Jan-2019 21:30:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\area\php\SaveArea.php:7) in E:\workspaces\DenverServers\home\moydom\www\wp-includes\pluggable.php on line 1219
+[15-Jan-2019 21:30:25 UTC] PHP Notice:  Undefined index: selectedCityEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:25 UTC] PHP Notice:  Undefined index: saleTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 6
+[15-Jan-2019 21:30:25 UTC] PHP Notice:  Undefined index: rentTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 7
+[15-Jan-2019 21:30:25 UTC] PHP Notice:  Undefined index: costEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\cost\php\SaveCost.php on line 7
+[15-Jan-2019 21:30:25 UTC] PHP Notice:  Undefined index: areaEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\area\php\SaveArea.php on line 7
+[15-Jan-2019 21:30:25 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:30:25 UTC] PHP Notice:  Undefined index: hotSaleOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:25 UTC] PHP Notice:  Undefined index: waterOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:25 UTC] PHP Notice:  Undefined index: electricityOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:25 UTC] PHP Notice:  Undefined index: sewageOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:25 UTC] PHP Notice:  Undefined index: gasOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:25 UTC] PHP Notice:  Undefined index: internetOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:25 UTC] PHP Notice:  Undefined index: freeParkingOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:25 UTC] PHP Notice:  Undefined index: addressEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:30:25 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:30:25 UTC] PHP Notice:  Undefined index: hidden2_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataTwo.php on line 7
+[15-Jan-2019 21:31:17 UTC] PHP Notice:  Trying to get property of non-object in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 113
+[15-Jan-2019 21:31:17 UTC] PHP Notice:  Undefined index: selectedCityEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:31:17 UTC] PHP Notice:  Undefined index: saleTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 6
+[15-Jan-2019 21:31:17 UTC] PHP Notice:  Undefined index: rentTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 7
+[15-Jan-2019 21:31:17 UTC] PHP Notice:  Undefined index: costEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\cost\php\SaveCost.php on line 7
+[15-Jan-2019 21:31:17 UTC] PHP Notice:  Undefined index: areaEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\area\php\SaveArea.php on line 7
+[15-Jan-2019 21:31:17 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:31:17 UTC] PHP Notice:  Undefined index: hotSaleOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:31:17 UTC] PHP Notice:  Undefined index: waterOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:31:17 UTC] PHP Notice:  Undefined index: electricityOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:31:17 UTC] PHP Notice:  Undefined index: sewageOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:31:17 UTC] PHP Notice:  Undefined index: gasOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:31:17 UTC] PHP Notice:  Undefined index: internetOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:31:17 UTC] PHP Notice:  Undefined index: freeParkingOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:31:17 UTC] PHP Notice:  Undefined index: addressEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:31:17 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:31:17 UTC] PHP Notice:  Undefined index: hidden2_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataTwo.php on line 7
+[15-Jan-2019 21:31:26 UTC] PHP Notice:  Trying to get property of non-object in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 113
+[15-Jan-2019 21:31:26 UTC] PHP Notice:  Undefined index: selectedCityEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:31:26 UTC] PHP Notice:  Undefined index: saleTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 6
+[15-Jan-2019 21:31:26 UTC] PHP Notice:  Undefined index: rentTypeEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\dialType\php\SaveDialType.php on line 7
+[15-Jan-2019 21:31:26 UTC] PHP Notice:  Undefined index: costEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\cost\php\SaveCost.php on line 7
+[15-Jan-2019 21:31:26 UTC] PHP Notice:  Undefined index: areaEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\area\php\SaveArea.php on line 7
+[15-Jan-2019 21:31:26 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:31:26 UTC] PHP Notice:  Undefined index: hotSaleOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:31:26 UTC] PHP Notice:  Undefined index: waterOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:31:26 UTC] PHP Notice:  Undefined index: electricityOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:31:26 UTC] PHP Notice:  Undefined index: sewageOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:31:26 UTC] PHP Notice:  Undefined index: gasOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:31:26 UTC] PHP Notice:  Undefined index: internetOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:31:26 UTC] PHP Notice:  Undefined index: freeParkingOptionEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:31:26 UTC] PHP Notice:  Undefined index: addressEditor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\base\php\SaveMetadata.php on line 15
+[15-Jan-2019 21:31:26 UTC] PHP Notice:  Undefined index: hidden1_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataOne.php on line 7
+[15-Jan-2019 21:31:26 UTC] PHP Notice:  Undefined index: hidden2_Editor in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\metabox\hiddenData\SaveHiddenDataTwo.php on line 7

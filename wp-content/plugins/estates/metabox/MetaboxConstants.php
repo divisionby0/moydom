@@ -11,4 +11,5 @@ class MetaboxConstants
     public static $INTERNET_OPTION = "hasInternet";
     public static $FREE_PARKING_OPTION = "hasFreeParking";
     public static $ADDRESS = "address";
+    public static $SELECTED_CITY = "selectedCity";
 }

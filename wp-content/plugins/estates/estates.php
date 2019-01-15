@@ -38,6 +38,7 @@ function display_estate_meta_box( $estate ) {
     new IdMetabox($id);
 
     $currentCity = get_post_meta($id , 'selectedCity', true );
+    echo "<p>currentCity: ".$currentCity."</p>";
     new CityMetabox($currentCity);
 
     //$currentDialTypes = get_post_meta($id , 'dialTypes', true );
@@ -114,12 +115,13 @@ function getCurrentPostType(){
 
 function admin_save_post( $estate_id, $estate ) {
 
+    echo "<p>saving post</p>";
     $postType = getCurrentPostType();
     $isFlat = $postType ===Constant::$flats;
     $isHouse = $postType ===Constant::$houses;
     $isCommercialEstate = $postType===Constant::$commercialEstates;
     $isSector = $postType===Constant::$sectors;
-
+    
     new SaveCity($estate_id, $estate);
     new SaveDialType($estate_id, $estate);
     new SaveCost($estate_id, $estate);

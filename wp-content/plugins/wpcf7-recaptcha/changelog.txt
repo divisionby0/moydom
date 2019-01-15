@@ -1,0 +1,36 @@
+== Changelog Archive ==
+
+This is to keep track of all changes the plugin undertakes. The readme.txt should only contain the most recent 3.
+
+= 1.1.2 =
+
+Relase Date: January 14, 2019
+
+* Overview
+	* Replaces old Text Domain 'iqc' with new Text Domain 'wpcf7-recaptcha' to match the plugin slug. This fix should help translations.
+	* Added Portable Object Template (.pot) file to the /languages/ folder to help translators.
+	* Added call to action on the settings page which encourages users to like IQComputing on Facebook to receive the latest news and updates regarding this plugin and future plugins we develop.
+
+= 1.1.1 =
+
+Release Date: January 07, 2019
+
+* Overview
+	* Adds message whenever user forgets to click reCaptcha checkbox.
+
+= 1.1.0 =
+
+Release Date: December 28, 2018
+
+* Overview
+	* Prevents Contact Form 7 from removing reCaptcha keys upon update.
+	* Removes Contact Form 7 reCaptcha upgrade notice.
+
+= 1.0 =
+
+Release Date: December 28, 2018
+
+* Overview
+	* Initial release of plugin.
+	* Contact Form 7 5.0.5 reCaptcha functionality copied over.
+	* Created subpage under "Contact" named "reCaptcha Version" to be used as a settings page.

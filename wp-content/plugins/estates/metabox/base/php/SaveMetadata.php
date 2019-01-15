@@ -11,7 +11,7 @@ class SaveMetadata
         $this->save();
     }
 
-    private function save(){
+    protected function save(){
         $value = $_POST[$this->getEditorId()];
 
         if ( isset( $value )) {

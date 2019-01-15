@@ -481,5 +481,16 @@ function print_admin_phone_2_text(){
 	echo '<input style="width:100%;" type="text" id="admin_phone_2_text" name="admin_phone_2_text" value="' . $value . '" />';
 }
 
+function register_general_address_text(){
+	register_setting('general', 'address_text', 'esc_attr');
+	add_settings_field('address_text', '<label for="address_text">'.__('Адрес' , 'address_text' ).'</label>' , 'print_address_text', 'general');
+}
+function print_address_text(){
+	$value = get_option( 'address_text', '' );
+	echo '<input style="width:100%;" type="text" id="address_text" name="address_text" value="' . $value . '" />';
+}
+
 add_filter('admin_init', 'register_general_phone_1_admin_text');
 add_filter('admin_init', 'register_general_phone_2_admin_text');
+
+add_filter('admin_init', 'register_general_address_text');
