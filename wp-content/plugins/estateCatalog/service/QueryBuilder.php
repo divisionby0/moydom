@@ -2,7 +2,7 @@
 
 class QueryBuilder
 {
-    public static function createQuery($estateType, $saleDialType, $rentDialType, $city, $costMin, $costMax, $postsPerPage = "-1"){
+    public static function createQuery($estateType, $saleDialType, $rentDialType, $city, $costMin, $costMax, $floorMin, $floorMax, $postsPerPage = "-1"){
 
         $saleQuery = null;
 
@@ -59,6 +59,17 @@ class QueryBuilder
             ));
         }
 
+        if($estateType == Constant::$flats){
+            if(isset($floorMin) && isset($floorMax)){
+                array_push($metaQuery, array(
+                    'key'     => 'floor',
+                    'value'   => array($floorMin, $floorMax),
+                    'compare' => "BETWEEN",
+                    'type' => 'NUMERIC'
+                ));
+            }
+        }
+        
         $args = array(
             'post_type'      => $estateType,
             'post_status'    => 'publish',

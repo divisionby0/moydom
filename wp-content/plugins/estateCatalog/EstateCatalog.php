@@ -40,9 +40,11 @@ function getEstates(){
     $rentDialType = $_POST['rentDialType'];
     $costMin = $_POST['costMin'];
     $costMax = $_POST['costMax'];
+    $floorMin = $_POST['floorMin'];
+    $floorMax = $_POST['floorMax'];
     $city = $_POST['city'];
     
-    $estatesData = DataBase::getEstate($estateType, $saleDialType, $rentDialType, $city, $costMin, $costMax);
+    $estatesData = DataBase::getEstate($estateType, $saleDialType, $rentDialType, $city, $costMin, $costMax, $floorMin, $floorMax);
 
     echo $estatesData;
     die();

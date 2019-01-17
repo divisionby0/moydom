@@ -10,7 +10,6 @@
 <?php
 $header_status = biznesspack_get_option( 'show_top_header' );
 	if ( 1 == $header_status ) {
-		
 			$top_address    = biznesspack_get_option( 'top_address' );
 			$top_phone      = biznesspack_get_option( 'top_phone' );
 			$top_email      = biznesspack_get_option( 'top_email' );

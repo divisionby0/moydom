@@ -3,10 +3,10 @@
 
 class SaveHiddenDataOne extends SaveMetadata
 {
-    protected function save(){
-        $data = $_POST["hidden1_Editor"];
-        if ( isset( $data )) {
-            update_post_meta( $this->estateId, 'hiddenData1', $data );
-        }
+    protected function getEditorId(){
+        return "hidden1_Editor";
+    }
+    protected function getCurrentOption(){
+        return 'hiddenData1';
     }
 }

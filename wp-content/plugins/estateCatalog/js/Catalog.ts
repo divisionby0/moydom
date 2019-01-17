@@ -14,6 +14,10 @@ class Catalog{
     private rentDialType:number = 0;
     private costMin:number = 0;
     private costMax:number = 9000000;
+
+    private floorMin:number = 0;
+    private floorMax:number = 15;
+
     private estates:any[];
 
     constructor(ajax:Ajax){
@@ -40,6 +44,9 @@ class Catalog{
         this.$j("#costMax").change(()=>this.onCostMaxChanged());
         this.$j("#dateSort").click((event)=>this.onDateSortClicked(event));
         this.$j("#costSort").click((event)=>this.onCostSortClicked(event));
+
+        this.$j("#floorMin").change(()=>this.onFloorMinChanged());
+        this.$j("#floorMax").change(()=>this.onFloorMaxChanged());
     }
 
     private onDateSortClicked(event:any):boolean{
@@ -63,10 +70,25 @@ class Catalog{
     }
 
     private onEstateTypeChanged():void{
-        console.log("onEstateTypeChanged");
         this.selectedEstateType = this.$j("#estateType").find(":selected").data("type");
+        if(this.selectedEstateType == "flats"){
+            this.$j("#floorNumberContainer").show();
+        }
+        else{
+            this.$j("#floorNumberContainer").hide();
+        }
         this.createRequest();
     }
+    
+    private onFloorMinChanged():void{
+        this.floorMin = this.$j("#floorMin").find(":selected").data("value");
+        this.createRequest();
+    }
+    private onFloorMaxChanged():void{
+        this.floorMax = this.$j("#floorMax").find(":selected").data("value");
+        this.createRequest();
+    }
+    
     private onCostMinChanged():void{
         this.costMin = this.$j("#costMin").find(":selected").data("value");
         this.createRequest();
@@ -77,7 +99,7 @@ class Catalog{
     }
 
     private createRequest():void{
-        this.ajax.getEstates(this.selectedEstateType, this.saleDialType, this.rentDialType, this.selectedCity, this.costMin, this.costMax);
+        this.ajax.getEstates(this.selectedEstateType, this.saleDialType, this.rentDialType, this.selectedCity, this.costMin, this.costMax, this.floorMin, this.floorMax);
     }
 
     private onSaleDialTypeChanged():void {
@@ -104,11 +126,11 @@ class Catalog{
         try{
             this.estates = JSON.parse(data);
             console.log("response: ",this.estates);
-            this.renderCollection();
         }
         catch(error){
             console.log("error parsing data ",data);
         }
+        this.renderCollection();
     }
     
     private renderCollection():void{

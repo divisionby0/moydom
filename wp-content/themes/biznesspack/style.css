@@ -4866,6 +4866,7 @@ a.back-to-top .fa:hover {
 
 
 .addressAndPhones{
+	text-align: center;
 	width: 40%;
 	float: left;
 	font-size: 1em;

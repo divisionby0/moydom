@@ -10,6 +10,8 @@ var Catalog = (function () {
         this.rentDialType = 0;
         this.costMin = 0;
         this.costMax = 9000000;
+        this.floorMin = 0;
+        this.floorMax = 15;
         this.$j = jQuery.noConflict();
         this.ajax = ajax;
         this.setDefaults();
@@ -32,6 +34,8 @@ var Catalog = (function () {
         this.$j("#costMax").change(function () { return _this.onCostMaxChanged(); });
         this.$j("#dateSort").click(function (event) { return _this.onDateSortClicked(event); });
         this.$j("#costSort").click(function (event) { return _this.onCostSortClicked(event); });
+        this.$j("#floorMin").change(function () { return _this.onFloorMinChanged(); });
+        this.$j("#floorMax").change(function () { return _this.onFloorMaxChanged(); });
     };
     Catalog.prototype.onDateSortClicked = function (event) {
         event.preventDefault();
@@ -52,8 +56,21 @@ var Catalog = (function () {
         this.createRequest();
     };
     Catalog.prototype.onEstateTypeChanged = function () {
-        console.log("onEstateTypeChanged");
         this.selectedEstateType = this.$j("#estateType").find(":selected").data("type");
+        if (this.selectedEstateType == "flats") {
+            this.$j("#floorNumberContainer").show();
+        }
+        else {
+            this.$j("#floorNumberContainer").hide();
+        }
+        this.createRequest();
+    };
+    Catalog.prototype.onFloorMinChanged = function () {
+        this.floorMin = this.$j("#floorMin").find(":selected").data("value");
+        this.createRequest();
+    };
+    Catalog.prototype.onFloorMaxChanged = function () {
+        this.floorMax = this.$j("#floorMax").find(":selected").data("value");
         this.createRequest();
     };
     Catalog.prototype.onCostMinChanged = function () {
@@ -65,7 +82,7 @@ var Catalog = (function () {
         this.createRequest();
     };
     Catalog.prototype.createRequest = function () {
-        this.ajax.getEstates(this.selectedEstateType, this.saleDialType, this.rentDialType, this.selectedCity, this.costMin, this.costMax);
+        this.ajax.getEstates(this.selectedEstateType, this.saleDialType, this.rentDialType, this.selectedCity, this.costMin, this.costMax, this.floorMin, this.floorMax);
     };
     Catalog.prototype.onSaleDialTypeChanged = function () {
         if (this.$j("#sailType").is(':checked')) {
@@ -89,11 +106,11 @@ var Catalog = (function () {
         try {
             this.estates = JSON.parse(data);
             console.log("response: ", this.estates);
-            this.renderCollection();
         }
         catch (error) {
             console.log("error parsing data ", data);
         }
+        this.renderCollection();
     };
     Catalog.prototype.renderCollection = function () {
         this.$j("#estatesListContainer").empty();

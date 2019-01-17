@@ -4,7 +4,7 @@ var Ajax = (function () {
     function Ajax() {
         this.j = jQuery.noConflict();
     }
-    Ajax.prototype.getEstates = function (estateType, saleDialType, rentDialType, city, costMin, costMax) {
+    Ajax.prototype.getEstates = function (estateType, saleDialType, rentDialType, city, costMin, costMax, floorMin, floorMax) {
         var _this = this;
         var data = { 'action': 'getEstates',
             'estateType': estateType,
@@ -12,6 +12,8 @@ var Ajax = (function () {
             'rentDialType': rentDialType,
             'costMin': costMin,
             'costMax': costMax,
+            'floorMin': floorMin,
+            'floorMax': floorMax,
             'city': city
         };
         this.j.post(ajaxurl, data, function (response) { return _this.onFilteredEstatesResponse(response); });

@@ -9,13 +9,15 @@ class Ajax{
         this.j = jQuery.noConflict();
     }
     
-    public getEstates(estateType:string, saleDialType:number, rentDialType:number, city:string, costMin:number, costMax:number):void{
+    public getEstates(estateType:string, saleDialType:number, rentDialType:number, city:string, costMin:number, costMax:number, floorMin:number, floorMax:number):void{
         var data:any = {'action':'getEstates',
             'estateType':estateType,
             'saleDialType':saleDialType,
             'rentDialType':rentDialType,
             'costMin':costMin,
             'costMax':costMax,
+            'floorMin':floorMin,
+            'floorMax':floorMax,
             'city':city
         };
         this.j.post(ajaxurl, data, (response) => this.onFilteredEstatesResponse(response));

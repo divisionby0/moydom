@@ -25,6 +25,7 @@ class FiltersView
         echo "<div class='container'><div class='row'>";
         $this->createDialType();
         $this->createEstateType();
+        $this->createFloorNumber();
         $this->createCities();
         $this->createCost();
         $this->createSort();
@@ -66,16 +67,51 @@ class FiltersView
 
     private function createFloorNumber()
     {
-        echo "<div class='col-md-3' id='floorNumberContainer'>";
-        echo "<div class='row'><b>Этаж:</b></div>";
+        echo "<div class='col-md-3' id='floorNumberContainer' style='display: none;'>";
+        echo "<div class='row'><div class='col-md-6'><b>Этаж с </b></div><div class='col-md-6'><b>Этаж по </b></div></div><div class='row'>";
 
-        echo "<div class='row'><select id='floor'>";
-        echo "<option>Первый</option>";
-        echo "<option>Не первый</option>";
-        echo "<option>Последний</option>";
-        echo "<option>Не последний</option>";
-        echo "<option>Любой</option>";
+        echo "<div class='col-md-6'>";
+
+        echo "<div class='row'>";
+        echo "<select id='floorMin'>";
+        echo "<option data-value='1'>1</option>";
+        echo "<option data-value='2'>2</option>";
+        echo "<option data-value='3'>3</option>";
+        echo "<option data-value='4'>4</option>";
+        echo "<option data-value='5'>5</option>";
+        echo "<option data-value='6'>6</option>";
+        echo "<option data-value='7'>7</option>";
+        echo "<option data-value='8'>8</option>";
+        echo "<option data-value='9'>9</option>";
+        echo "<option data-value='10'>10</option>";
+        echo "<option data-value='11'>11</option>";
+        echo "<option data-value='12'>12</option>";
+        echo "<option data-value='13'>13</option>";
+        echo "<option data-value='14'>14</option>";
+        echo "<option data-value='15'>15</option>";
         echo "</select></div></div>";
+
+        echo "<div class='col-md-6'>";
+        echo "<div class='row'>";
+        echo "<select id='floorMax'>";
+        echo "<option data-value='1'>1</option>";
+        echo "<option data-value='2'>2</option>";
+        echo "<option data-value='3'>3</option>";
+        echo "<option data-value='4'>4</option>";
+        echo "<option data-value='5'>5</option>";
+        echo "<option data-value='6'>6</option>";
+        echo "<option data-value='7'>7</option>";
+        echo "<option data-value='8'>8</option>";
+        echo "<option data-value='9'>9</option>";
+        echo "<option data-value='10'>10</option>";
+        echo "<option data-value='11'>11</option>";
+        echo "<option data-value='12'>12</option>";
+        echo "<option data-value='13'>13</option>";
+        echo "<option data-value='14'>14</option>";
+        echo "<option data-value='15' selected>15</option>";
+        echo "</select></div></div>";
+
+        echo "</div></div>";
     }
 
     private function createRoomsQuantity()

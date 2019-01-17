@@ -50,10 +50,12 @@
                                 $url = site_url()."/контакты/";
                                 $phone1 = get_option( 'admin_phone_1_text', '' );
                                 $phone2 = get_option( 'admin_phone_2_text', '' );
-                                echo "<div class='addressAndPhones'>";
-                                echo "<a href='".$url."'>".$address."</a>";
-                                echo "<p><a href='tel:$phone1'>$phone1</a></p><p><a href='tel:$phone2'>$phone2</a></p>";
-                                echo "</div>";
+                                $admin_email = get_option('admin_email');
+                                echo "<div class='addressAndPhones'><div>";
+                                echo "<a style='vertical-align:-webkit-baseline-middle;' href='".$url."'>".$address."</a>";
+                                echo "<br/><a style='vertical-align:-webkit-baseline-middle;' href='tel:$phone1'>$phone1</a>    <a style='vertical-align:-webkit-baseline-middle;' href='tel:$phone2'>$phone2</a>";
+                                echo "<br/><a style='vertical-align:-webkit-baseline-middle;' href='mailto:".$admin_email."'>".$admin_email."</a>";
+                                echo "</div></div>";
                             ?>
 
                             <?php if ( has_nav_menu( 'primary' ) ) : ?>
