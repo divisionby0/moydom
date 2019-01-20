@@ -71,6 +71,8 @@ class Autoload
         include_once('php/flat/FlatPostType.php');
         include_once('php/commerce/CommerceEstatePostType.php');
         include_once('php/sector/SectorPostType.php');
+        include_once('php/garage/GaragePostType.php');
+        include_once('php/countryHouse/CountryHousePostType.php');
 
         include_once ("IncludeJS.php");
     }

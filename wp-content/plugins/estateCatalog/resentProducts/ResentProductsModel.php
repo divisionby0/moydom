@@ -12,7 +12,7 @@ class ResentProductsModel
     }
     
     public function load($estateType, $saleDialType, $rentDialType, $city, $minCost, $maxCost){
-        $estatesData = DataBase::getEstate($estateType, $saleDialType, $rentDialType, $city, $minCost, $maxCost);
+        $estatesData = DataBase::getEstate($estateType, $saleDialType, $rentDialType, $city, $minCost, $maxCost, null, null);
         $estates = json_decode($estatesData);
 
         $this->view->setData($estates, $this->currentId);

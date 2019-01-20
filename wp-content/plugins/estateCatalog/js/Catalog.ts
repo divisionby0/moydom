@@ -16,7 +16,7 @@ class Catalog{
     private costMax:number = 9000000;
 
     private floorMin:number = 0;
-    private floorMax:number = 15;
+    private floorMax:number = 25;
 
     private estates:any[];
 

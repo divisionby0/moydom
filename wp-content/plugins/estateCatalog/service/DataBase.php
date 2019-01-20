@@ -83,10 +83,16 @@ class DataBase
             $rentDialType = get_post_meta($id, "rentDialType")[0];
             $cost = get_post_meta($id, "cost")[0];
 
+            $rooms = 0;
+            $roomsData = get_post_meta($id, "rooms");
+            if(isset($roomsData) && sizeof($roomsData)>0){
+                $rooms = $roomsData[0];
+            }
+
             $area = 0;
             $areaOutside = 0;
             $areaData = get_post_meta($id, "area");
-            $areaOutsideData = get_post_meta($id, "areaOutside");
+            $areaOutsideData = get_post_meta($id, "outsideArea");
 
             if(isset($areaData) && sizeof($areaData)>0){
                 $area = $areaData[0];
@@ -110,7 +116,7 @@ class DataBase
             }
 
             //$estate = array("id"=>$id, "name"=>$name, "description"=>$description, "image"=>$image, "url"=>$url, "estateType"=>$estateType, "saleDialType"=>$saleDialType, "rentDialType"=>$rentDialType, "city"=>$city, "cost"=>$cost);
-            $estate = array("id"=>$id, "name"=>$name, "image"=>$image, "url"=>$url, "estateType"=>$estateType, "saleDialType"=>$saleDialType, "rentDialType"=>$rentDialType, "city"=>$city, "cost"=>$cost, "floor"=>$floor,"totalFloors"=>$totalFloors,"area"=>$area, "areaOutside"=>$areaOutside, "address"=>$address, "date"=>$date, "type"=>$type);
+            $estate = array("id"=>$id, "name"=>$name, "image"=>$image, "url"=>$url, "estateType"=>$estateType, "saleDialType"=>$saleDialType, "rentDialType"=>$rentDialType, "city"=>$city, "cost"=>$cost, "floor"=>$floor,"totalFloors"=>$totalFloors,"area"=>$area, "areaOutside"=>$areaOutside, "rooms"=>$rooms, "address"=>$address, "date"=>$date, "type"=>$type);
 
             array_push($estates, $estate);
         }

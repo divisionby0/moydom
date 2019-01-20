@@ -44,28 +44,32 @@ class EstateListRenderer{
         var dialType:any = this.$j("<img src='"+rendererIcon+"' style='position:absolute; z-index: 1000; top:0;'/>");
         dialType.appendTo(image);
 
-        var name:any = this.$j("<div class='col-md-5'><div class='row'><b>"+this.data.name+"</b></div></div>");
+        var name:any = this.$j("<div class='col-md-5'><div class='col-md-12'><b>"+this.data.name+"</b></div></div>");
         name.appendTo(this.container);
 
         if(this.data.address){
-            var address:any = this.$j("<div class='row'>"+this.data.address+"</div>");
+            var address:any = this.$j("<div class='col-md-12'>"+this.data.address+"</div>");
             address.appendTo(name);
         }
 
-        if(this.data.type == "flats" || this.data.type == "houses"){
-            var areaDecorator:any = this.$j("<div class='row'>S:"+this.data.area+" кв.м.</div>");
+        if(this.data.type == "flats" || this.data.type == "houses" || this.data.type == "sectors"){
+            var areaDecorator:any = this.$j("<div class='col-md-12'>S:"+this.data.area+" кв.м.</div>");
             areaDecorator.appendTo(name);
+
+            if(this.data.type == "houses"){
+                // floor
+                var areaOutsideDecorator:any = this.$j("<div class='col-md-12'>S участ.:"+this.data.areaOutside+ " кв.м.</div>");
+                areaOutsideDecorator.appendTo(name);
+            }
         }
 
         if(this.data.type == "flats"){
             // floor
-            var floorDecorator:any = this.$j("<div class='row'>Этаж:"+this.data.floor+"/"+this.data.totalFloors+"</div>");
+            var floorDecorator:any = this.$j("<div class='col-md-12'>Этаж:"+this.data.floor+"/"+this.data.totalFloors+"</div>");
             floorDecorator.appendTo(name);
-        }
-        if(this.data.type == "houses"){
-            // floor
-            var areaOutsideDecorator:any = this.$j("<div class='row'>S участ.:"+this.data.areaOutside+ " кв.м.</div>");
-            areaOutsideDecorator.appendTo(name);
+
+            var rooms:any = this.$j("<div class='col-md-12'>"+this.data.rooms+" комн.</div>");
+            rooms.appendTo(name);
         }
 
 

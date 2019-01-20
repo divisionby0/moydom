@@ -11,7 +11,7 @@ var Catalog = (function () {
         this.costMin = 0;
         this.costMax = 9000000;
         this.floorMin = 0;
-        this.floorMax = 15;
+        this.floorMax = 25;
         this.$j = jQuery.noConflict();
         this.ajax = ajax;
         this.setDefaults();

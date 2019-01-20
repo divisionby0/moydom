@@ -34,8 +34,8 @@ class BaseItemRenderer
         echo "<div class='".$this->rendererClass."' style='margin: 3px;'><a href='".$this->url."'>";
         $this->createImage($this->imageHeight, $this->image, $this->name);
         echo "<div class='col-md-12' style='font-size: ".$this->fontSize.";'><b>".$this->name."</b></div>";
-        echo "<div class='col-md-12' style='font-size: ".$this->fontSize.";'>Город: ".$this->city."</b></div>";
-        echo "<div class='col-md-12' style='font-size: ".$this->fontSize.";'>Цена:".$this->cost." руб</b></div>";
+        echo "<div class='col-md-12' style='font-size: ".$this->fontSize.";'>Город: <b>".$this->city."</b></div>";
+        echo "<div class='col-md-12' style='font-size: ".$this->fontSize.";'>Цена: <b>".$this->cost." руб </b></div>";
         echo "</a></div>";
     }
     

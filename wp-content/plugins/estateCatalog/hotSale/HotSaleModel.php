@@ -12,6 +12,6 @@ class HotSaleModel
     }
     
     private function getCollection(){
-        return DataBase::getHotSaleEstates(array(Constant::$houses, Constant::$commercialEstates, Constant::$flats, Constant::$sectors));
+        return DataBase::getHotSaleEstates(array(Constant::$houses, Constant::$commercialEstates, Constant::$flats, Constant::$sectors, Constant::$garages, Constant::$countryHouses));
     }
 }

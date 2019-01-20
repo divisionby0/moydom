@@ -1227,6 +1227,9 @@ body a:active {
 	transition: color 0.2s;
 }
 
+.menu-item{
+	font-size: 1.4em!important;
+}
 .navigation-top .current-menu-item > a,
 .navigation-top .current_page_item > a {
 	color: #767676;
@@ -4867,9 +4870,13 @@ a.back-to-top .fa:hover {
 
 .addressAndPhones{
 	text-align: center;
-	width: 40%;
+	width: 34%;
 	float: left;
 	font-size: 1em;
+}
+
+.addressAndPhones a{
+	line-height: 1em!important;
 }
 
 /*
@@ -4952,7 +4959,7 @@ Queries
     	margin-top: 10px;
 	}
 	.addressAndPhones{
-		font-size: 0.77em;
+		font-size: 0.7em;
 	}
 }
 @media screen and ( max-width: 1024px ) {

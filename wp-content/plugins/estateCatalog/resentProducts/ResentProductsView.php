@@ -8,7 +8,7 @@ class ResentProductsView
     }
     public function setData($data, $currentId){
         if(sizeof($data) == 1){
-            echo "<p>No resent estates</p>";
+            echo "<p>Нет похожих</p>";
         }
         else{
             echo "<div class='container'><div class='row'>";
@@ -16,7 +16,7 @@ class ResentProductsView
                 $resentPostId = $data[$i]->id;
                 if(intval($resentPostId) != intval($currentId)){
                     $estateData = $data[$i];
-                    new BaseItemRenderer($estateData);
+                    new HotSaleListRenderer($estateData);
                 }
             }
             echo "</div></div>";

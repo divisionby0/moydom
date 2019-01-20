@@ -49,6 +49,8 @@ class FiltersView
         echo "<option data-type='".Constant::$flats."'>Квартира</option>";
         echo "<option data-type='".Constant::$sectors."'>Участок</option>";
         echo "<option data-type='".Constant::$commercialEstates."'>Коммерческая недвижимость</option>";
+        echo "<option data-type='".Constant::$garages."'>Гараж</option>";
+        echo "<option data-type='".Constant::$countryHouses."'>Дача</option>";
         echo "</select></div></div>";
     }
 
@@ -89,6 +91,16 @@ class FiltersView
         echo "<option data-value='13'>13</option>";
         echo "<option data-value='14'>14</option>";
         echo "<option data-value='15'>15</option>";
+        echo "<option data-value='16'>16</option>";
+        echo "<option data-value='17'>17</option>";
+        echo "<option data-value='18'>18</option>";
+        echo "<option data-value='19'>19</option>";
+        echo "<option data-value='20'>20</option>";
+        echo "<option data-value='21'>21</option>";
+        echo "<option data-value='22'>22</option>";
+        echo "<option data-value='23'>23</option>";
+        echo "<option data-value='24'>24</option>";
+        echo "<option data-value='25'>25</option>";
         echo "</select></div></div>";
 
         echo "<div class='col-md-6'>";
@@ -108,7 +120,17 @@ class FiltersView
         echo "<option data-value='12'>12</option>";
         echo "<option data-value='13'>13</option>";
         echo "<option data-value='14'>14</option>";
-        echo "<option data-value='15' selected>15</option>";
+        echo "<option data-value='15'>15</option>";
+        echo "<option data-value='16'>16</option>";
+        echo "<option data-value='17'>17</option>";
+        echo "<option data-value='18'>18</option>";
+        echo "<option data-value='19'>19</option>";
+        echo "<option data-value='20'>20</option>";
+        echo "<option data-value='21'>21</option>";
+        echo "<option data-value='22'>22</option>";
+        echo "<option data-value='23'>23</option>";
+        echo "<option data-value='24'>24</option>";
+        echo "<option data-value='25' selected>25</option>";
         echo "</select></div></div>";
 
         echo "</div></div>";

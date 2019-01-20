@@ -24,6 +24,8 @@ function create_content_types(){
     new FlatPostType();
     new CommerceEstatePostType();
     new SectorPostType();
+    new GaragePostType();
+    new CountryHousePostType();
 }
 
 // show estate
@@ -33,16 +35,14 @@ function display_estate_meta_box( $estate ) {
     $isHouse = $postType ===Constant::$houses;
     $isCommercialEstate = $postType===Constant::$commercialEstates;
     $isSector = $postType===Constant::$sectors;
+    $isGarage = $postType===Constant::$garages;
+    $isCountryHouse = $postType===Constant::$countryHouses;
 
     $id = $estate->ID;
     new IdMetabox($id);
 
     $currentCity = get_post_meta($id , 'selectedCity', true );
-    //echo "<p>currentCity: ".$currentCity."</p>";
     new CityMetabox($currentCity);
-
-    //$currentDialTypes = get_post_meta($id , 'dialTypes', true );
-    //new DialTypeMetabox($currentDialTypes);
 
     $saleDialType = get_post_meta($id , 'saleDialType', true );
     $rentDialType = get_post_meta($id , 'rentDialType', true );
@@ -52,26 +52,36 @@ function display_estate_meta_box( $estate ) {
     $cost = get_post_meta($id , 'cost', true );
     new CostMetabox($cost);
 
+    $area = get_post_meta($id , 'area', true );
+    new AreaMetabox($area);
+
+    if($isHouse || $isCountryHouse){
+        $outsideArea = get_post_meta($id , 'outsideArea', true );
+        new OutsideAreaMetabox($outsideArea);
+    }
+
     $isHotSale = get_post_meta($id , MetaboxConstants::$HOT_SALE_OPTION, true );
     new HotSaleMetabox($isHotSale);
 
-    $hasWater = get_post_meta($id , MetaboxConstants::$WATER_OPTION, true );
-    new WaterMetabox($hasWater);
-    
+    if(!$isGarage){
+        $hasWater = get_post_meta($id , MetaboxConstants::$WATER_OPTION, true );
+        new WaterMetabox($hasWater);
+
+        $hasSewage = get_post_meta($id , MetaboxConstants::$SEWAGE_OPTION, true );
+        new SewageMetabox($hasSewage);
+
+        $hasGas = get_post_meta($id , MetaboxConstants::$GAS_OPTION, true );
+        new GasMetabox($hasGas);
+
+        $hasInternet = get_post_meta($id , MetaboxConstants::$INTERNET_OPTION, true );
+        new InternetMetabox($hasInternet);
+
+        $hasFreeParking = get_post_meta($id , MetaboxConstants::$FREE_PARKING_OPTION, true );
+        new FreeParkingMetabox($hasFreeParking);
+    }
+
     $hasElectricity = get_post_meta($id , MetaboxConstants::$ELECTRICITY_OPTION, true );
     new ElectricityMetabox($hasElectricity);
-    
-    $hasSewage = get_post_meta($id , MetaboxConstants::$SEWAGE_OPTION, true );
-    new SewageMetabox($hasSewage);
-
-    $hasGas = get_post_meta($id , MetaboxConstants::$GAS_OPTION, true );
-    new GasMetabox($hasGas);
-    
-    $hasInternet = get_post_meta($id , MetaboxConstants::$INTERNET_OPTION, true );
-    new InternetMetabox($hasInternet);
-
-    $hasFreeParking = get_post_meta($id , MetaboxConstants::$FREE_PARKING_OPTION, true );
-    new FreeParkingMetabox($hasFreeParking);
 
     $address = get_post_meta($id , MetaboxConstants::$ADDRESS, true );
     new AddressMetabox($address);
@@ -94,14 +104,6 @@ function display_estate_meta_box( $estate ) {
         $roomsQuantity = get_post_meta($id , 'rooms', true );
         new RoomQuantityMetabox($roomsQuantity);
     }
-
-    $area = get_post_meta($id , 'area', true );
-    new AreaMetabox($area);
-    
-    if($isHouse){
-        $outsideArea = get_post_meta($id , 'outsideArea', true );
-        new OutsideAreaMetabox($outsideArea);
-    }
 }
 
 function estate_admin(){
@@ -115,13 +117,14 @@ function getCurrentPostType(){
 
 function admin_save_post( $estate_id, $estate ) {
     $postType = getCurrentPostType();
-    if($postType!=Constant::$houses && $postType!=Constant::$sectors && $postType!=Constant::$flats && $postType!=Constant::$commercialEstates && $postType!=Constant::$city){
+    if($postType!=Constant::$houses && $postType!=Constant::$sectors && $postType!=Constant::$flats && $postType!=Constant::$commercialEstates && $postType!=Constant::$city && $postType!=Constant::$garages && $postType!=Constant::$countryHouses){
         return;
     }
     $isFlat = $postType ===Constant::$flats;
     $isHouse = $postType ===Constant::$houses;
     $isCommercialEstate = $postType===Constant::$commercialEstates;
     $isSector = $postType===Constant::$sectors;
+    $isCountryHouse = $postType===Constant::$countryHouses;
 
     new SaveCity($estate_id, $estate);
     new SaveDialType($estate_id, $estate);
@@ -146,7 +149,7 @@ function admin_save_post( $estate_id, $estate ) {
         new SaveTotalFloors($estate_id, $estate);
         new SaveRoomQuantity($estate_id, $estate);
     }
-    if($isHouse){
+    if($isHouse || $isCountryHouse){
         new SaveOutsideArea($estate_id, $estate);
     }
 }
