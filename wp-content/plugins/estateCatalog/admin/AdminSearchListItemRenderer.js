@@ -10,9 +10,11 @@ var AdminSearchListItemRenderer = (function (_super) {
         _super.apply(this, arguments);
     }
     AdminSearchListItemRenderer.prototype.createAnchorElement = function () {
-        console.log("siteUrl=" + siteUrl);
         var url = siteUrl + "/wp-admin/post.php?post=" + this.data.id + "&action=edit";
         return "<a href='" + url + "' target='_blank'></a>";
+    };
+    AdminSearchListItemRenderer.prototype.createIdElement = function () {
+        return this.$j("<div class='col-md-1'>ID:<span class='badge badge-primary'>" + this.data.id + "</span></div>");
     };
     return AdminSearchListItemRenderer;
 }(EstateListRenderer));

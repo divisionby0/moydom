@@ -22,7 +22,7 @@ var EstateListRenderer = (function () {
         else {
             rendererIcon += "renderer_rent.png";
         }
-        var estateId = this.$j("<div class='col-md-1'>ID:<span class='badge badge-primary' style='background-color: #405585!important;'>" + this.data.id + "</span></div>");
+        var estateId = this.createIdElement();
         estateId.appendTo(this.container);
         var estateDate = this.$j("<div class='col-md-2'>" + this.data.date + "</div>");
         estateDate.appendTo(this.container);
@@ -54,6 +54,9 @@ var EstateListRenderer = (function () {
         }
         var cost = this.$j("<div class='col-md-2'><b>" + this.data.cost + " руб.</b></div>");
         cost.appendTo(this.container);
+    };
+    EstateListRenderer.prototype.createIdElement = function () {
+        return this.$j("<div class='col-md-1'>ID:<span class='badge badge-primary' style='background-color: #405585!important;'>" + this.data.id + "</span></div>");
     };
     EstateListRenderer.prototype.createAnchorElement = function () {
         return "<a href='" + this.data.url + "'></a>";
