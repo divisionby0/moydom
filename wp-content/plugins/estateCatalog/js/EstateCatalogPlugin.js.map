@@ -1,1 +1,1 @@
-{"version":3,"file":"EstateCatalogPlugin.js","sourceRoot":"","sources":["EstateCatalogPlugin.ts"],"names":[],"mappings":"AAAA,iCAAiC;AACjC,IAAI,IAAI,GAAG,IAAI,IAAI,EAAE,CAAC;AACtB,IAAI,OAAO,CAAC,IAAI,CAAC,CAAC"}
+{"version":3,"file":"EstateCatalogPlugin.js","sourceRoot":"","sources":["EstateCatalogPlugin.ts"],"names":[],"mappings":"AAAA,iCAAiC;AACjC,qDAAqD;AACrD,IAAI,IAAI,GAAG,IAAI,IAAI,EAAE,CAAC;AACtB,IAAI,OAAO,CAAC,IAAI,CAAC,CAAC;AAClB,gDAAgD;AAChD,+BAA+B"}

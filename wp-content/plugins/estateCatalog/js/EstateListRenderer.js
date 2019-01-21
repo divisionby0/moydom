@@ -7,7 +7,8 @@ var EstateListRenderer = (function () {
         this.createChildren();
     }
     EstateListRenderer.prototype.createChildren = function () {
-        var container = this.$j("<a href='" + this.data.url + "'></a>");
+        var anchorElement = this.createAnchorElement();
+        var container = this.$j(anchorElement);
         this.container = this.$j("<div class='row' style='margin-bottom: 4px; margin-top: 4px;'></div>");
         this.container.appendTo(container);
         container.appendTo(this.parent);
@@ -53,6 +54,9 @@ var EstateListRenderer = (function () {
         }
         var cost = this.$j("<div class='col-md-2'><b>" + this.data.cost + " руб.</b></div>");
         cost.appendTo(this.container);
+    };
+    EstateListRenderer.prototype.createAnchorElement = function () {
+        return "<a href='" + this.data.url + "'></a>";
     };
     return EstateListRenderer;
 }());

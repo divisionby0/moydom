@@ -6,6 +6,7 @@
  *
  */
 
+
 /**
  * Biznesspack only works in WordPress 4.7 or later.
  */
@@ -459,7 +460,6 @@ function clearPostContent($content){
 	if(strlen($content) > strlen($newContent)){
 		$newContent.="...";
 	}
-
 	return $newContent;
 }
 
@@ -494,3 +494,9 @@ add_filter('admin_init', 'register_general_phone_1_admin_text');
 add_filter('admin_init', 'register_general_phone_2_admin_text');
 
 add_filter('admin_init', 'register_general_address_text');
+
+
+
+
+
+

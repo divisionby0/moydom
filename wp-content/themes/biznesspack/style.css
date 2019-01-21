@@ -2541,6 +2541,10 @@ h2.widget-title {
 	top: -2px;
 	width: 24px;
 }
+.search-form{
+	width: 100%!important;
+	margin: 4px!important;
+}
 
 /* Tag cloud widget */
 
@@ -5186,6 +5190,12 @@ Queries
 }
 .logoPhone{
 	padding-right: 2px;
+}
+#dateSort{
+	color: #315a86!important;
+}
+#costSort{
+	color: #315a86!important;
 }
 /*
 #catalogFiltersMobile{

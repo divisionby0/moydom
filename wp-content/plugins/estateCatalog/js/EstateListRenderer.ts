@@ -3,7 +3,7 @@ declare var pluginsUrl;
 class EstateListRenderer{
     private $j;
     private parent:any;
-    private data:any;
+    protected data:any;
     private container:any;
     
     constructor(parent:any, data:any){
@@ -15,7 +15,8 @@ class EstateListRenderer{
     }
 
     private createChildren():void{
-        var container:any = this.$j("<a href='"+this.data.url+"'></a>");
+        var anchorElement:string = this.createAnchorElement();
+        var container:any = this.$j(anchorElement);
         this.container = this.$j("<div class='row' style='margin-bottom: 4px; margin-top: 4px;'></div>");
         this.container.appendTo(container);
 
@@ -75,5 +76,8 @@ class EstateListRenderer{
 
         var cost:any = this.$j("<div class='col-md-2'><b>"+this.data.cost+" руб.</b></div>");
         cost.appendTo(this.container);
+    }
+    protected createAnchorElement():string{
+        return "<a href='"+this.data.url+"'></a>";
     }
 }

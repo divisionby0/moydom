@@ -101,7 +101,11 @@ class DataBase
                 $areaOutside = $areaOutsideData[0];
             }
 
-            $address = get_post_meta($id, "address")[0];
+            $addressData = get_post_meta($id, "address");
+            $address = "";
+            if(sizeof($addressData)!=0){
+                $address = get_post_meta($id, "address")[0];
+            }
 
             $floorData = get_post_meta($id, "floor");
             $totalFloorsData = get_post_meta($id, "totalFloors");

@@ -4,6 +4,13 @@ var Ajax = (function () {
     function Ajax() {
         this.j = jQuery.noConflict();
     }
+    Ajax.prototype.search = function (value) {
+        var _this = this;
+        var data = { 'action': 'searchForEstate',
+            'id': value
+        };
+        this.j.post(ajaxurl, data, function (response) { return _this.onSearchEstatesResponse(response); });
+    };
     Ajax.prototype.getEstates = function (estateType, saleDialType, rentDialType, city, costMin, costMax, floorMin, floorMax) {
         var _this = this;
         var data = { 'action': 'getEstates',
@@ -20,6 +27,9 @@ var Ajax = (function () {
     };
     Ajax.prototype.onFilteredEstatesResponse = function (response) {
         EventBus.dispatchEvent(AjaxServiceEvent.ON_ESTATES_LOAD_COMPLETE, response);
+    };
+    Ajax.prototype.onSearchEstatesResponse = function (response) {
+        EventBus.dispatchEvent(AjaxServiceEvent.ON_SEARCH_RESULT, response);
     };
     return Ajax;
 }());

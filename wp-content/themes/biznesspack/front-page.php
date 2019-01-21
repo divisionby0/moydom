@@ -43,8 +43,9 @@ $biznesspack_featurebox_type3_section = biznesspack_get_option( 'biznesspack_fea
 		get_template_part( 'section/calltoaction' );
 	endif;
 
-echo "<div class='container'><div class='row'></div></div>";
+echo "<div class='container'><div class='row'>";
 get_search_form();
+echo "</div></div>";
 
 echo "<div class='container'><div class='row'><h2 style='width: 100%; text-align: center;'>Горячая продажа</h2></div></div>";
 new HotSaleController();
