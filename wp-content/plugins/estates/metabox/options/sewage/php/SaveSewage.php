@@ -6,6 +6,6 @@ class SaveSewage extends SaveMetadata
         return "sewageOptionEditor";
     }
     protected function getCurrentOption(){
-        return MetaboxConstants::$GAS_OPTION;
+        return MetaboxConstants::$SEWAGE_OPTION;
     }
 }

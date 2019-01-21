@@ -5,7 +5,7 @@
  * @version 1.5.1
  */
 
-get_header(); ?>
+get_header("estateCart"); ?>
 	<div id="content" class="site-content" style="padding-top: 40px!important;">
 		<div class="container">
             <div class="row">
@@ -100,7 +100,7 @@ get_header(); ?>
                                 }
                                 echo "</div>";
                                 echo "<div class='col-md-6' style='margin-top:12px!important;'>";
-                                echo "<p>Если Вас заинтересовал этот объект, свяжитесь с нами, введите Ваше имя, Ваш email и контактный телефон. Наши специальсты свяжутся с Вами.</p>";
+                                echo "<p>Если Вас заинтересовал этот объект, свяжитесь с нами, введите Ваше имя, Ваш email и контактный телефон. Наши специалисты свяжутся с Вами.</p>";
                                 echo do_shortcode( '[contact-form-7 id="221" title="Заинтересованность объектом"]' );
                                 echo "</div>";
                                 echo "</div>";
