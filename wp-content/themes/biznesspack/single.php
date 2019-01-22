@@ -34,8 +34,8 @@ get_header("estateCart"); ?>
                                 $address = get_post_meta($id , MetaboxConstants::$ADDRESS, true );
 
                                 $isCountryHouse = $postType===Constant::$countryHouses;
-                                $isHouse = $postType ===Constant::$houses;
-                                $isFlat = $postType ===Constant::$flats;
+                                $isHouse = $postType===Constant::$houses;
+                                $isFlat = $postType===Constant::$flats;
                                 $isHotSale = get_post_meta($id , MetaboxConstants::$HOT_SALE_OPTION, true );
 
                                 echo "<div class='container' style='margin-bottom: 14px!important;'>";
