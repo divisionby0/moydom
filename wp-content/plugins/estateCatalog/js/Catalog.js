@@ -9,7 +9,7 @@ var Catalog = (function () {
         this.saleDialType = 1;
         this.rentDialType = 0;
         this.costMin = 0;
-        this.costMax = 9000000;
+        this.costMax = 150000000;
         this.floorMin = 0;
         this.floorMax = 25;
         this.$j = jQuery.noConflict();
@@ -82,6 +82,7 @@ var Catalog = (function () {
         this.createRequest();
     };
     Catalog.prototype.createRequest = function () {
+        console.log("creating request estateType:" + this.selectedEstateType + "  saleDialType=" + this.saleDialType + "  rent=" + this.rentDialType + " city:" + this.selectedCity + " costMin=" + this.costMin + "  costMax=" + this.costMax + "  floorMin=" + this.floorMin + "  floorMax=" + this.floorMax);
         this.ajax.getEstates(this.selectedEstateType, this.saleDialType, this.rentDialType, this.selectedCity, this.costMin, this.costMax, this.floorMin, this.floorMax);
     };
     Catalog.prototype.onSaleDialTypeChanged = function () {

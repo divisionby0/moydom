@@ -13,7 +13,7 @@ class Catalog{
     private saleDialType:number = 1;
     private rentDialType:number = 0;
     private costMin:number = 0;
-    private costMax:number = 9000000;
+    private costMax:number = 150000000;
 
     private floorMin:number = 0;
     private floorMax:number = 25;
@@ -99,6 +99,7 @@ class Catalog{
     }
 
     private createRequest():void{
+        console.log("creating request estateType:"+this.selectedEstateType+"  saleDialType="+this.saleDialType+"  rent="+this.rentDialType+" city:"+this.selectedCity+" costMin="+this.costMin+"  costMax="+this.costMax+"  floorMin="+this.floorMin+"  floorMax="+this.floorMax);
         this.ajax.getEstates(this.selectedEstateType, this.saleDialType, this.rentDialType, this.selectedCity, this.costMin, this.costMax, this.floorMin, this.floorMax);
     }
 

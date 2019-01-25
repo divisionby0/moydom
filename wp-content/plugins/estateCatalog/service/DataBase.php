@@ -6,7 +6,8 @@ class DataBase
         $cities = array();
         $query = new WP_Query(array(
             'post_type' => 'city',
-            'post_status' => 'publish'
+            'post_status' => 'publish',
+            'posts_per_page' => -1
         ));
 
         while ($query->have_posts()) {
@@ -14,7 +15,6 @@ class DataBase
             $cityName = get_the_title();
             array_push($cities, $cityName);
         }
-
         sort($cities);
 
         return $cities;
