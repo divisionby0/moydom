@@ -67,9 +67,11 @@ function loadJs(){
     wp_enqueue_script( 'ajaxService', plugin_dir_url( __FILE__ )  . '/js/service/Ajax.js', null, null, true);
     wp_enqueue_script( 'ajaxServiceEvent', plugin_dir_url( __FILE__ )  . '/js/service/AjaxServiceEvent.js', null, null, true);
     wp_enqueue_script( 'constants', plugin_dir_url( __FILE__ )  . '/js/Constants.js', null, null, true);
+    wp_enqueue_script( 'cookies', plugin_dir_url( __FILE__ )  . '/js/utils/Cookie.js', null, null, true);
     wp_enqueue_script( 'catalog', plugin_dir_url( __FILE__ )  . '/js/Catalog.js', null, null, true);
     wp_enqueue_script( 'estateListRenderer', plugin_dir_url( __FILE__ )  . '/js/EstateListRenderer.js', null, null, true);
     wp_enqueue_script( 'dateUtils', plugin_dir_url( __FILE__ )  . '/js/utils/DateUtils.js', null, null, true);
+    wp_enqueue_script('formatter', plugin_dir_url( __FILE__ )  .'/js/utils/StringFormatter.js', null, null, true);
 
     wp_enqueue_script( 'plugin', plugin_dir_url( __FILE__ )  . '/js/EstateCatalogPlugin.js', array('jquery'), null, true);
 }

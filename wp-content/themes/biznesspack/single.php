@@ -17,11 +17,12 @@ get_header("estateCart"); ?>
                             while ( have_posts() ) : the_post();
                                 $id = get_the_ID();
                                 $postType = getCurrentPostType();
-                                $cost = get_post_meta($id, "cost",true);
                                 $saleDialType = get_post_meta($id, "saleDialType", true);
                                 $rentDialType = get_post_meta($id, "rentDialType", true);
                                 $city = get_post_meta($id, "selectedCity", true);
-                                $cost = get_post_meta($id, "cost", true);
+                                
+                                $cost = number_format(get_post_meta($id, "cost",true), 0, '.', ' ');
+
                                 $area = get_post_meta($id, "area", true);
                                 $outsideArea = get_post_meta($id , 'outsideArea', true );
                                 $estateType = get_post_type($id);

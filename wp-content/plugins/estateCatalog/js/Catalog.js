@@ -4,12 +4,13 @@
 ///<reference path="service/AjaxServiceEvent.ts"/>
 ///<reference path="EstateListRenderer.ts"/>
 ///<reference path="utils/DateUtils.ts"/>
+///<reference path="utils/Cookie.ts"/>
 var Catalog = (function () {
     function Catalog(ajax) {
         this.saleDialType = 1;
         this.rentDialType = 0;
-        this.costMin = 0;
-        this.costMax = 150000000;
+        this.costMin = 5000;
+        this.costMax = 5000000;
         this.floorMin = 0;
         this.floorMax = 25;
         this.$j = jQuery.noConflict();
@@ -20,8 +21,64 @@ var Catalog = (function () {
         this.createRequest();
     }
     Catalog.prototype.setDefaults = function () {
-        this.selectedEstateType = Constants.HOUSES;
-        this.selectedCity = this.$j("#city").find(":selected").text();
+        this.selectedEstateType = Cookie.getEstateType();
+        this.selectedCity = Cookie.getCity();
+        this.saleDialType = Number(Cookie.getSaleType());
+        this.rentDialType = Number(Cookie.getRentType());
+        this.costMin = Number(Cookie.getCostMin());
+        this.costMax = Number(Cookie.getCostMax());
+        this.floorMin = Number(Cookie.getFloorMin());
+        this.floorMax = Number(Cookie.getFloorMax());
+        if (this.costMin == 0) {
+            this.costMin = 5000;
+            Cookie.setCostMin(this.costMin.toString());
+        }
+        if (this.costMax == 0) {
+            this.costMax = 5000000;
+            Cookie.setCostMin(this.costMax.toString());
+        }
+        if (this.floorMin == 0) {
+            this.floorMin = 1;
+            Cookie.setFloorMin(this.floorMin.toString());
+        }
+        if (this.floorMax == 0) {
+            this.floorMax = 25;
+            Cookie.setFloorMax(this.floorMax.toString());
+        }
+        if (this.saleDialType == 0 && this.rentDialType == 0) {
+            this.saleDialType = 1;
+            this.rentDialType = 1;
+            Cookie.setSaleType(String(1));
+            Cookie.setRentType(String(1));
+        }
+        if (this.saleDialType == 1) {
+            this.$j("#sailType").prop('checked', true);
+        }
+        else {
+            this.$j("#sailType").prop('checked', false);
+        }
+        if (this.rentDialType == 1) {
+            this.$j("#rentType").prop('checked', true);
+        }
+        else {
+            this.$j("#rentType").prop('checked', false);
+        }
+        if (this.selectedCity == undefined || this.selectedCity == "" || this.selectedCity == null) {
+            this.selectedCity = this.$j("#city");
+            this.selectedCity = this.$j("#city option:first").val();
+        }
+        this.$j("#estateType option[data-type='" + this.selectedEstateType + "']").attr("selected", "selected");
+        this.$j("#floorMin option[data-value='" + this.floorMin + "']").attr("selected", "selected");
+        this.$j("#floorMax option[data-value='" + this.floorMax + "']").attr("selected", "selected");
+        this.$j("#costMin option[data-value='" + this.costMin + "']").attr("selected", "selected");
+        this.$j("#costMax option[data-value='" + this.costMax + "']").attr("selected", "selected");
+        this.$j("#city").val(this.selectedCity);
+        if (this.selectedEstateType == "flats") {
+            this.$j("#floorNumberContainer").show();
+        }
+        else {
+            this.$j("#floorNumberContainer").hide();
+        }
     };
     Catalog.prototype.createUIListeners = function () {
         var _this = this;
@@ -53,10 +110,12 @@ var Catalog = (function () {
     };
     Catalog.prototype.onCityChanged = function () {
         this.selectedCity = this.$j("#city").find(":selected").text();
+        Cookie.setCity(this.selectedCity);
         this.createRequest();
     };
     Catalog.prototype.onEstateTypeChanged = function () {
         this.selectedEstateType = this.$j("#estateType").find(":selected").data("type");
+        Cookie.setEstateType(this.selectedEstateType);
         if (this.selectedEstateType == "flats") {
             this.$j("#floorNumberContainer").show();
         }
@@ -67,18 +126,22 @@ var Catalog = (function () {
     };
     Catalog.prototype.onFloorMinChanged = function () {
         this.floorMin = this.$j("#floorMin").find(":selected").data("value");
+        Cookie.setFloorMin(this.floorMin.toString());
         this.createRequest();
     };
     Catalog.prototype.onFloorMaxChanged = function () {
         this.floorMax = this.$j("#floorMax").find(":selected").data("value");
+        Cookie.setFloorMax(this.floorMax.toString());
         this.createRequest();
     };
     Catalog.prototype.onCostMinChanged = function () {
         this.costMin = this.$j("#costMin").find(":selected").data("value");
+        Cookie.setCostMin(this.costMin.toString());
         this.createRequest();
     };
     Catalog.prototype.onCostMaxChanged = function () {
         this.costMax = this.$j("#costMax").find(":selected").data("value");
+        Cookie.setCostMax(this.costMax.toString());
         this.createRequest();
     };
     Catalog.prototype.createRequest = function () {
@@ -92,6 +155,7 @@ var Catalog = (function () {
         else {
             this.saleDialType = 0;
         }
+        Cookie.setSaleType(this.saleDialType.toString());
         this.createRequest();
     };
     Catalog.prototype.onRentDialTypeChanged = function () {
@@ -101,6 +165,7 @@ var Catalog = (function () {
         else {
             this.rentDialType = 0;
         }
+        Cookie.setRentType(this.rentDialType.toString());
         this.createRequest();
     };
     Catalog.prototype.onResponse = function (data) {

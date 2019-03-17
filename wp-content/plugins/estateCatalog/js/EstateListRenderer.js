@@ -1,4 +1,5 @@
 ///<reference path="../../estates/lib/jqueryTS/jquery.d.ts"/>
+///<reference path="utils/StringFormatter.ts"/>
 var EstateListRenderer = (function () {
     function EstateListRenderer(parent, data) {
         this.$j = jQuery.noConflict();
@@ -52,8 +53,11 @@ var EstateListRenderer = (function () {
             var rooms = this.$j("<div class='col-md-12'>" + this.data.rooms + " комн.</div>");
             rooms.appendTo(name);
         }
-        var cost = this.$j("<div class='col-md-2'><b>" + this.data.cost + " руб.</b></div>");
-        cost.appendTo(this.container);
+        var stringFormatter = new StringFormatter();
+        var cost = stringFormatter.formatMoney(this.data.cost, null, null, null);
+        //var cost:string = StringFormatter.formatMoney(this.data.cost,null,null,null);
+        var costElement = this.$j("<div class='col-md-2'><b>" + cost + " руб.</b></div>");
+        costElement.appendTo(this.container);
     };
     EstateListRenderer.prototype.createIdElement = function () {
         return this.$j("<div class='col-md-1'>ID:<span class='badge badge-primary' style='background-color: #405585!important;'>" + this.data.id + "</span></div>");

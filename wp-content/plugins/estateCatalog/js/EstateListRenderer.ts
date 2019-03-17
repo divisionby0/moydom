@@ -1,4 +1,5 @@
 ///<reference path="../../estates/lib/jqueryTS/jquery.d.ts"/>
+///<reference path="utils/StringFormatter.ts"/>
 declare var pluginsUrl;
 class EstateListRenderer{
     protected $j;
@@ -73,9 +74,11 @@ class EstateListRenderer{
             rooms.appendTo(name);
         }
 
-
-        var cost:any = this.$j("<div class='col-md-2'><b>"+this.data.cost+" руб.</b></div>");
-        cost.appendTo(this.container);
+        var stringFormatter:StringFormatter = new StringFormatter();
+        var cost:string = stringFormatter.formatMoney(this.data.cost,null,null,null);
+        //var cost:string = StringFormatter.formatMoney(this.data.cost,null,null,null);
+        var costElement:any = this.$j("<div class='col-md-2'><b>"+cost+" руб.</b></div>");
+        costElement.appendTo(this.container);
     }
     
     protected createIdElement():any{

@@ -3744,3 +3744,5 @@
 [22-Jan-2019 08:03:09 UTC] PHP Notice:  Trying to get property of non-object in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 115
 [22-Jan-2019 08:04:21 UTC] PHP Notice:  Trying to get property of non-object in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 115
 [22-Jan-2019 08:04:21 UTC] PHP Notice:  Trying to get property of non-object in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 115
+[17-Mar-2019 07:20:36 UTC] PHP Notice:  Undefined index: estateType in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estateCatalog\EstateCatalog.php on line 40
+[17-Mar-2019 07:20:49 UTC] PHP Notice:  Undefined index: estateType in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estateCatalog\EstateCatalog.php on line 40

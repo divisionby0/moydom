@@ -21,6 +21,9 @@ class BaseItemRenderer
         $this->url = $data->url;
         $this->city = $data->city;
         $this->cost = $data->cost;
+
+        $this->cost = number_format($this->cost, 0, '.', ' ');
+
         $this->rentDialType = intval($data->rentDialType);
         $this->saleDialType = intval($data->saleDialType);
 
@@ -35,7 +38,7 @@ class BaseItemRenderer
         $this->createImage($this->imageHeight, $this->image, $this->name);
         echo "<div class='col-md-12' style='font-size: ".$this->fontSize.";'><b>".$this->name."</b></div>";
         echo "<div class='col-md-12' style='font-size: ".$this->fontSize.";'>Город: <b>".$this->city."</b></div>";
-        echo "<div class='col-md-12' style='font-size: ".$this->fontSize.";'>Цена: <b>".$this->cost." руб </b></div>";
+        echo "<div class='col-md-12' style='font-size: ".$this->fontSize.";'>Цена: <b><span style='font-size:0.9em!important;'>".$this->cost." руб</span></b></div>";
         echo "</a></div>";
     }
     
