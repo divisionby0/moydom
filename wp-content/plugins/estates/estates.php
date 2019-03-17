@@ -159,4 +159,65 @@ add_action( 'add_meta_boxes', 'estate_admin' );
 add_action( 'save_post', 'admin_save_post', 10, 2 );
 
 
+function flats_columns($columns) {
+    unset($columns['date']);
+    $columns['city'] = 'Город';
+    $columns['cost'] = 'Цена';
+    $columns['floor'] = 'Этаж';
+    $columns['floorsTotal'] = 'Всего этажей';
+
+    return $columns;
+}
+
+function base_estates_columns($columns) {
+    unset($columns['date']);
+    $columns['city'] = 'Город';
+    $columns['cost'] = 'Цена';
+    return $columns;
+}
+
+function estate_show_columns($name) {
+    global $post;
+    switch ($name) {
+        case 'city':
+            echo get_post_meta($post->ID, MetaboxConstants::$SELECTED_CITY, true);
+            break;
+        case 'cost':
+            echo get_post_meta($post->ID, "cost", true);
+            break;
+        case 'floor':
+            echo get_post_meta($post->ID, "floor", true);
+            break;
+        case 'floorsTotal':
+            echo get_post_meta($post->ID, "totalFloors", true);
+            break;
+    }
+}
+function my_sortable_estates_column( $columns ) {
+    $columns['city'] = 'Город';
+    unset($columns['image']);
+    unset($columns['date']);
+    return $columns;
+}
+
+add_filter('manage_edit-flats_columns', 'flats_columns');
+add_action('manage_posts_custom_column',  'estate_show_columns');
+add_filter('manage_edit-flats_sortable_columns', 'my_sortable_estates_column' );
+
+
+add_filter('manage_edit-houses_columns', 'base_estates_columns');
+add_filter('manage_edit-houses_sortable_columns', 'my_sortable_estates_column' );
+
+add_filter('manage_edit-commercialestates_columns', 'base_estates_columns');
+add_filter('manage_edit-commercialestates_sortable_columns', 'my_sortable_estates_column' );
+
+add_filter('manage_edit-sectors_columns', 'base_estates_columns');
+add_filter('manage_edit-sectors_sortable_columns', 'my_sortable_estates_column' );
+
+add_filter('manage_edit-garages_columns', 'base_estates_columns');
+add_filter('manage_edit-garages_sortable_columns', 'my_sortable_estates_column' );
+
+add_filter('manage_edit-countryhouses_columns', 'base_estates_columns');
+add_filter('manage_edit-countryhouses_sortable_columns', 'my_sortable_estates_column' );
+
 

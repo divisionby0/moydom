@@ -13,8 +13,8 @@ class Catalog{
     private selectedCity:string;
     private saleDialType:number = 1;
     private rentDialType:number = 0;
-    private costMin:number = 5000;
-    private costMax:number = 5000000;
+    private costMin:number = 0;
+    private costMax:number = 500000000;
 
     private floorMin:number = 0;
     private floorMax:number = 25;
@@ -24,6 +24,13 @@ class Catalog{
     constructor(ajax:Ajax){
         this.$j = jQuery.noConflict();
         this.ajax = ajax;
+
+        var isFrontPage = this.$j("#frontPageAnchor").length!=0;
+        if(!isFrontPage){
+            return;
+        }
+        console.log("isFrontPage="+isFrontPage);
+
         this.setDefaults();
         this.createUIListeners();
         this.createResponseListeners();
@@ -35,18 +42,29 @@ class Catalog{
         this.selectedCity = Cookie.getCity();
         this.saleDialType = Number(Cookie.getSaleType());
         this.rentDialType = Number(Cookie.getRentType());
+
         this.costMin = Number(Cookie.getCostMin());
         this.costMax = Number(Cookie.getCostMax());
+
         this.floorMin = Number(Cookie.getFloorMin());
         this.floorMax = Number(Cookie.getFloorMax());
 
+        console.log("saved costs: ",this.costMin,this.costMax);
+
+        if(this.selectedEstateType == null || this.selectedEstateType == "" || this.selectedEstateType == undefined){
+            this.selectedEstateType = "houses";
+            Cookie.setEstateType(this.selectedEstateType);
+        }
+
+        console.log("this.selectedEstateType='"+this.selectedEstateType+"'");
+
         if(this.costMin == 0){
             this.costMin = 5000;
-            Cookie.setCostMin(this.costMin.toString());
+            Cookie.setCostMin(String(this.costMin));
         }
         if(this.costMax == 0){
-            this.costMax = 5000000;
-            Cookie.setCostMin(this.costMax.toString());
+            this.costMax = 500000000;
+            Cookie.setCostMax(String(this.costMax));
         }
 
         if(this.floorMin == 0){
@@ -170,8 +188,16 @@ class Catalog{
     }
 
     private createRequest():void{
-        console.log("creating request estateType:"+this.selectedEstateType+"  saleDialType="+this.saleDialType+"  rent="+this.rentDialType+" city:"+this.selectedCity+" costMin="+this.costMin+"  costMax="+this.costMax+"  floorMin="+this.floorMin+"  floorMax="+this.floorMax);
-        this.ajax.getEstates(this.selectedEstateType, this.saleDialType, this.rentDialType, this.selectedCity, this.costMin, this.costMax, this.floorMin, this.floorMax);
+        if(this.selectedEstateType == "flats"){
+            console.log("creating request estateType:"+this.selectedEstateType+"  saleDialType="+this.saleDialType+"  rent="+this.rentDialType+" city:"+this.selectedCity+" costMin="+this.costMin+"  costMax="+this.costMax+"  floorMin="+this.floorMin+"  floorMax="+this.floorMax);
+            this.ajax.getEstates(this.selectedEstateType, this.saleDialType, this.rentDialType, this.selectedCity, this.costMin, this.costMax, this.floorMin, this.floorMax);
+        }
+        else{
+            console.log("creating request estateType:"+this.selectedEstateType+"  saleDialType="+this.saleDialType+"  rent="+this.rentDialType+" city:"+this.selectedCity+" costMin="+this.costMin+"  costMax="+this.costMax+"  floorMin="+null+"  floorMax="+null);
+            this.ajax.getEstates(this.selectedEstateType, this.saleDialType, this.rentDialType, this.selectedCity, this.costMin, this.costMax, null, null);
+        }
+
+        //this.ajax.getEstates(this.selectedEstateType, this.saleDialType, this.rentDialType, this.selectedCity, this.costMin, this.costMax, this.floorMin, this.floorMax);
     }
 
     private onSaleDialTypeChanged():void {

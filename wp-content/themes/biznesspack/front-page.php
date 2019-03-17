@@ -1,5 +1,6 @@
 <?php
 get_header();
+echo "<span id='frontPageAnchor'></span>";
 $biznesspack_featured_status  = biznesspack_get_option( 'biznesspack_featured_status' );
 $biznesspack_callto_action	= biznesspack_get_option( 'biznesspack_callto_action_status' );
 $biznesspack_latest_post_section = biznesspack_get_option( 'biznesspack_latest_post_section_status' );

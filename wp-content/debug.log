@@ -3746,3 +3746,18 @@
 [22-Jan-2019 08:04:21 UTC] PHP Notice:  Trying to get property of non-object in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 115
 [17-Mar-2019 07:20:36 UTC] PHP Notice:  Undefined index: estateType in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estateCatalog\EstateCatalog.php on line 40
 [17-Mar-2019 07:20:49 UTC] PHP Notice:  Undefined index: estateType in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estateCatalog\EstateCatalog.php on line 40
+[17-Mar-2019 09:21:05 UTC] PHP Notice:  Undefined index: city in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estateCatalog\EstateCatalog.php on line 47
+[17-Mar-2019 09:41:05 UTC] PHP Notice:  Undefined index: city in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estateCatalog\EstateCatalog.php on line 47
+[17-Mar-2019 09:48:35 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 166
+[17-Mar-2019 09:48:36 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 166
+[17-Mar-2019 09:59:31 UTC] PHP Warning:  Unterminated comment starting line 200 in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 200
+[17-Mar-2019 09:59:46 UTC] PHP Warning:  Unterminated comment starting line 200 in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 200
+[17-Mar-2019 10:00:22 UTC] PHP Warning:  Unterminated comment starting line 200 in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 200
+[17-Mar-2019 10:00:23 UTC] PHP Warning:  Unterminated comment starting line 200 in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 200
+[17-Mar-2019 10:00:24 UTC] PHP Warning:  Unterminated comment starting line 200 in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 200
+[17-Mar-2019 10:00:39 UTC] PHP Warning:  Unterminated comment starting line 200 in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 200
+[17-Mar-2019 10:00:52 UTC] PHP Warning:  Unterminated comment starting line 200 in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 200
+[17-Mar-2019 10:00:54 UTC] PHP Warning:  Unterminated comment starting line 200 in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 200
+[17-Mar-2019 10:01:01 UTC] PHP Warning:  Unterminated comment starting line 200 in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 200
+[17-Mar-2019 10:01:03 UTC] PHP Warning:  Unterminated comment starting line 200 in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 200
+[17-Mar-2019 10:01:18 UTC] PHP Warning:  Unterminated comment starting line 200 in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 200

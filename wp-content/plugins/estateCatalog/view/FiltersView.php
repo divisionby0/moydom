@@ -185,7 +185,7 @@ class FiltersView
         echo "<option data-value='2000000'>2 000 000</option>";
         echo "<option data-value='3000000'>3 000 000</option>";
         echo "<option data-value='5000000'>5 000 000</option>";
-        echo "<option selected>Более 5 000 000</option>";
+        echo "<option data-value='500000000' selected>Более 5 000 000</option>";
         echo "</select></div></div>";
 
         echo "</div></div>";

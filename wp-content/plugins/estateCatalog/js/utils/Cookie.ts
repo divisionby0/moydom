@@ -8,7 +8,6 @@ class Cookie{
     private static floorMin:string;
     private static floorMax:string;
     
-    
     public static setEstateType(value:string):void{
         this.setCookie("estateType", value);
     }
