@@ -2,7 +2,7 @@
 
 class QueryBuilder
 {
-    public static function createQuery($estateType, $saleDialType, $rentDialType, $city, $costMin, $costMax, $floorMin, $floorMax, $postsPerPage = "-1"){
+    public static function createQuery($estateType, $saleDialType, $rentDialType, $city, $costMin, $costMax, $floorMin, $floorMax, $postsPerPage = "-1", $rooms = 1){
 
         $saleQuery = null;
 
@@ -66,6 +66,12 @@ class QueryBuilder
                     'value'   => array($floorMin, $floorMax),
                     'compare' => "BETWEEN",
                     'type' => 'NUMERIC'
+                ));
+            }
+            if(isset($rooms)){
+                array_push($metaQuery, array(
+                    'key'     => 'rooms',
+                    'value'   => $rooms
                 ));
             }
         }

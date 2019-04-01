@@ -1,6 +1,5 @@
 class StringFormatter{
     constructor(){
-        console.log("Im StringFormatter");
     }
     public formatMoney(n, c, d, t):string {
         var c = isNaN(c = Math.abs(c)) ? 2 : c,

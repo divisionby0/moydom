@@ -16,7 +16,7 @@ class Ajax{
         this.j.post(ajaxurl, data, (response) => this.onSearchEstatesResponse(response));
     }
     
-    public getEstates(estateType:string, saleDialType:number, rentDialType:number, city:string, costMin:number, costMax:number, floorMin:number, floorMax:number):void{
+    public getEstates(estateType:string, saleDialType:number, rentDialType:number, city:string, costMin:number, costMax:number, floorMin:number, floorMax:number, rooms:number):void{
         var data:any = {'action':'getEstates',
             'estateType':estateType,
             'saleDialType':saleDialType,
@@ -25,12 +25,14 @@ class Ajax{
             'costMax':costMax,
             'floorMin':floorMin,
             'floorMax':floorMax,
+            'rooms':rooms,
             'city':city
         };
         this.j.post(ajaxurl, data, (response) => this.onFilteredEstatesResponse(response));
     }
     
     private onFilteredEstatesResponse(response:any):void{
+        console.log("response:",response);
         EventBus.dispatchEvent(AjaxServiceEvent.ON_ESTATES_LOAD_COMPLETE, response);
     }
     

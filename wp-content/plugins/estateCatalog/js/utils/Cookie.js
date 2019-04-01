@@ -31,6 +31,12 @@ var Cookie = (function () {
     Cookie.getCostMin = function () {
         return this.getCookie("costMin");
     };
+    Cookie.setRooms = function (value) {
+        this.setCookie("rooms", value);
+    };
+    Cookie.getRooms = function () {
+        return this.getCookie("rooms");
+    };
     Cookie.setCostMax = function (value) {
         this.setCookie("costMax", value);
     };

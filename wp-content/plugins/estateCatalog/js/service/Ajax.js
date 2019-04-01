@@ -11,7 +11,7 @@ var Ajax = (function () {
         };
         this.j.post(ajaxurl, data, function (response) { return _this.onSearchEstatesResponse(response); });
     };
-    Ajax.prototype.getEstates = function (estateType, saleDialType, rentDialType, city, costMin, costMax, floorMin, floorMax) {
+    Ajax.prototype.getEstates = function (estateType, saleDialType, rentDialType, city, costMin, costMax, floorMin, floorMax, rooms) {
         var _this = this;
         var data = { 'action': 'getEstates',
             'estateType': estateType,
@@ -21,11 +21,13 @@ var Ajax = (function () {
             'costMax': costMax,
             'floorMin': floorMin,
             'floorMax': floorMax,
+            'rooms': rooms,
             'city': city
         };
         this.j.post(ajaxurl, data, function (response) { return _this.onFilteredEstatesResponse(response); });
     };
     Ajax.prototype.onFilteredEstatesResponse = function (response) {
+        console.log("response:", response);
         EventBus.dispatchEvent(AjaxServiceEvent.ON_ESTATES_LOAD_COMPLETE, response);
     };
     Ajax.prototype.onSearchEstatesResponse = function (response) {

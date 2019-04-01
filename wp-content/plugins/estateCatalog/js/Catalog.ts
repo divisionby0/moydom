@@ -18,6 +18,7 @@ class Catalog{
 
     private floorMin:number = 0;
     private floorMax:number = 25;
+    private rooms:number = 1;
 
     private estates:any[];
 
@@ -29,7 +30,6 @@ class Catalog{
         if(!isFrontPage){
             return;
         }
-        console.log("isFrontPage="+isFrontPage);
 
         this.setDefaults();
         this.createUIListeners();
@@ -49,7 +49,10 @@ class Catalog{
         this.floorMin = Number(Cookie.getFloorMin());
         this.floorMax = Number(Cookie.getFloorMax());
 
+        this.rooms = Number(Cookie.getRooms());
+
         console.log("saved costs: ",this.costMin,this.costMax);
+        console.log("rooms: ",this.rooms);
 
         if(this.selectedEstateType == null || this.selectedEstateType == "" || this.selectedEstateType == undefined){
             this.selectedEstateType = "houses";
@@ -108,12 +111,15 @@ class Catalog{
         this.$j("#costMax option[data-value='" + this.costMax +"']").attr("selected","selected");
 
         this.$j("#city").val(this.selectedCity);
+        this.$j("#rooms option[data-value='" + this.rooms +"']").attr("selected","selected");
 
         if(this.selectedEstateType == "flats"){
             this.$j("#floorNumberContainer").show();
+            this.$j("#roomsQuantityContainer").show();
         }
         else{
             this.$j("#floorNumberContainer").hide();
+            this.$j("#roomsQuantityContainer").hide();
         }
     }
 
@@ -128,6 +134,8 @@ class Catalog{
         this.$j("#dateSort").click((event)=>this.onDateSortClicked(event));
         this.$j("#costSort").click((event)=>this.onCostSortClicked(event));
 
+        this.$j("#rooms").change(()=>this.onRoomsChanged());
+        
         this.$j("#floorMin").change(()=>this.onFloorMinChanged());
         this.$j("#floorMax").change(()=>this.onFloorMaxChanged());
     }
@@ -158,9 +166,11 @@ class Catalog{
         Cookie.setEstateType(this.selectedEstateType);
         if(this.selectedEstateType == "flats"){
             this.$j("#floorNumberContainer").show();
+            this.$j("#roomsQuantityContainer").show();
         }
         else{
             this.$j("#floorNumberContainer").hide();
+            this.$j("#roomsQuantityContainer").hide();
         }
         this.createRequest();
     }
@@ -187,17 +197,19 @@ class Catalog{
         this.createRequest();
     }
 
+    private onRoomsChanged():void {
+        this.rooms = this.$j("#rooms").find(":selected").data("value");
+        Cookie.setRooms(this.rooms.toString());
+        this.createRequest();
+    }
+
     private createRequest():void{
         if(this.selectedEstateType == "flats"){
-            console.log("creating request estateType:"+this.selectedEstateType+"  saleDialType="+this.saleDialType+"  rent="+this.rentDialType+" city:"+this.selectedCity+" costMin="+this.costMin+"  costMax="+this.costMax+"  floorMin="+this.floorMin+"  floorMax="+this.floorMax);
-            this.ajax.getEstates(this.selectedEstateType, this.saleDialType, this.rentDialType, this.selectedCity, this.costMin, this.costMax, this.floorMin, this.floorMax);
+            this.ajax.getEstates(this.selectedEstateType, this.saleDialType, this.rentDialType, this.selectedCity, this.costMin, this.costMax, this.floorMin, this.floorMax, this.rooms);
         }
         else{
-            console.log("creating request estateType:"+this.selectedEstateType+"  saleDialType="+this.saleDialType+"  rent="+this.rentDialType+" city:"+this.selectedCity+" costMin="+this.costMin+"  costMax="+this.costMax+"  floorMin="+null+"  floorMax="+null);
-            this.ajax.getEstates(this.selectedEstateType, this.saleDialType, this.rentDialType, this.selectedCity, this.costMin, this.costMax, null, null);
+            this.ajax.getEstates(this.selectedEstateType, this.saleDialType, this.rentDialType, this.selectedCity, this.costMin, this.costMax, null, null, null);
         }
-
-        //this.ajax.getEstates(this.selectedEstateType, this.saleDialType, this.rentDialType, this.selectedCity, this.costMin, this.costMax, this.floorMin, this.floorMax);
     }
 
     private onSaleDialTypeChanged():void {
@@ -227,7 +239,6 @@ class Catalog{
     private onResponse(data:string):void{
         try{
             this.estates = JSON.parse(data);
-            console.log("response: ",this.estates);
         }
         catch(error){
             console.log("error parsing data ",data);

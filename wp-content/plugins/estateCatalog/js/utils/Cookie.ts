@@ -7,6 +7,7 @@ class Cookie{
     private static costMax:string;
     private static floorMin:string;
     private static floorMax:string;
+    private static rooms:string;
     
     public static setEstateType(value:string):void{
         this.setCookie("estateType", value);
@@ -41,6 +42,13 @@ class Cookie{
     }
     public static getCostMin():string{
         return this.getCookie("costMin");
+    }
+    
+    public static setRooms(value:string):void{
+        this.setCookie("rooms", value);
+    }
+    public static getRooms():string{
+        return this.getCookie("rooms");
     }
     
     public static setCostMax(value:string):void{

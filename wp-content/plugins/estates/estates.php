@@ -204,7 +204,6 @@ add_filter('manage_edit-flats_columns', 'flats_columns');
 add_action('manage_posts_custom_column',  'estate_show_columns');
 add_filter('manage_edit-flats_sortable_columns', 'my_sortable_estates_column' );
 
-
 add_filter('manage_edit-houses_columns', 'base_estates_columns');
 add_filter('manage_edit-houses_sortable_columns', 'my_sortable_estates_column' );
 

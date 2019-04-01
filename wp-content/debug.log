@@ -3761,3 +3761,19 @@
 [17-Mar-2019 10:01:01 UTC] PHP Warning:  Unterminated comment starting line 200 in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 200
 [17-Mar-2019 10:01:03 UTC] PHP Warning:  Unterminated comment starting line 200 in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 200
 [17-Mar-2019 10:01:18 UTC] PHP Warning:  Unterminated comment starting line 200 in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 200
+[23-Mar-2019 05:37:48 UTC] PHP Warning:  mysqli_query(): (HY000/6): Error on delete of 'C:\Windows\SERVIC~2\NETWOR~1\AppData\Local\Temp\#sql42c_3bf_0.MYD' (Errcode: 13 - Permission denied) in E:\workspaces\DenverServers\home\moydom\www\wp-includes\wp-db.php on line 1924
+[23-Mar-2019 05:37:48 UTC] База данных WordPress возвратила ошибку Error on delete of 'C:\Windows\SERVIC~2\NETWOR~1\AppData\Local\Temp\#sql42c_3bf_0.MYD' (Errcode: 13 - Permission denied) в ответ на запрос SHOW FULL COLUMNS FROM `wp_options`, выполненный call_user_func_array, wp_reschedule_event, wp_schedule_event, _set_cron_array, update_option
+[27-Mar-2019 06:54:22 UTC] PHP Notice:  Trying to get property of non-object in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 115
+[27-Mar-2019 06:54:22 UTC] PHP Notice:  Trying to get property of non-object in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 115
+[27-Mar-2019 06:54:22 UTC] PHP Notice:  Trying to get property of non-object in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 115
+[27-Mar-2019 06:54:22 UTC] PHP Notice:  Trying to get property of non-object in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estates\Estates.php on line 115
+[01-Apr-2019 10:56:35 UTC] PHP Notice:  Undefined index: rooms in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estateCatalog\EstateCatalog.php on line 47
+[01-Apr-2019 10:56:41 UTC] PHP Notice:  Undefined index: rooms in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estateCatalog\EstateCatalog.php on line 47
+[01-Apr-2019 10:56:43 UTC] PHP Notice:  Undefined index: rooms in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estateCatalog\EstateCatalog.php on line 47
+[01-Apr-2019 10:57:15 UTC] PHP Notice:  Undefined index: rooms in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estateCatalog\EstateCatalog.php on line 47
+[01-Apr-2019 10:57:22 UTC] PHP Notice:  Undefined index: rooms in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estateCatalog\EstateCatalog.php on line 47
+[01-Apr-2019 10:58:43 UTC] PHP Notice:  Undefined index: rooms in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estateCatalog\EstateCatalog.php on line 47
+[01-Apr-2019 10:58:50 UTC] PHP Notice:  Undefined index: rooms in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estateCatalog\EstateCatalog.php on line 47
+[01-Apr-2019 11:04:26 UTC] PHP Notice:  Array to string conversion in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estateCatalog\EstateCatalog.php on line 52
+[01-Apr-2019 11:04:39 UTC] PHP Notice:  Array to string conversion in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estateCatalog\EstateCatalog.php on line 52
+[01-Apr-2019 11:05:11 UTC] PHP Notice:  Array to string conversion in E:\workspaces\DenverServers\home\moydom\www\wp-content\plugins\estateCatalog\EstateCatalog.php on line 52

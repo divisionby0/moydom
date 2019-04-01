@@ -26,6 +26,7 @@ class FiltersView
         $this->createDialType();
         $this->createEstateType();
         $this->createFloorNumber();
+        $this->createRoomsQuantity();
         $this->createCities();
         $this->createCost();
         $this->createSort();
@@ -142,10 +143,13 @@ class FiltersView
         echo "<div class='row'><b>Количество комнат:</b></div>";
 
         echo "<div class='row'><select id='rooms'>";
-        echo "<option>1</option>";
-        echo "<option>2</option>";
-        echo "<option>3</option>";
-        echo "<option>Более 3х</option>";
+        echo "<option data-value='1'>1</option>";
+        echo "<option data-value='2'>2</option>";
+        echo "<option data-value='3'>3</option>";
+        echo "<option data-value='4'>4</option>";
+        echo "<option data-value='5'>5</option>";
+        echo "<option data-value='6'>6</option>";
+        echo "<option data-value='7'>7</option>";
         echo "</select></div></div>";
     }
 

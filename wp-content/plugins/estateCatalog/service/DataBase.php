@@ -40,11 +40,11 @@ class DataBase
         return json_encode($estates);
     }
     
-    public static function getEstate($estateType, $saleDialType, $rentDialType, $city, $costMin, $costMax, $floorMin, $floorMax){
+    public static function getEstate($estateType, $saleDialType, $rentDialType, $city, $costMin, $costMax, $floorMin, $floorMax, $rooms){
         // TODO https://css-tricks.com/snippets/wordpress/custom-loop-based-on-custom-fields/
 		// TODO https://www.google.com.ua/search?client=opera&hs=IRv&ei=TxEJXIfjFoa5swH_m7KwCw&q=wordpress+select+by+custom+fields+values&oq=wordpress+select+by+custom+fields+values&gs_l=psy-ab.3...733881.734972..735212...0.0..0.158.249.1j1......0....1..gws-wiz.......0i71.g8LkObXlP-I
         
-        $queryData = QueryBuilder::createQuery($estateType, $saleDialType, $rentDialType, $city, $costMin, $costMax, $floorMin, $floorMax);
+        $queryData = QueryBuilder::createQuery($estateType, $saleDialType, $rentDialType, $city, $costMin, $costMax, $floorMin, $floorMax, "-1", $rooms);
         $query = new WP_Query( $queryData );
 
         $posts = $query->posts;
